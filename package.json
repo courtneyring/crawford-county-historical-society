@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "download-copy": "node buildScripts/downloadContent",
     "start": "next start",
     "lint": "next lint"
   },

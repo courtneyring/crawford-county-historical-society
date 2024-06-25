@@ -50,7 +50,7 @@ const downloadContent = async () => {
         console.log(json)
     }
     // const copy = convertSpreadsheetToArray(rows)
-    fs.writeFileSync('copy.json', JSON.stringify(json))
+    fs.writeFileSync('src/assets/json/copy.json', JSON.stringify(json))
 }
 
 
