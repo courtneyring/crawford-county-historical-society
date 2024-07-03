@@ -15,6 +15,10 @@ const sections = [
         type: 'object'
     },
     {
+        name: 'About',
+        type: 'object'
+    },
+    {
         name: 'Navbar',
         type: 'array'
     }

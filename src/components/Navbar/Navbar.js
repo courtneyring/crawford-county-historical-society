@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className={`w-full block lg:flex lg:items-center lg:w-auto ${!menuIsOpen && 'hidden'}`}>
           <div className="text-base flex sm:flex-col lg:flex-row">
             {links.map((link, idx) => {
-              return <a href={link.path} className={` mt-4 lg:mt-0 text-white hover:text-white  ${idx != links.length - 1 && 'mr-4'}`} key={`link-${idx}`}>
+              return <a href={link.value} className={` mt-4 lg:mt-0 text-white hover:text-white  ${idx != links.length - 1 && 'mr-4'}`} key={`link-${idx}`}>
                 {link.label}
               </a>
             })}
