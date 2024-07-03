@@ -1,36 +1,14 @@
 'use client'
 import { useState } from 'react';
+import copy from '../../assets/json/copy.json';
+
 
 const Navbar = () => {
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
-  const links = [
-    {
-      label: 'About',
-      path: '/about'
-    },
-    {
-      label: 'Events',
-      path: '/events'
-    },
-    {
-      label: 'History',
-      path: '/history'
-    },
-    {
-      label: 'Exhibits',
-      path: '/exhibits'
-    },
-    {
-      label: 'Newsletters',
-      path: '/newsletters'
-    },
-    {
-      label: 'Contact',
-      path: '/contact'
-    },
-  ]
+  const links = copy.navbar;
+
 
   const toggleMenu = () => {
     setMenuIsOpen(!menuIsOpen)
