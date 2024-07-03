@@ -2,19 +2,21 @@
 const fs = require('fs');
 const { writeSheet, readSheet } = require('./sheetsService.js');
 const markdownit = require('markdown-it')
-const md = markdownit()
+const md = markdownit({breaks: true})
 // let file = fs.open('copy.json')
 
 const sections = [
     {
         name: 'Home',
-        type: 'object', 
-        markdown: true
+        type: 'object'
+    },
+    {
+        name: 'Footer',
+        type: 'object'
     },
     {
         name: 'Navbar',
-        type: 'array', 
-        markdown: false
+        type: 'array'
     }
 ]
 
@@ -27,7 +29,7 @@ const convertSpreadsheetToArray = (rows, markdown) => {
     for (let row of rows) {
         let obj = {};
         for (let [idx, key] of Object.entries(keys)) {
-            let val = markdown ? md.renderInline(row[idx]) : row[idx]
+            let val = md.renderInline(row[idx])
             obj[key] = val
         }
         arr.push(obj)
@@ -40,7 +42,7 @@ const convertSpreadsheetToObj = (rows, markdown) => {
     for (let row of rows) {
         if (row[0] && row[1]) {
             console.log(row[1])
-            let val = markdown ? md.renderInline(row[1]) : row[1]
+            let val = md.renderInline(row[1])
             copy[row[0]] = val
         }
     }
@@ -53,7 +55,7 @@ const downloadContent = async () => {
 
     for (let section of sections) {
         const rows = await readSheet(section.name);
-        let copy = section.type == 'array' ? convertSpreadsheetToArray(rows, section.markdown) : convertSpreadsheetToObj(rows, section.markdown)
+        let copy = section.type == 'array' ? convertSpreadsheetToArray(rows) : convertSpreadsheetToObj(rows)
         json[section.name.toLowerCase()] = copy;
         console.log(json)
     }
