@@ -21,6 +21,10 @@ const sections = [
     {
         name: 'Navbar',
         type: 'array'
+    },
+    {
+        name: 'Contact',
+        type: 'object'
     }
 ]
 

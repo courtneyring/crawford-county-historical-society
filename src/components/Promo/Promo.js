@@ -1,4 +1,4 @@
-import { ParseContent } from '../ParseContent/ParseContent';
+import { ParseContent } from '@/components';
 
 const Promo = ({copy}) => {
     return (

@@ -1,6 +1,6 @@
 'use client';
 
-import { ParseContent } from '../ParseContent/ParseContent';
+import { ParseContent } from '@/components';
 
 const Hero = ({text, image, skinny}) => {
     return (
