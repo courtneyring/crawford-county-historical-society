@@ -23,6 +23,14 @@ const sections = [
         type: 'array'
     },
     {
+        name: 'Events',
+        type: 'object'
+    },
+    {
+        name: 'EventsPanels',
+        type: 'array'
+    },
+    {
         name: 'Contact',
         type: 'object'
     }
