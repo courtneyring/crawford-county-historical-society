@@ -33,6 +33,14 @@ const sections = [
     {
         name: 'Contact',
         type: 'object'
+    },
+    {
+        name: 'Board',
+        type: 'object'
+    },
+    {
+        name: 'BoardList',
+        type: 'array'
     }
 ]
 
