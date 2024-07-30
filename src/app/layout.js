@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
+import copy from '@/assets/json/copy.json'
+import useRepeatable from "../hooks/useRepeatable";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,12 +13,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+  console.log(useRepeatable)
+
+  // const footerPromos = useRepeatable({ componentType: 'promo', copy: copy.footer, length: 3 })
+
   return (
     <html lang="en">
       <body className={inter.className}>
         <Navbar/>
         {children}
-        <Footer />
+        {/* <Footer promos={footerPromos} /> */}
         </body>
     </html>
   );

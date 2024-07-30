@@ -35,6 +35,10 @@ const sections = [
         type: 'object'
     },
     {
+        name: 'Support',
+        type: 'object'
+    },
+    {
         name: 'Board',
         type: 'object'
     },

@@ -44,6 +44,7 @@ const useRepeatable = ({ componentType, copy, length }) => {
 
             newArr.push(obj);
         }
+        console.log(newArr)
         setArr(newArr);
 
 
