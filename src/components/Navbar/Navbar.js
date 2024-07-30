@@ -1,13 +1,10 @@
 'use client'
 import { useState } from 'react';
-import copy from '../../assets/json/copy.json';
 
 
-const Navbar = () => {
+const Navbar = ({links}) => {
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  const links = copy.navbar;
 
 
   const toggleMenu = () => {
@@ -16,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="bg-black p-6 justify-center items-center flex">
+    <nav className="p-6 justify-center items-center flex">
       <div className='container flex items-center justify-between flex-wrap w-full'>
 
         <div className="flex items-center flex-shrink-0 text-white mr-6">

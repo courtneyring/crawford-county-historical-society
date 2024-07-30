@@ -1,6 +1,5 @@
 
 import Promo from './Promo';
-import { fn } from '@storybook/test';
 
 
 const copy = {
@@ -19,9 +18,6 @@ export default {
         layout: 'centered',
     },
     tags: ['autodocs'],
-    argTypes: {
-        backgroundColor: { control: 'color' },
-    },
 };
 
 

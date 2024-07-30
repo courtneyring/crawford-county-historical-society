@@ -3,7 +3,7 @@ import "./globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 import copy from '@/assets/json/copy.json'
-import useRepeatable from "../hooks/useRepeatable";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar/>
+        <Navbar links={copy.navbar}/>
         {children}
         {/* <Footer promos={footerPromos} /> */}
         </body>
