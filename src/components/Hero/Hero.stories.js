@@ -9,19 +9,25 @@ export default {
         layout: 'full',
     },
     tags: ['autodocs'],
-    argTypes: {
-        // backgroundColor: { control: 'color' },
-    },
-    args: { copy },
 };
 
 
-const Template = (args) => <Hero {...args} />;
+// const Template = (args) => <Hero {...args} />;
 
 
-export const Primary = Template.bind({});
-Primary.args = {
-    text:'test',
-    image: 'hero.png',
-    skinny: true
+export const Default = {
+    args: {
+        text: 'Crawford County <br> Historical Society',
+        image: 'hero.png',
+        skinny: false
+    }
+
+}
+
+export const Skinny  = {
+    args: {
+        image: 'hero.png',
+        skinny: true
+    }
+    
 }
