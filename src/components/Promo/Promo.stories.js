@@ -14,6 +14,11 @@ const copy = {
 export default {
     title: 'Components/Promo',
     component: Promo,
+    decorators: [
+        (Story) => (
+            <div className='max-w-96'><Story /></div>
+        )
+    ],
     parameters: {
         layout: 'centered',
     },
@@ -21,8 +26,19 @@ export default {
 };
 
 
-export const Primary = {
+export const WithLink = {
     args: {
-        copy: copy
+        icon: 'calendar',
+        header: 'Header',
+        body: 'It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.',
+        href: {url: 'http://google.com', label: 'Check out more'}
+    },
+};
+
+export const WithoutLink = {
+    args: {
+        icon: 'calendar',
+        header: 'Header',
+        body: 'It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.',
     },
 };

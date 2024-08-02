@@ -1,16 +1,16 @@
-// import { ParseContent } from '@/components';
 import parse from "html-react-parser";
 import DOMPurify from "isomorphic-dompurify";
+import './Promo.scss';
 
-const Promo = ({copy}) => {
+const Promo = ({icon, header, body, href}) => {
+    const Tag = href ? 'a' : 'div';
     return (
-        <div className="flex flex-col items-center flex-1">
-            {copy.icon && <img src={`/assets/icons/${copy.icon}.svg`} className='h-14 w-auto mb-3'/>}
-            <h3 className='mb-3'>{copy.header}</h3>
-            {/* <ParseContent className='mb-5 text-center' content={copy.body} tag='p'/>  */}
-            <p>{parse(DOMPurify.sanitize(copy.body)) }</p>
-            {(copy.linkUrl && copy.linkLabel) &&<a className='mt-auto flex items-center' href={copy.linkUrl}>{copy.linkLabel}<img className='ml-2'src='/assets/icons/chevron-right.svg' /></a>}
-        </div>
+        <Tag className="flex flex-col items-center flex-1 promo" href={href?.url}>
+            {icon && <img src={`/assets/icons/${icon}.svg`} className='h-14 w-auto mb-3'/>}
+            <h3 className='mb-5'>{header}</h3>
+            <p className="text-center mb-5">{parse(DOMPurify.sanitize(body)) }</p>
+            {href &&<a className='mt-auto flex items-center' >{href.label}<img className='ml-2'src='/assets/icons/chevron-right.svg' /></a>}
+        </Tag>
     )
 }
 
