@@ -6,25 +6,16 @@ import { fn } from '@storybook/test';
 
 const promos = [
   {
-    "header": "Crawford County History",
-    "body": "Learn more about Crawford County through historical photographs and information.",
-    "linkUrl": "/history",
-    "linkLabel": "Explore the Past",
-    "icon": "camera"
+    "header": "Contact Us",
+    "body": "97 East Michigan Avenue<br>P.O. Bo 218<br>Grayling, MI 49738<br><br>989-745-3493",
   },
   {
-    "header": "Museum Exhibits",
-    "body": "Crawford County through the ages including  AuSable River, Fish Hatchery, and the National Guard’s Camp Grayling.",
-    "linkUrl": "/exhibits",
-    "linkLabel": "Learn about our showcases",
-    "icon": "calendar"
+    "header": "Hours",
+    "body": "Tuesday to Saturday<br>10am - 4pm",
   },
   {
-    "header": "Show Your Support",
+    "header": "Donate",
     "body": "Find out ways you can help the museum from day-to-day operations to long term success.",
-    "linkUrl": "/support",
-    "linkLabel": "Help our museum",
-    "icon": "groups"
   }
 ]
 
@@ -32,12 +23,9 @@ export default {
   title: 'Components/Footer',
   component: Footer,
   parameters: {
-    layout: 'centered',
+    layout: 'full',
   },
   tags: ['autodocs'],
-  argTypes: {
-    // backgroundColor: { control: 'color' },
-  },
   args: { promos },
 };
 

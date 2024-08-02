@@ -14,11 +14,6 @@ const copy = {
 export default {
     title: 'Components/Promo',
     component: Promo,
-    decorators: [
-        (Story) => (
-            <div className='max-w-96'><Story /></div>
-        )
-    ],
     parameters: {
         layout: 'centered',
     },
