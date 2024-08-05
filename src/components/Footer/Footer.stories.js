@@ -8,6 +8,7 @@ const promos = [
   {
     "type": "image-body",
     "body": "97 East Michigan Avenue<br>P.O. Box 218<br>Grayling, MI 49738<br><br>989-745-3493",
+    "image": "/assets/images/CourtneyRingLogo.png"
   },
   {
     "type": "hours",
@@ -25,8 +26,11 @@ const promos = [
     "type": "links",
     "links": [
       {label: 'Home', url: '/home'},
-      {label: 'Contact', url: '/contact'},
-      {label: 'Support', url: '/support'},
+      {label: 'About', url: '/contact'},
+      {label: 'Events', url: '/support'},
+      {label: 'Support', url: '/home'},
+      {label: 'Board', url: '/contact'},
+      {label: 'Contact', url: '/support'},
     ] 
   }
 ]

@@ -1,3 +1,53 @@
 footer {
   background: black;
 }
+
+.hours {
+  grid-area: hours;
+}
+
+.links {
+  grid-area: links;
+}
+
+.image-body {
+  grid-area: image-body;
+}
+
+.grid-container {
+  // grid-template-areas: "image-body hours links";
+  // grid-template-rows: repeat(3, minmax(0, 1fr));
+  // grid-template-columns: 1fr;
+}
+
+@media(min-width: 640px) {
+  .grid-container {
+    grid-template-areas: "image-body hours links";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    gap: 30px;
+
+  }
+}
+
+@media(min-width: 768px) {
+  .grid-container {
+    grid-template-areas: "image-body hours . links";
+    grid-template-columns: 3fr 3fr 1fr 3fr;
+    grid-template-rows: 1fr;
+    display: grid;
+    gap: 30px;
+
+  }
+}
+
+
+
+@media(min-width: 1280px) {
+  .grid-container {
+      grid-template-areas: "image-body hours . links";
+      grid-template-columns: 1fr 1fr 2fr 1fr;
+      gap: 50px;
+    }
+}
