@@ -6,16 +6,28 @@ import { fn } from '@storybook/test';
 
 const promos = [
   {
-    "header": "Contact Us",
-    "body": "97 East Michigan Avenue<br>P.O. Bo 218<br>Grayling, MI 49738<br><br>989-745-3493",
+    "type": "image-body",
+    "body": "97 East Michigan Avenue<br>P.O. Box 218<br>Grayling, MI 49738<br><br>989-745-3493",
   },
   {
-    "header": "Hours",
-    "body": "Tuesday to Saturday<br>10am - 4pm",
+    "type": "hours",
+    "fields": [
+      {key: 'Tuesday', value: '10am - 4pm'},
+      {key: 'Wednesday', value: '10am - 4pm'},
+      {key: 'Thursday', value: '10am - 4pm'},
+      {key: 'Friday', value: '10am - 4pm'},
+      {key: 'Saturday', value: '10am - 4pm'},
+      {key: 'Sunday', value: 'Closed'},
+      {key: 'Monday', value: 'Closed'},
+    ]
   },
   {
-    "header": "Donate",
-    "body": "Find out ways you can help the museum from day-to-day operations to long term success.",
+    "type": "links",
+    "links": [
+      {label: 'Home', url: '/home'},
+      {label: 'Contact', url: '/contact'},
+      {label: 'Support', url: '/support'},
+    ] 
   }
 ]
 
