@@ -21,7 +21,10 @@ module.exports = {
         'yellow': '#FFC151',
         'blue': '#426AAF', 
         'darkgrey': '#4F4F4F',
-        'lightgrey': 'F4F4F3',
+        'lightgrey': '#e5e7eb',
+      },
+      maxWidth: {
+        '9/10': '90%',
       }
     },
   },
