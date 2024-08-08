@@ -15,17 +15,32 @@ module.exports = {
       },
       height: {
         '125': '31.25rem', 
-        '180': '45rem'
+        '180': '45rem',
       }, 
       colors: {
         'yellow': '#FFC151',
         'blue': '#426AAF', 
         'darkgrey': '#4F4F4F',
         'lightgrey': '#e5e7eb',
+        'translucent': 'rgba(0, 0, 0, 0.5)'
       },
       maxWidth: {
         '9/10': '90%',
-      }
+      }, 
+      animation: {
+        fadeIn: 'fadeIn 0.3s ease-in-out',
+        fadeOut: 'fadeOut 0.3s ease-in-out',
+      },
+      keyframes: () => ({
+        fadeIn: {
+          '0%': { opacity: 0, transform: `translateY(3%)` },
+          '100%': { opacity: 1, transform: `translateY(0%)` },
+        },
+        fadeOut: {
+          '0%': { opacity: 1, transform: `translateY(0%)` },
+          '100%': { opacity: 0, transform: `translateY(3%)` },
+        },
+      }),
     },
   },
   plugins: [],

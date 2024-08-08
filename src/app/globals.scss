@@ -6,6 +6,7 @@
 
 * {
   font-family: 'Urbanist', Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 :root {
@@ -43,4 +44,24 @@ h2 {
 
 h3 {
   font-size: 1.3rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
