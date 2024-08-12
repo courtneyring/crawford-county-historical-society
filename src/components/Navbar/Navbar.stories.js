@@ -44,7 +44,8 @@ export default {
 
 export const Default = {
     args: {
-        links
+        links,
+        title: 'CCHS'
     },
     parameters: {
         backgrounds: { default: 'dark' },
