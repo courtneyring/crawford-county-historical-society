@@ -17,7 +17,7 @@ export const Primary = {
         const [isOpen, setOpen] = useState();
 
         return (
-            <MenuButton clickFn={setOpen(!isOpen)} isOpen={isOpen} />
+            <MenuButton clickFn={() => setOpen(!isOpen)} isOpen={isOpen} />
 
         )
     }

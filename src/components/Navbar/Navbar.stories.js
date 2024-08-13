@@ -43,11 +43,15 @@ export default {
 
 
 export const Default = {
-    args: {
-        links,
-        title: 'CCHS'
-    },
     parameters: {
         backgrounds: { default: 'dark' },
+    }, 
+    render: () =>{
+        return (
+            <div className='w-full p-2'>
+                <Navbar links={links} title={"CCHS"} />
+            </div>
+        )
+        
     }
 };
