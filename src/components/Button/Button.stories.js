@@ -16,7 +16,7 @@ export default {
 export const Primary = {
     args: {
         variation: 'primary',
-        text: 'Button',
+        children: 'Button',
         fn: () =>fn(),
     }
 
@@ -25,7 +25,7 @@ export const Primary = {
 export const Secondary = {
     args: {
         variation: 'secondary',
-        text: 'Button',
+        children: 'Button',
         fn: () =>fn(),
     }
 
@@ -34,7 +34,7 @@ export const Secondary = {
 export const Link = {
     args: {
         variation: 'link',
-        text: 'Button',
+        children: 'Button',
         url: 'https://google.com',
         target: '_blank'
     }
