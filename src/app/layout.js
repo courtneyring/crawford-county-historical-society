@@ -14,14 +14,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  console.log(useRepeatable)
 
-  // const footerPromos = useRepeatable({ componentType: 'promo', copy: copy.footer, length: 3 })
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Navbar links={copy.navbar}/>
+        {/* <Navbar links={copy.navbar}/> */}
         {children}
         {/* <Footer promos={footerPromos} /> */}
         </body>
