@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 
 const useResize = () => {
     const [dimensions, setDimensions] = useState({
-        innerWidth: window.innerWidth,
-        innerHeight: window.innerHeight,
+        innerWidth: typeof window !== 'undefined' && window.innerWidth,
+        innerHeight: typeof window !== 'undefined'&&  window.innerHeight,
     });
 
     useEffect(() => {

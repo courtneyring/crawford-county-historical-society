@@ -1,7 +1,6 @@
 'use client'
 import { useState } from 'react';
 import MenuButton from '../MenuButton/MenuButton';
-import useResize from '@/hooks/useResize';
 import { isMobile } from '@/utils/breakpoints';
 import useResizeResponsive from '@/hooks/useResponsive';
 import { createPortal } from 'react-dom';
