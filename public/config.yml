@@ -18,7 +18,7 @@ collections:
           - { label: "Image", name: "image", widget: "image" }
   - name: "navigation"
     label: "Navigation"
-    folder: "src/navigation"
+    folder: "src/copy"
     create: true
     slug: "navigation"
     fields: 
