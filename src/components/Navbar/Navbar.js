@@ -35,7 +35,7 @@ const Navbar = ({ links, logoImage, title }) => {
         :
         <div className=''>
           {links.map((link, idx) => {
-            return <a className=' [&:not(:last-child)]:px-5 text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value}>{link.label}</a>
+            return <a className=' [&:not(:last-child)]:px-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value}>{link.label}</a>
           })}
         </div>
       }

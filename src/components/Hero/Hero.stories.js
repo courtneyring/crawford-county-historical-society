@@ -24,6 +24,18 @@ export const Default = {
 
 }
 
+export const WithCTA = {
+    args: {
+        text: 'Crawford County <br> Historical Society',
+        image: 'hero.png',
+        skinny: false,
+        cta: {
+            label: 'Learn More',
+            value: '/about'
+        }
+    }
+}
+
 export const Skinny  = {
     args: {
         image: 'hero.png',

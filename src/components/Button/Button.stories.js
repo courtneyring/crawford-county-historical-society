@@ -22,6 +22,14 @@ export const Primary = {
 
 }
 
+export const PrimaryWithUrl = {
+    args: {
+        variation: 'primary',
+        children: 'Button',
+        url: '/about'
+    }
+}
+
 export const Secondary = {
     args: {
         variation: 'secondary',

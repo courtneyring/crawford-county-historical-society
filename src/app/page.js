@@ -18,7 +18,7 @@ export default function Home() {
 
   return (
     <main className="flex  flex-col items-center ">
-      <Hero text={hero.title} image={hero.image}/>
+      <Hero text={hero.title} image={hero.image} cta={{label: 'Learn More', value: '/about'}}/>
       <div className=" max-w-7xl w-full items-center justify-between lg:flex px-2">
         <div className="flex grid md:grid-cols-3 gap-16 py-10">
           {promos.map((promo, idx) =>
