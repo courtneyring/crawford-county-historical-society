@@ -1,7 +1,7 @@
 ---
 hero:
   title: Crawford County Historical Society
-  image: public/band-mill.jpg
+  image: /assets/images/image-asset.jpeg
 imagePromos:
   - image: public/chief-daughter.jpg
     heading: Crawford County History
