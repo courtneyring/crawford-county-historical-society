@@ -2,7 +2,7 @@ backend:
   name: github
   repo: courtneyring/crawford-county-historical-society
 media_folder: "public/assets/images"
-public_folder: "assets/images"
+public_folder: "/assets/images"
 collections:
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI
