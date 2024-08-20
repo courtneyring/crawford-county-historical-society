@@ -1,7 +1,7 @@
 ---
 hero:
   title: Crawford County Historical Society
-  image: public/danish-church.jpg
+  image: public/chief-daughter.jpg
 imagePromos:
   - image: public/chief-daughter.jpg
     heading: Crawford County History
