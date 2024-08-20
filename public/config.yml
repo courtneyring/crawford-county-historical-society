@@ -7,25 +7,42 @@ collections:
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI
     folder: "src/copy" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
     slug: "home" # Filename template, e.g., YYYY-MM-DD-title.md
+    summary: 'CCHS Home Copy'
     fields: # The fields for each document, usually in front matter
       - label: "Hero"
         name: "hero"
-        widget: "object"        
+        widget: "object"
+        summary: "{{fields.title}}"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
+      - label: "Image Promos"
+        name: "imagePromos"
+        widget: "list"
+        allow_add: true
+        summary: "{{fields.header}} - {{fields.body}}"
+        fields:
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Header", name: "header", widget: "text" }
+          - { label: "Body", name: "body", widget: "text" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields: 
+              - {label: Label, name: label, widget: string}
+              - {label: Url, name: url, widget: string}
   - name: "navigation"
     label: "Navigation"
+    summary: "CCHS Navigation Copy"
     folder: "src/copy"
-    create: true
     slug: "navigation"
     fields: 
       - {label: "Title", name: "title", widget: "string", required: false }
       - {label: "Image", name: "image", widget: "image", required: false }
       - label: "Links"
         name: "links"
+        summary: "{{fields.label}} - {{fields.value}}"
         widget: "list"
         allow_add: true
         fields:

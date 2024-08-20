@@ -5,30 +5,38 @@ import copy from '@/assets/json/copy.json';
 import useRepeatable from '@/hooks/useRepeatable';
 import Hero from "@/components/Hero/Hero";
 import { attributes, react as HomeContent } from '../copy/home.md'
+import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 
 
 
 export default function Home() {
 
-  let { hero } = attributes;
-  console.log(attributes)
+  let { hero, imagePromos } = attributes;
+  
 
-  const promos = useRepeatable({componentType: 'promo', copy: copy.home, length: 3});
-  const homeCopy = copy.home;
+  const promoCopy = {
+    "header": "Crawford County History",
+    "body": "Learn more about Crawford County through historical photographs and information.",
+    href: {
+      url: '/history',
+      label: 'Export the Past',
+    }
+  }
+
+
 
   return (
     <main className="flex  flex-col items-center ">
       <Hero text={hero.title} image={hero.image} cta={{label: 'Learn More', value: '/about'}}/>
-      <div className=" max-w-7xl w-full items-center justify-between lg:flex px-2">
-        <div className="flex grid md:grid-cols-3 gap-16 py-10">
-          {promos.map((promo, idx) =>
-            <Promo copy={promo} key={`promo-${idx}`} />
-          )}
+      <div className='container'>
+        <p>The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.</p>
+        {}
+        <ImagePromoBlock promo={promoCopy} image='https://images.squarespace-cdn.com/content/v1/624b503d11269629b387b9c3/1649102910495-TNRUPY6VYTRMUGH1P4IU/image-asset.jpeg?format=2500w' />
+        <ImagePromoBlock reverse={true} promo={promoCopy} image='https://images.squarespace-cdn.com/content/v1/624b503d11269629b387b9c3/1649102910495-TNRUPY6VYTRMUGH1P4IU/image-asset.jpeg?format=2500w' />
+        <ImagePromoBlock promo={promoCopy} image='https://images.squarespace-cdn.com/content/v1/624b503d11269629b387b9c3/1649102910495-TNRUPY6VYTRMUGH1P4IU/image-asset.jpeg?format=2500w' />
 
-
-        </div>
-        
       </div>
+     
     </main>
   );
 }
