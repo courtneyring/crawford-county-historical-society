@@ -6,7 +6,7 @@ import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 
 export default function Home() {
 
-  let { hero, imagePromos } = attributes;
+  let { hero, imagePromos, intro } = attributes;
   console.log(imagePromos)
 
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero  image={hero.image} />
       <div className="bg-lightgrey w-full">
         <div className='container mx-auto'>
-          <p className="text-4xl leading-12 max-w-5xl py-20 mx-auto">The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.</p>
+          <p className="text-4xl leading-12 max-w-5xl py-20 mx-auto">{intro}</p>
         </div>
       </div>
 
