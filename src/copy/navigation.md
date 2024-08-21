@@ -1,6 +1,6 @@
 ---
 hero:
-  title: Crawford County Historical Society
+  title: Crawford County Historical Societyf
   image: band-mill.jpg
 title: CCHS
 links:
