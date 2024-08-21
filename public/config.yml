@@ -36,6 +36,7 @@ collections:
   - name: "navigation"
     label: "Navigation"
     summary: "CCHS Navigation Copy"
+    create: true
     folder: "src/copy"
     slug: "navigation"
     fields: 
