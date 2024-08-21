@@ -1,13 +1,10 @@
 'use client';
 
 import Hero from "@/components/Hero/Hero";
-import copy from '@/assets/json/copy.json';
-import useRepeatable from "@/hooks/useRepeatable";
-import { ParseContent } from "@/components";
+// import { attributes, react as HomeContent } from '../../copy/about.md'
 
 const About = () => {
-    const aboutCopy = copy.about;
-    const textBlocks = useRepeatable({ componentType: 'textBlock', copy: copy.about, length:5})
+    let { heroImg } = attributes;
 
     return (
         <main className="flex flex-col items-center">

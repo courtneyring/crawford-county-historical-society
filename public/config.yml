@@ -49,6 +49,15 @@ collections:
         fields:
           - {label: Label, name: label, widget: string}
           - {label: Value, name: value, widget: string}
+  - name: "about"
+    label: "About"
+    summary: "CCHS About Copy"
+    folder: "src/copy"
+    slug: "about"
+    fields: 
+      - label: "HeroImage"
+        name: "heroImage"
+        widget: "image"
   - name: "footer" # Used in routes, e.g., /admin/collections/blog
     label: "Footer" # Used in the UI
     folder: "_posts/footer" # The path to the folder where the documents are stored
