@@ -58,15 +58,3 @@ collections:
       - label: "HeroImage"
         name: "heroImage"
         widget: "image"
-  - name: "footer" # Used in routes, e.g., /admin/collections/blog
-    label: "Footer" # Used in the UI
-    folder: "_posts/footer" # The path to the folder where the documents are stored
-    # create: true # Allow users to create new documents in this collection
-    slug: "footer" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      # - { label: "Layout", name: "layout", widget: "hidden", default: "blog" }
-      - { label: "Title", name: "title", widget: "string", default: "test" }
-      # - { label: "Publish Date", name: "date", widget: "datetime" }
-      # - { label: "Featured Image", name: "thumbnail", widget: "image" }
-      # - { label: "Rating (scale of 1-5)", name: "rating", widget: "number" }
-      # - { label: "Body", name: "body", widget: "markdown" }
