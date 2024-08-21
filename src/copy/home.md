@@ -2,6 +2,11 @@
 hero:
   title: Crawford County Historical Society
   image: /assets/images/band-mill.jpg
+  intro: "Experience the world’s first space shuttle, a nuclear weapons-carrying
+    submarine, dozens of military aircraft, a supersonic spy plane, and the
+    world’s fastest commercial airliner displayed in and around the legendary
+    aircraft carrier, Intrepid—an awe-inspiring place for an unforgettable
+    adventure. "
 imagePromos:
   - image: /assets/images/band-mill.jpg
     heading: Crawford County History
