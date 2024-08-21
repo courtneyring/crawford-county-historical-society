@@ -30,6 +30,9 @@ module.exports = {
       maxWidth: {
         '9/10': '90%',
       }, 
+      lineHeight: {
+        '12': '3rem'
+      },
       animation: {
         fadeIn: 'fadeIn 0.3s ease-in-out',
         fadeOut: 'fadeOut 0.3s ease-in-out',
