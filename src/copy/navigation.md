@@ -21,4 +21,13 @@ intro: "Experience the world’s first space shuttle, a nuclear weapons-carrying
   world’s fastest commercial airliner displayed in and around the legendary
   aircraft carrier, Intrepid—an awe-inspiring place for an unforgettable
   adventure. "
+imagePromos:
+  - header: Crawford County History
+    image: /assets/images/south-side-school.jpg
+    body: Learn more about Crawford County including its important
+      people,  buildings, and industries through historical photographs and
+      information.
+    cta:
+      label: Explore the Past
+      url: /about
 ---
