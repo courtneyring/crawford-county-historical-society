@@ -39,4 +39,5 @@ imagePromos:
       label: Help our museum
       url: /support
     header: Show Your Support
+heroImage: /assets/images/south-side-school.jpg
 ---
