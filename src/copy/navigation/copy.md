@@ -10,8 +10,8 @@ links:
     value: /board
   - label: Events
     value: /events
-  - label: Exhibits
-    value: /exhibits
+  - label: Gallery
+    value: /gallery
   - label: Support
     value: /support
   - label: Contact
