@@ -65,3 +65,15 @@ collections:
       - label: 'Body'
         name: 'body'
         widget: text
+  - name: "gallery"
+    label: "Gallery"
+    summary: "CCHS Gallery Copy"
+    folder: "src/copy/gallery"
+    slug: "copy"
+    fields: 
+      - label: "HeroImage"
+        name: "heroImage"
+        widget: "image"
+      - label: 'Page Title'
+        name: 'pageTitle'
+        widget: string
