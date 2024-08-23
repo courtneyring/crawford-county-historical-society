@@ -77,3 +77,9 @@ collections:
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string
+      - label: 'Images'
+        name: 'images'
+        widget: list
+        allow_add: true
+        fields: 
+          - {label: Image, name: image, widget: image}
