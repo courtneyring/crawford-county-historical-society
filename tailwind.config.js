@@ -27,6 +27,9 @@ module.exports = {
         'lightgrey': '#e5e7eb',
         'translucent': 'rgba(0, 0, 0, 0.5)'
       },
+      aspectRatio: {
+        '4/3': '4/3'
+      },
       maxWidth: {
         '9/10': '90%',
       }, 
