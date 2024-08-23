@@ -83,3 +83,61 @@ collections:
         allow_add: true
         fields: 
           - {label: Image, name: image, widget: image}
+  - name: "contact"
+    label: "Contact"
+    summary: "CCHS Contact Copy"
+    folder: "src/copy/contact"
+    slug: "copy"
+    fields: 
+      - label: "HeroImage"
+        name: "heroImage"
+        widget: "image"
+      - label: 'Page Title'
+        name: 'pageTitle'
+        widget: string
+      - label: 'Address'
+        name: 'address'
+        widget: object
+        fields: 
+          - label: 'Street'
+            name: 'street'
+            widget: string
+          - label: 'PO Box, Suite, etc'
+            name: 'street2'
+            widget: string
+          - label: 'City'
+            name: 'city'
+            widget: string
+          - label: 'State'
+            name: 'state'
+            widget: string
+          - label: 'Zip Code'
+            name: 'zip'
+            widget: number
+      - label: 'Phone'
+        name: 'phone'
+        widget: string
+      - label: 'Email'
+        name: 'email'
+        widget: string
+      - label: 'Monday Hours'
+        name: 'hoursMonday'
+        widget: string
+      - label: 'Tuesday Hours'
+        name: 'hoursTuesday'
+        widget: string
+      - label: 'Wednesday Hours'
+        name: 'hoursWednesday'
+        widget: string
+      - label: 'Thursday Hours'
+        name: 'hoursThursday'
+        widget: string
+      - label: 'Friday Hours'
+        name: 'hoursFriday'
+        widget: string
+      - label: 'Saturday Hours'
+        name: 'hoursSaturday'
+        widget: string
+      - label: 'Sunday Hours'
+        name: 'hoursSunday'
+        widget: string
