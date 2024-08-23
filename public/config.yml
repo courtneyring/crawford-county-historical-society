@@ -120,24 +120,14 @@ collections:
       - label: 'Email'
         name: 'email'
         widget: string
-      - label: 'Monday Hours'
-        name: 'hoursMonday'
-        widget: string
-      - label: 'Tuesday Hours'
-        name: 'hoursTuesday'
-        widget: string
-      - label: 'Wednesday Hours'
-        name: 'hoursWednesday'
-        widget: string
-      - label: 'Thursday Hours'
-        name: 'hoursThursday'
-        widget: string
-      - label: 'Friday Hours'
-        name: 'hoursFriday'
-        widget: string
-      - label: 'Saturday Hours'
-        name: 'hoursSaturday'
-        widget: string
-      - label: 'Sunday Hours'
-        name: 'hoursSunday'
-        widget: string
+      - label: 'Hours'
+        name: 'hours'
+        widget: object
+        fields: 
+          - {label: 'Tuesday', name: 'tuesday', widget: string}
+          - {label: 'Wednesday', name: 'wednesday', widget: string}
+          - {label: 'Thursday', name: 'thursday', widget: string}
+          - {label: 'Friday', name: 'friday', widget: string}
+          - {label: 'Saturday', name: 'saturday', widget: string}
+          - {label: 'Sunday', name: 'sunday', widget: string}
+          - {label: 'Monday', name: 'monday', widget: string}

@@ -4,7 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import { attributes } from '../../../copy/contact/copy.md'
 
 const About = () => {
-    let { heroImage, pageTitle } = attributes;
+    let { heroImage, pageTitle, address, phone, email, hours } = attributes;
 
     return (
         <main className="flex flex-col items-center">

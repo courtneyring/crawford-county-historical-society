@@ -9,11 +9,12 @@ address:
     zip: 49738
 phone: 989-745-3493
 email: cchsgrayling@gmail.com
-hoursMonday: Closed
-hoursTuesday: Closed
-hoursWednesday: 10am - 4pm
-hoursThursday: 10am - 4pm
-hoursFriday: 10am - 4pm
-hoursSaturday: 10am - 4pm
-hoursSunday: Closed
+hours: 
+    tuesday: 10am - 4pm
+    wednesday: 10am - 4pm
+    thursday: 10am - 4pm
+    friday: 10am - 4pm
+    saturday: 10am - 4pm
+    sunday: Closed
+    monday: Closed
 ---
