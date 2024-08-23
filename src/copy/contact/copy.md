@@ -1,7 +1,12 @@
 ---
 heroImage: /assets/images/south-side-school.jpg
 pageTitle: Contact
-address: 97 East Michigan Avenue P.O. Box 218 Grayling, MI 49738
+address:
+    street: 97 East Michigan Avenue
+    street2: P.O. Box 218
+    city: Grayling
+    state: MI
+    zip: 49738
 phone: 989-745-3493
 email: cchsgrayling@gmail.com
 hoursMonday: Closed
