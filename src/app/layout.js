@@ -3,7 +3,7 @@ import "./globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 // import copy from '@/assets/json/copy.json'
-// import { attributes } from '../copy/navigation.md'
+import { attributes } from '../copy/navigation/copy.md'
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -15,12 +15,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  // let { title, links } = attributes;
+  let { title, links } = attributes;
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <Navbar links={links} title={title}/> */}
+        <Navbar links={links} title={title}/>
         {children}
         {/* <Footer promos={footerPromos} /> */}
         </body>

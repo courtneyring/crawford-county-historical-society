@@ -1,6 +1,6 @@
 'use client';
 import Hero from "@/components/Hero/Hero";
-import { attributes, react as HomeContent } from '../copy/home.md'
+import { attributes, react as HomeContent } from '../copy/home/copy.md'
 import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 
 

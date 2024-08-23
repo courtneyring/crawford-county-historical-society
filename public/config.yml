@@ -59,3 +59,9 @@ collections:
       - label: "HeroImage"
         name: "heroImage"
         widget: "image"
+      - label: 'Page Title'
+        name: 'pageTitle'
+        widget: string
+      - label: 'Body'
+        name: 'body'
+        widget: text
