@@ -19,7 +19,7 @@ const Events = () => {
                 <h1 className="mb-5">{pageTitle}</h1>
                 {events.map((event, idx) => {
                     return (
-                        <div className="h-60 mb-12">
+                        <div className="h-60 mb-20">
                             <Event
                                 key={`event-${idx}`}
                                 name={event.name}

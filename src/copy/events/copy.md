@@ -13,5 +13,5 @@ events:
     name: Test Event
     location: Crawford County Museum
     description: testing
-    image: /assets/images/grayling-house.jpeg
+    image: /assets/images/grayling-house.jpg
 ---
