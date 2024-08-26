@@ -9,4 +9,5 @@ events:
       obsidian and glass using the flintknapping techniques of prehistoric
       indigenous inhabitants of Michigan
     image: /assets/images/image-asset.jpeg
+    location: Crawford County Museum
 ---
