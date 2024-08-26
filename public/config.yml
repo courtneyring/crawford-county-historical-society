@@ -95,6 +95,15 @@ collections:
     - label: 'Page Title'
       name: 'pageTitle'
       widget: string
+    - label: 'Events'
+      name: 'events'
+      widget: 'list'
+      allow_add: true
+      fields: 
+        - {label: Event Name, name: name, widget: string}
+        - {label: Start, name: start, widget: datetime}
+        - {label: End, name: end, widget: datetime}
+        - {label: Description, name: description, widget: text}
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"

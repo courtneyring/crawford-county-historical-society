@@ -1,4 +1,4 @@
 ---
 heroImage: /assets/images/south-side-school.jpg
-pageTitle: Contact
+pageTitle: Events
 ---
