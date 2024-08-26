@@ -1,14 +1,11 @@
 ---
-heroImage: /assets/images/south-side-school.jpg
+heroImage: /assets/images/band-mill.jpg
 pageTitle: Events
 events:
-  - name: Test Event
-    start: 2024-08-20T15:15:00.000Z
-    end: 2024-08-20T18:00:00.000Z
+  - start: "{{now}}"
+    end: "{{now}}"
+    name: Test Event
     location: Crawford County Museum
-    description: Watch Jeff McLain create arrowheads, knives and blades from flint,
-      obsidian and glass using the flintknapping techniques of prehistoric
-      indigenous inhabitants of Michigan
+    description: testing
     image: /assets/images/image-asset.jpeg
-    location: Crawford County Museum
 ---
