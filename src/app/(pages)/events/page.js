@@ -14,11 +14,11 @@ const Events = () => {
         <main className="flex flex-col items-center">
             <Hero skinny image={eventsCopy.heroImg}/>
             <div className='max-w-7xl w-full px-2'>
-                <h1>{eventsCopy.pageName}</h1>
+                {/* <h1>{eventsCopy.pageName}</h1>
                 {eventsPanels.map((panel) => {
                     return <Panel copy={panel}/>
                 })}
-               
+                */}
             </div>
             
         </main>

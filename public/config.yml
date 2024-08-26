@@ -83,6 +83,18 @@ collections:
         allow_add: true
         fields: 
           - {label: Image, name: image, widget: image}
+  - name: 'events'
+    label: "Events"
+    summary: "CCHS Events Copy"
+    folder: 'src/copy/events'
+    slub: 'copy'
+    fields: 
+    - label: "HeroImage"
+      name: "heroImage"
+      widget: "image"
+    - label: 'Page Title'
+      name: 'pageTitle'
+      widget: string
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"
