@@ -1,7 +1,6 @@
 
 import Event from './Event';
-
-
+import * as dayjs from 'dayjs'
 
 export default {
     title: 'Components/Event',
@@ -16,9 +15,19 @@ export default {
 
 export const Primary = {
     render: () => {
+
+        const start=dayjs()
+
         return (
             <div className='w-full'>
-                <Event title='Event One' date='Wed, Jan 1, 20257:30 PM  Fri, Jan 3, 20258:30 PM' description='It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.'/>
+                <Event
+                    title='Example Event'
+                    image='https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+                    start={start}
+                    end={start}
+                    description='Lorem ipsum'
+                    location='Crawford County Museum'
+                />
             </div>
 
         )
