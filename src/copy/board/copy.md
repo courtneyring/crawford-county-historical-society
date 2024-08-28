@@ -16,4 +16,19 @@ members:
     name: Guy Putman
   - position: Board Member
     name: Karri Vinton
+attend:
+  heading: Attend a Monthly Meeting
+  body: The Board of Directors meets on the second Tuesday of every month at 3pm.
+    From April to September, meetings are held at the Museum. From October to
+    March, the board meets at the Grayling Township Hall, which is located at
+    2090 Viking Way, Grayling, MI 49738.
+  image: /assets/images/george-mason.jpg
+contact:
+  heading: Contact a Board Member
+  body: To contact the board of directors or a specific member of the board,
+    please call or email and someone will get back with you as soon as possible
+  image: /assets/images/public-park.jpg
+  cta:
+    label: Contact
+    value: /contact
 ---
