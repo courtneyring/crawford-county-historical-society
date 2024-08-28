@@ -3,6 +3,7 @@
 import Hero from "@/components/Hero/Hero";
 import copy from '@/assets/json/copy.json';
 import { ParseContent } from "@/components";
+import {Promo} from "@/components";
 
 
 const Board = () => {
@@ -18,7 +19,7 @@ const Board = () => {
                 <p className="mb-5 font-bold">{boardCopy.listTitle}</p>
                 <ul className="mb-5">
                     {boardList.map((pos) => {
-                        return <li className="mb-5">{pos.title},&nbsp;<i >{pos.position}</i></li>
+                        return <Promo header={pos.title} body={pos.position} />
                     })}
                 </ul>
                 <hr className="mb-5"></hr>
