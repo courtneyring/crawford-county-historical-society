@@ -6,3 +6,4 @@ export {default as ParseContent } from './ParseContent/ParseContent';
 export {default as Promo} from './Promo/Promo';
 export {default as Panel} from './Panel/Panel';
 export {default as Event} from './Event/Event';
+export { default as PageContainer } from './PageContainer/PageContainer';

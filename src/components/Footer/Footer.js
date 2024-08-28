@@ -40,19 +40,7 @@ const Footer = ({ promos }) => {
         className="flex flex-col bg-black items-center text-surface text-white font-light ">
         <div className="container w-full py-10 px-5">
           <div className="md:px-5 lg:px-10 grid-container ">
-            {promos.map((promo) => {
-              return (
 
-
-                <>
-                  {promo.type == 'hours' && getHours(promo)}
-                  {promo.type == 'links' && getLinks(promo)}
-                  {promo.type == 'image-body' && getImageBody(promo)}
-                  {/* {parse(DOMPurify.sanitize(promo.body))} */}
-                </>
-
-              )
-            })}
 
           </div>
           {/* <p className='text-xs mt-12'>Designed and Developed by <a href='https://courtneyring.com' target='_blank'>Courtney Ring</a></p> */}

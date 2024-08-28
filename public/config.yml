@@ -102,6 +102,26 @@ collections:
         fields: 
           - {label: Position, name: position, widget: string}
           - {label: Name, name: name, widget: string}
+      - label: 'Attend'
+        name: 'attend'
+        widget: object
+        fields: 
+          - {label: Heading, name: heading, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: image, widget: image}
+      - label: 'Contact'
+        name: 'contact'
+        widget: object
+        fields: 
+          - {label: Heading, name: heading, widget: string}
+          - {label: Body, name: body, widget: markdown}
+          - {label: Image, name: image, widget: image}
+          - label: Cta
+            name: cta
+            widget: object
+            fields: 
+              - {label: Label, name: label, widget: string}
+              - {label: Value, name: value, widget: string}
   - name: 'events'
     label: "Events"
     summary: "CCHS Events Copy"

@@ -1,37 +1,39 @@
 'use client';
 
-import Hero from "@/components/Hero/Hero";
-import copy from '@/assets/json/copy.json';
-import { ParseContent } from "@/components";
-import {Promo} from "@/components";
+import { PageContainer } from "@/components";
+import { Promo } from "@/components";
+import { attributes } from '../../../copy/board/copy.md'
+import ImagePromoBlock from "@/components/ImagePromoBlock/ImagePromoBlock";
 
 
 const Board = () => {
-    const boardCopy = copy.board;
-    const boardList = copy.boardlist;
+    let { heroImage, pageTitle, members, attend, contact } = attributes;
 
 
     return (
-        <main className="flex flex-col items-center">
-            <Hero skinny image={boardCopy.heroImg} />
-            <div className='max-w-7xl w-full px-2'>
-                <h1>{boardCopy.pageName}</h1>
-                <p className="mb-5 font-bold">{boardCopy.listTitle}</p>
-                <ul className="mb-5">
-                    {boardList.map((pos) => {
-                        return <Promo header={pos.title} body={pos.position} />
-                    })}
-                </ul>
-                <hr className="mb-5"></hr>
-                <p className="mb-5 ">{boardCopy.paragraph1}</p>
-                <p className="mb-5 ">{boardCopy.paragraph2}</p>
-                <ParseContent className="ml-5 mb-5" content={boardCopy.address2} tag='p'></ParseContent>
-                <p className="mb-5 ">{boardCopy.paragraph3}</p>
-                <ParseContent className="ml-5 mb-5" content={boardCopy.address3} tag='p'></ParseContent>
-                <p className="mb-5 ">{boardCopy.paragraph4}</p>
+        <PageContainer heroImage={heroImage} pageTitle={pageTitle} >
+            <div className="mb-5 grid grid-cols-3">
+                {members.map((pos, idx) => {
+                    return <Promo header={pos.name} eyebrow={pos.position} key={`promo-${idx}`} alignment='left'/>
+                })}
             </div>
+            <hr className="border-t-2 my-10"/>
+            <ImagePromoBlock
+                header={attend.heading}
+                body={attend.body}
+                image={attend.image}
+            />
+            <div className="h-12"></div>
+            <ImagePromoBlock
+                header={contact.heading}
+                body={contact.body}
+                image={contact.image}
+                cta={contact.cta}
+                reverse
+            />
+            
+        </PageContainer>
 
-        </main>
     )
 }
 

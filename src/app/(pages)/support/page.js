@@ -1,8 +1,11 @@
+import { PageContainer } from "@/components";
+
 const Support = () => {
     return(
-        <main className="flex flex-col items-center">
-           
-        </main>
+       <PageContainer>
+
+
+       </PageContainer>
     )
 
 }

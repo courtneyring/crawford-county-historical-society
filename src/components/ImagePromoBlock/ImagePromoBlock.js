@@ -15,7 +15,7 @@ const ImagePromoBlock = ({heading, body, cta, image, reverse}) => {
             <div className={`flex flex-col items-start justify-start md:order-1 md:justify-center ${reverse ? 'md:pl-10' : 'md:pr-10'}`}>
                 <h3 className="text-5xl mb-5">{heading}</h3>
                 <p className="text-2xl mb-5 leading-10">{body}</p>
-                <Button url={cta.value}>{cta.label}</Button>
+                {cta && <Button url={cta.value} variation='primary'>{cta.label}</Button>}
             </div>
         </div>
     )

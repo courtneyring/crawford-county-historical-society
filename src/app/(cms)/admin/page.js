@@ -1,15 +1,15 @@
-import { Hero } from "@/components";
+// import { Hero } from "@/components";
 
 const Admin = () => {
-    const HeroPreview = ({entry}) => (
-        <Hero text={entry.getIn(['data', 'title'])} image=''>
-        </Hero>
-    )
+    // const HeroPreview = ({entry}) => (
+    //     <Hero text={entry.getIn(['data', 'title'])} image=''>
+    //     </Hero>
+    // )
     return (
         <html>
 
             <head>
-                <meta charset="utf-8" />
+                <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="robots" content="noindex" />
                 <title>Content Manager</title>
