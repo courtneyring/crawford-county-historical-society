@@ -1,8 +1,12 @@
 'use client';
 
-import Hero from "@/components/Hero/Hero";
-import { Header, PageContainer } from "@/components";
-import { attributes, react as AboutContent } from '../../../copy/about/copy.md'
+import { PageContainer } from "@/components";
+
+import copy from '../../../copy/about/copy.md';
+import placeholder from '../../../placeholderCopy/about/copy.md';
+
+const { attributes, react: AboutContent } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+
 
 const About = () => {
     let { heroImage, pageTitle, body } = attributes;

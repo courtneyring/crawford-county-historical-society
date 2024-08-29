@@ -2,11 +2,14 @@ import { Inter } from "next/font/google";
 import "./globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
-// import copy from '@/assets/json/copy.json'
-import { attributes } from '../copy/navigation/copy.md'
 
+import copy from '../copy/navigation/copy.md';
+import placeholder from '../placeholderCopy/navigation/copy.md';
+
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata = {
   title: "CCHS",

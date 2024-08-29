@@ -1,7 +1,10 @@
 'use client';
 
-import { attributes } from '../../../copy/events/copy.md';
 import { Event, PageContainer } from '@/components';
+import copy from '../../../copy/events/copy.md';
+import placeholder from '../../../placeholderCopy/events/copy.md';
+
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const Events = () => {
 

@@ -2,9 +2,12 @@
 
 import { PageContainer } from "@/components";
 import { Promo } from "@/components";
-import { attributes } from '../../../copy/board/copy.md'
 import ImagePromoBlock from "@/components/ImagePromoBlock/ImagePromoBlock";
 
+import copy from '../../../copy/board/copy.md';
+import placeholder from '../../../placeholderCopy/board/copy.md';
+
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const Board = () => {
     let { heroImage, pageTitle, members, attend, contact } = attributes;

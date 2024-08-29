@@ -1,10 +1,12 @@
 'use client';
 
-import Hero from "@/components/Hero/Hero";
-import { attributes } from '../../../copy/contact/copy.md'
 import { Map, PageContainer } from "@/components";
+import copy from '../../../copy/contact/copy.md';
+import placeholder from '../../../placeholderCopy/contact/copy.md';
 
-const About = () => {
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+
+const Contact = () => {
     let { heroImage, pageTitle, address, phone, email, hours } = attributes;
 
     return (
@@ -49,4 +51,4 @@ const About = () => {
     )
 }
 
-export default About;
+export default Contact;

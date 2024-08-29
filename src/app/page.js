@@ -1,13 +1,17 @@
 'use client';
 import Hero from "@/components/Hero/Hero";
-import { attributes, react as HomeContent } from '../copy/home/copy.md'
 import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 
+import copy from '../copy/home/copy.md';
+import placeholder from '../placeholderCopy/home/copy.md';
+
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 export default function Home() {
 
   let { hero, imagePromos, intro } = attributes;
-  console.log(imagePromos)
+  
+
 
   return (
     <main className="flex  flex-col items-center ">

@@ -1,9 +1,12 @@
 'use client';
-
-import { attributes } from '../../../copy/gallery/copy.md'
 import { useMemo } from "react";
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 import { PageContainer } from '@/components';
+
+import copy from '../../../copy/gallery/copy.md';
+import placeholder from '../../../placeholderCopy/gallery/copy.md';
+
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const Gallery = () => {
     let { heroImage, pageTitle, images } = attributes;
