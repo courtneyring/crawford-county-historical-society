@@ -6,7 +6,7 @@ intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget r
 imagePromos:
   - image: https://placehold.co/600x400
     heading: Fusce sodales
-    body:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget risus metus. In quis euismod nisi. Fusce at urna eu urna luctus sollicitudin.
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget risus metus. In quis euismod nisi. Fusce at urna eu urna luctus sollicitudin.
     cta:
       label: tortor et libero
       url: /about

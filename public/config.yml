@@ -83,6 +83,18 @@ collections:
         allow_add: true
         fields: 
           - {label: Image, name: image, widget: image}
+  - name: "support"
+    label: "Support"
+    summary: "CCHS Support Copy"
+    folder: "src/copy/support"
+    slug: "copy"
+    fields: 
+      - label: "HeroImage"
+        name: "heroImage"
+        widget: "image"
+      - label: 'Page Title'
+        name: 'pageTitle'
+        widget: string
   - name: "board"
     label: "Board"
     summary: "CCHS Board Copy"
