@@ -1,10 +1,10 @@
 ---
-heroImage: /assets/images/south-side-school.jpg
-pageTitle: Contact
+heroImage: https://placehold.co/600x400
+pageTitle: Lorem ipsum
 address:
-    street: 97 East Michigan Avenue
-    street2: P.O. Box 218
-    city: Grayling
+    street: Lorem ipsum 
+    street2: dolor sit
+    city: consectetur
     state: MI
     zip: 49738
 phone: 989-745-3493

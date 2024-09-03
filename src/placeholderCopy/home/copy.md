@@ -1,37 +1,28 @@
 ---
 hero:
-  title: Crawford County Historical Society
-  image: /assets/images/band-mill.jpg
-intro: "Welcome to the Crawford County Museum and Society. Experience the
-  world’s first space shuttle, a nuclear weapons-carrying submarine, dozens of
-  military aircraft, a supersonic spy plane, and the world’s fastest commercial
-  airliner displayed in and around the legendary aircraft carrier, Intrepid—an
-  awe-inspiring place for an unforgettable adventure. "
+  title: Lorem ipsum 
+  image: https://placehold.co/600x400
+intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget risus metus. In quis euismod nisi. Fusce at urna eu urna luctus sollicitudin. Donec mollis, justo quis ultrices venenatis, ipsum lorem aliquam lectu"
 imagePromos:
-  - image: /assets/images/band-mill.jpg
-    heading: Crawford County History
-    body: Learn more about Crawford County including its important people,
-      buildings, and industries through historical photographs and information.
+  - image: https://placehold.co/600x400
+    heading: Fusce sodales
+    body:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget risus metus. In quis euismod nisi. Fusce at urna eu urna luctus sollicitudin.
     cta:
-      label: Explore the Past
+      label: tortor et libero
       url: /about
-    header: Crawford County History
-  - image: /assets/images/band-mill.jpg
-    heading: Museum Exhibits
-    body: "Our documents and artifacts showcase life in Crawford County through the
-      ages including special exhibits for the AuSable River, Fish Hatchery, and
-      the National Guard’s Camp Grayling. "
+    header: Fusce sodales
+  - image: https://placehold.co/600x400
+    heading: Fusce sodales
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget risus metus. In quis euismod nisi. Fusce at urna eu urna luctus sollicitudin.
     cta:
-      label: Learn about our showcases
+      label: tortor et libero
       url: /about
-    header: Museum Exhibits
-  - image: /assets/images/band-mill.jpg
-    heading: Show Your Support
-    body: The museum is funded through donations, sponsorships, and grants. Find out
-      ways you can help the museum from day-to-day operations to long term
-      success
+    header: Fusce sodales
+  - image: https://placehold.co/600x400
+    heading: Fusce sodales
+    body: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget risus metus. In quis euismod nisi. Fusce at urna eu urna luctus sollicitudin.
     cta:
-      label: Help our museum
+      label: tortor et libero
       url: /support
-    header: Show Your Support
+    header: Fusce sodales
 ---

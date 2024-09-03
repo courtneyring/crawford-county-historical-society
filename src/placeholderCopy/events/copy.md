@@ -1,17 +1,17 @@
 ---
-heroImage: /assets/images/band-mill.jpg
-pageTitle: Events
+heroImage: https://placehold.co/600x400
+pageTitle: Lorem ipsum
 events:
   - start: Thursday, Aug 29, 12:00 am
     end: 12:00 am
-    name: Test Event
-    location: Crawford County Museum
+    name: Lorem ipsum
+    location: dolor sit
     description: testing
-    image: /assets/images/image-asset.jpeg
+    image: https://placehold.co/600x400
   - start: Thursday, Aug 29, 12:00 am
     end: 12:00 am
-    name: Test Event
-    location: Crawford County Museum
+    name: Lorem ipsum
+    location: dolor sit
     description: testing
-    image: /assets/images/grayling-house.jpg
+    image: https://placehold.co/600x400
 ---
