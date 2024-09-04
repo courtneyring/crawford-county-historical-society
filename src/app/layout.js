@@ -1,4 +1,6 @@
 import { Inter } from "next/font/google";
+
+
 import "./globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
@@ -22,8 +24,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar links={links} title={title}/>
+      <body>
+        {/* <Navbar links={links} title={title}/> */}
         {children}
         {/* <Footer /> */}
         </body>

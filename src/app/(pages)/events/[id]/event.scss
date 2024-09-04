@@ -1,0 +1,29 @@
+$lager-red: #be1e2e;
+$lager-black: #2f2f2f;
+$lager-cream: #FFFFFC;
+$lager-beige: #beb7a4;
+
+
+.hero {
+    background-color: $lager-cream;
+}
+
+.btn-container {
+    width: 22rem;
+}
+
+.section-dark {
+    background-color: $lager-black;
+}
+
+.section-light {
+    background-color: $lager-beige;
+}
+
+@media(min-width:992px) {
+
+    .btn-container {
+        width: 22%;
+    }
+
+}
