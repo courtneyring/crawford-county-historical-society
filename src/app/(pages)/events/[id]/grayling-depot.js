@@ -2,7 +2,7 @@
 'use client';
 import { Hero } from "@/components";
 import './event.scss'
-import { Libre_Baskerville, Courgette, Rufina, Arapey } from "next/font/google";
+import { Libre_Baskerville, Courgette, Rufina, Arapey, Urbanist } from "next/font/google";
 import Button from "@/components/Button/Button";
 import ImagePromoBlock from "@/components/ImagePromoBlock/ImagePromoBlock";
 import FadeIn from "@/animations/FadeIn";
@@ -12,6 +12,8 @@ const libreBaskerville = Libre_Baskerville({ subsets: ['latin'], weight: '700' }
 const courgette = Courgette({ subsets: ['latin'], weight: '400' })
 const rufina = Rufina({ subsets: ['latin'], weight: '400' })
 const arapey = Arapey({ subsets: ['latin'], weight: '400' })
+
+
 
 const GraylingDepot = () => {
 
