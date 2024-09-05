@@ -4,6 +4,7 @@ import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 
 import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
+import GraylingDepot from "./(pages)/events/[id]/grayling-depo";
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
@@ -14,8 +15,8 @@ export default function Home() {
 
 
   return (
-    <main className="flex  flex-col items-center ">
-      <Hero  image={hero.image} />
+    <main className=" ">
+      {/* <Hero  image={hero.image} />
       <div className="bg-lightgrey w-full">
         <div className='container mx-auto'>
           <p className="text-4xl leading-12 max-w-5xl py-20 mx-auto">{intro}</p>
@@ -34,7 +35,8 @@ export default function Home() {
         })}
 
 
-      </div>
+      </div> */}
+      <GraylingDepot />
      
     </main>
   );
