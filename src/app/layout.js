@@ -14,8 +14,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
-  title: "CCHS",
-  description: "CCHS",
+  title: "Grayling Depot Fundraiser",
+  description: "Grayling Depot Fundraiser",
 };
 
 export default function RootLayout({ children }) {
@@ -24,6 +24,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/assets/images/favicon.png"
+          type="image/png"
+        />
+      </head>
       <body>
         {/* <Navbar links={links} title={title}/> */}
         {children}
