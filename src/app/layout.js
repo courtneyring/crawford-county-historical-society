@@ -30,6 +30,9 @@ export default function RootLayout({ children }) {
           href="/assets/images/favicon.png"
           type="image/png"
         />
+        <meta property="og:title" content="Grayling Depot Fundraiser" />
+        <meta property="og:url" content="https://graylingdepot.com" />
+        <meta property="og:image" content="https://graylingdepot.com/assets/images/grayling-depot-landing.png" />
       </head>
       <body>
         {/* <Navbar links={links} title={title}/> */}
