@@ -45,7 +45,7 @@ const GraylingDepot = () => {
             <div className="section-dark md:h-screen md:max-h-[60rem]" id='detailSection'>
                 <FadeIn className='flex align-center h-full'>
 
-                    <div className="container m-auto text-center py-20 text-white">
+                    <div className="container m-auto text-center py-20 text-white px-5 md:px-0">
                         {/* <FadeIn> */}
                         <h2 className="text-4xl lg:text-6xl">$20 Donation, $1 Beer</h2>
                         <p className="text-2xl leading-10 lg:text-4xl lgleading-12 max-w-5xl my-10 mx-auto">Donate <span className="font-bold text-[#be1e2e]">$20</span> or more to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className="font-bold text-[#be1e2e]">$1</span>. Donations accepted online, at the museum, or mailed in. <br /><br />October 5 to December&nbsp;31</p>
