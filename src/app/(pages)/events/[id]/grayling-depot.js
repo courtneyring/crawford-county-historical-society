@@ -88,7 +88,7 @@ const GraylingDepot = () => {
                             heading='About the Historical Society'
                             body='The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.'
                             image='/assets/images/crawford-county-museum.jpg'
-                            imagePos='left'
+                            imagePos='object-left'
                             cta={{
                                 value: 'https://crawfordcountyhistoricalsociety.com',
                                 label: 'Learn More',

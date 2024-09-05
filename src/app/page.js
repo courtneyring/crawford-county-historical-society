@@ -4,7 +4,7 @@ import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 
 import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
-import GraylingDepot from "./(pages)/events/[id]/grayling-depo";
+import GraylingDepot from "./(pages)/events/[id]/grayling-depot";
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 

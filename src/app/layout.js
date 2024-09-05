@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 
 
 import "./globals.scss";
@@ -11,6 +12,7 @@ import placeholder from '../placeholderCopy/navigation/copy.md';
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const inter = Inter({ subsets: ["latin"] });
+const urbanist = Urbanist({ subsets: ['latin'], weight: '400' })
 
 
 export const metadata = {
@@ -23,7 +25,7 @@ export default function RootLayout({ children }) {
   let { title, links } = attributes;
 
   return (
-    <html lang="en">
+    <html lang="en" className={urbanist.className}>
       <head>
         <link
           rel="icon"

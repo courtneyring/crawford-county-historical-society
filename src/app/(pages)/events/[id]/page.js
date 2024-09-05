@@ -1,5 +1,5 @@
 
-import GraylingDepot from "./grayling-depo";
+import GraylingDepot from "./grayling-depot";
 
 
 export function generateStaticParams() {
