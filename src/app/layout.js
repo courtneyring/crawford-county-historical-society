@@ -12,7 +12,7 @@ import placeholder from '../placeholderCopy/navigation/copy.md';
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const inter = Inter({ subsets: ["latin"] });
-const urbanist = Urbanist({ subsets: ['latin'], weight: '400' })
+const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: '400' })
 
 
 export const metadata = {
