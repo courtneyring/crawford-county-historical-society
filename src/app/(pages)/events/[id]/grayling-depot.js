@@ -73,8 +73,8 @@ const GraylingDepot = () => {
                                 value: 'https://www.instagram.com/p/C-8NmOIuZ4_/',
                                 label: 'Event Details',
                                 target: '_blank',
-                                bgColor: '#FFFFFC',
-                                color: '#2f2f2f'
+                                color: '#FFFFFC',
+                                bgColor: '#2f2f2f'
                             }}
                         />
 
@@ -95,8 +95,8 @@ const GraylingDepot = () => {
                                 value: 'https://crawfordcountyhistoricalsociety.com',
                                 label: 'Learn More',
                                 target: '_blank',
-                                bgColor: '#FFFFFC',
-                                color: '#2f2f2f'
+                                color: '#FFFFFC',
+                                bgColor: '#2f2f2f'
                             }}
                         />
 
