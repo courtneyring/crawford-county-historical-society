@@ -37,7 +37,7 @@ const GraylingDepot = () => {
                     <img className=' md:hidden mt-[8rem]' src='/assets/images/grayling-depot-logo-mobile.png' />
 
                     <p className={`text-2xl lg:text-5xl mt-4 md:mt-8 mb-6 md:mb-16  font-bold text-center md:text-left ${courgette.className}`}>A limited release black lager</p>
-                    <div className="flex justify-between btn-container ">
+                    <div className="pb-16 md:pb-0 flex justify-between btn-container ">
                         <Button variation='primary' bgColor='#FFFFFC' color='#2f2f2f'>Donate Now</Button>
                         <Button variation='secondary' bgColor='#2f2f2f' color='white' fn={scrollDown} >Learn More</Button>
                     </div>
