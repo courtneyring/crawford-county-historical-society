@@ -3,7 +3,7 @@ import GraylingDepot from "./grayling-depo";
 
 
 export function generateStaticParams() {
-    return [{ id: 'oaktoberfest-fundraiser' }]
+    return [{ id: 'grayling-depot-fundraiser' }]
 }
 
 const EventPage = () => {
