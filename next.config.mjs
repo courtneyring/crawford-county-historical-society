@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     output: 'export',
+    optimizeFonts: false,
     webpack: (cfg) => {
         cfg.module.rules.push(
             {
