@@ -2,14 +2,14 @@ import Button from "../Button/Button";
 import Promo from "../Promo/Promo";
 
 
-const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor}) => {
+const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imagePos}) => {
 
 
     return (
-        <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 ">
+        <div className=" flex flex-col md:grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 ">
             
-            <div className={`h-90 lg:h-180 ${!reverse && `md:order-2`}`}> 
-                <img src={image} className="object-cover h-full"/>
+            <div className={`h-[40rem] md:h-[50rem] ${!reverse && `md:order-2`}`}> 
+                <img src={image} className={`object-cover h-full w-full object-${imagePos}`}/>
 
             </div>
             
