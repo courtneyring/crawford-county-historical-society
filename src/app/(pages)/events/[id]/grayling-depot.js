@@ -50,7 +50,7 @@ const GraylingDepot = () => {
                     <div className="container m-auto text-center py-20 text-white px-5 md:px-0">
                         {/* <FadeIn> */}
                         <h2 className="text-4xl lg:text-6xl">$20 Donation, $1 Beer</h2>
-                        <p className="text-2xl leading-10 lg:text-4xl lgleading-12 max-w-5xl my-10 mx-auto">Donate <span className="font-bold text-[#be1e2e]">$20</span> or more to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className="font-bold text-[#be1e2e]">$1</span>. Donations accepted online, at the museum, or mailed in. <br /><br />October 5 to December&nbsp;31</p>
+                        <p className="text-2xl leading-10 lg:text-4xl lgleading-12 max-w-5xl my-10 mx-auto">Donate <span className="font-bold text-[#be1e2e]">$20</span> or more to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className="font-bold text-[#be1e2e]">$1</span>. Donations accepted online, at the museum, or mailed in.</p>
 
                         {/* </FadeIn> */}
 
@@ -66,13 +66,12 @@ const GraylingDepot = () => {
                     <div className="container mx-auto md:py-20">
                         <ImagePromoBlock
                             heading='Oak-toberfest Launch'
-                            body={`Join us for the official launch of our new beer at Rolling Oak's annual Oak-toberfest! <br/><br />Saturday October 5 at Rolling Oak Brewery`}
+                            body={`Join us for the official launch of our new beer at Rolling Oak's annual Oak-toberfest! Saturday October 5 at Rolling Oak Brewery`}
                             image='/assets/images/rolling-oak-glasses.jpg'
                             
                             cta={{
                                 value: 'https://www.instagram.com/p/C-8NmOIuZ4_/',
                                 label: 'Event Details',
-                                target: '_blank',
                                 color: '#FFFFFC',
                                 bgColor: '#2f2f2f'
                             }}
@@ -94,7 +93,6 @@ const GraylingDepot = () => {
                             cta={{
                                 value: 'https://crawfordcountyhistoricalsociety.com',
                                 label: 'Learn More',
-                                target: '_blank',
                                 color: '#FFFFFC',
                                 bgColor: '#2f2f2f'
                             }}
@@ -127,7 +125,7 @@ const GraylingDepot = () => {
                 </FadeIn>
             </div >
 
-            <div className="section-dark md:h-[30rem] flex align-center">
+            {/* <div className="section-dark md:h-[30rem] flex align-center">
                 <div className="container mx-auto py-20 flex flex-col items-center justify-center">
                     <h2 className="text-5xl mb-10 text-[#FFFFFC]">Questions?</h2>
                     <Button
@@ -139,7 +137,7 @@ const GraylingDepot = () => {
 
                 </div>
 
-            </div>
+            </div> */}
         </>
     )
 }
