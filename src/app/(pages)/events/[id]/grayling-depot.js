@@ -65,8 +65,8 @@ const GraylingDepot = () => {
 
                     <div className="container mx-auto md:py-20">
                         <ImagePromoBlock
-                            heading='Oak-toberfest Launch'
-                            body={`Join us for the official launch of our new beer at Rolling Oak's annual Oak-toberfest! Saturday October 5 at Rolling Oak Brewery`}
+                            heading='Oaktoberfest Launch'
+                            body={`Join us for the official launch of our new beer at Rolling Oak's annual Oaktoberfest! Saturday October 5 at Rolling Oak Brewery`}
                             image='/assets/images/rolling-oak-glasses.jpg'
                             
                             cta={{
