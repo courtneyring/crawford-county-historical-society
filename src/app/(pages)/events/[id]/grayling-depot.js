@@ -1,6 +1,6 @@
 
 'use client';
-import { Hero } from "@/components";
+import { Hero, Promo } from "@/components";
 import './event.scss'
 import { Libre_Baskerville, Courgette, Rufina, Arapey, Urbanist } from "next/font/google";
 import Button from "@/components/Button/Button";
@@ -17,13 +17,13 @@ const arapey = Arapey({ subsets: ['latin'], weight: '400' })
 
 const GraylingDepot = () => {
 
-    const scrollDown = () => {
-        document.getElementById('detailSection').scrollIntoView({behavior: 'smooth'});
+    const scrollDown = (id) => {
+        document.getElementById(id).scrollIntoView({behavior: 'smooth'});
     }
 
     return (
         <>
-            <div className='h-screen hero'  >
+            <div className='h-screen min-h-screen hero lg:flex items-center justify-center'  >
                 <FadeIn className='h-full flex justify-center items-center flex-col p-5'>
                     <div className="grid grid-cols-3 mb-10 logos">
                         <div className="flex justify-center items-center"><img className="rolling-oak-logo  " src='/assets/images/rolling-oak-logo.png' /></div>
@@ -38,20 +38,20 @@ const GraylingDepot = () => {
 
                     <p className={`text-2xl lg:text-5xl mt-4 md:mt-8 mb-6 md:mb-16  font-bold text-center md:text-left ${courgette.className}`}>A limited release black lager</p>
                     <div className="pb-16 md:pb-0 flex justify-between btn-container ">
-                        <Button variation='primary' bgColor='#FFFFFC' color='#2f2f2f' url='https://www.cfnem.org/ncmcf/funds/give.html?fund=662'>Donate Now</Button>
-                        <Button variation='secondary' bgColor='#2f2f2f' color='white' fn={scrollDown} >Learn More</Button>
+                        <Button variation='primary' bgColor='#FFFFFC' color='#2f2f2f' fn={() => scrollDown('donationSection')}>Donate Now</Button>
+                        <Button variation='secondary' bgColor='#2f2f2f' color='white' fn={() => scrollDown('detailSection')} >Learn More</Button>
                     </div>
                 </FadeIn>
 
             </div>
-            <div className="section-dark md:h-screen md:max-h-[60rem]" id='detailSection'>
+            <div className="section-dark md:min-h-[50rem]  flex items-center justify-center" id='detailSection'>
                 <FadeIn className='flex align-center h-full'>
 
                     <div className="container m-auto text-center py-20 text-white px-5 md:px-0">
                         {/* <FadeIn> */}
-                        <h2 className="text-4xl lg:text-6xl">$20 Donation, $1 Beer</h2>
-                        <p className="text-2xl leading-10 lg:text-4xl lgleading-12 max-w-5xl my-10 mx-auto">Donate <span className="font-bold text-[#be1e2e]">$20</span> or more to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className="font-bold text-[#be1e2e]">$1</span>. Donations accepted online, at the museum, or mailed in.</p>
-
+                        <h2 className="text-4xl lg:text-6xl">Grayling Depot Offical Launch</h2>
+                        <p className="text-2xl leading-10 lg:text-4xl lg:leading-12 max-w-5xl my-10 mx-auto">Join us for the <span style={{color: '#be1e2e'}}>official launch</span> of "Grayling Depot" at Rolling Oak's annual Oaktoberfest! Saturday October 5 at Rolling&nbsp;Oak&nbsp;Brewery</p>
+                        <Button color='#ffffc' bgColor='#be1e2e'>Event Details</Button>
                         {/* </FadeIn> */}
 
                     </div>
@@ -59,31 +59,59 @@ const GraylingDepot = () => {
 
 
             </div>
-            <div className="section-light md:h-screen md:max-h-[60rem] ">
-                <FadeIn className='h-full'>
+            <div className="section-xlight  md:min-h-[50rem]  flex items-center justify-center" id='donationSection'>
+                <FadeIn className='min-h-full'>
 
 
-                    <div className="container mx-auto md:py-20">
-                        <ImagePromoBlock
-                            heading='Oaktoberfest Launch'
-                            body={`Join us for the official launch of our new beer at Rolling Oak's annual Oaktoberfest! Saturday October 5 at Rolling Oak Brewery`}
+                    <div className="container mx-auto py-20 px-5 ">
+                        <h2 className="text-4xl lg:text-6xl text-center mb-10">$20&nbsp;Donation, $1&nbsp;Beer</h2>
+                        <p className="text-2xl lg:text-3xl my-20">Donate <span className='underline' style={{ color: '#be1e2e' }}>$20 or more</span> to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className='underline' style={{ color: '#be1e2e' }}>$1</span>. Donations accepted online, at the museum, or mailed in.</p>
+                        <div className="flex flex-col md:flex-row items-center justify-between">
+
+                            <Promo
+                                icon='computer'
+                                header='Online'
+                                body='Pay online through the North Central Michigan Community Foundation'
+                                href={{ url: 'https://www.cfnem.org/ncmcf/funds/give.html?fund=662', label: 'Make Donation' }}
+                            />
+
+                            <Promo
+                                icon='mail'
+                                header='Mailed'
+                                body='Make checks out to CCHSFF and send to the museum address'
+                                href={{ url: 'http://google.com', label: 'Check out more' }}
+                            />
+
+                            <Promo
+                                icon='person'
+                                header='In-Person'
+                                body='Visit us at the museum and make a donation during your visit'
+                                href={{ url: 'https://crawfordcountyhistoricalsociety.com/#/contact', label: 'Get Directions' }}
+                            />
+
+
+                        </div>
+                        
+                        {/* <ImagePromoBlock
+                            heading='$20 Donation, $1 Beer'
+                            body={`Donate $20 or more to the Crawford County Historical Society and get your next beer at Rolling Oak for $1. Donations accepted <a  style='text-decoration:underline; cursor: pointer !important' href='https://www.cfnem.org/ncmcf/funds/give.html?fund=662'>online</a>, at the museum, or mailed in.`}
                             image='/assets/images/rolling-oak-glasses.jpg'
                             
-                            cta={{
-                                value: 'https://www.instagram.com/p/C-8NmOIuZ4_/',
-                                label: 'Event Details',
-                                color: '#FFFFFC',
-                                bgColor: '#2f2f2f'
-                            }}
-                        />
+                            // cta={{
+                            //     value: 'https://www.instagram.com/p/C-8NmOIuZ4_/',
+                            //     label: 'Event Details',
+                            //     color: '#FFFFFC',
+                            //     bgColor: '#2f2f2f'
+                            // }}
+                        /> */}
 
                     </div>
                 </FadeIn>
 
             </div>
-            <div className=" section-light md:h-screen md:max-h-[60rem]">
+            <div className=" section-light md:min-h-[50rem]  flex items-center justify-center ">
                 <FadeIn>
-                    <div className="container mx-auto md:py-20">
+                    <div className="container mx-auto lg:py-20">
                         <ImagePromoBlock
                             reverse
                             heading='About the Historical Society'
@@ -104,7 +132,7 @@ const GraylingDepot = () => {
 
 
             </div>
-            <div className='section-light md:h-screen md:max-h-[60rem]'>
+            <div className='section-light  md:min-h-[50rem]  flex items-center justify-center'>
                 <FadeIn >
                     <div className="container mx-auto md:py-20">
                         <ImagePromoBlock
