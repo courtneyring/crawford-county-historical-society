@@ -51,7 +51,7 @@ const GraylingDepot = () => {
                         {/* <FadeIn> */}
                         <h2 className="text-4xl lg:text-6xl">Grayling Depot Official Launch</h2>
                         <p className="text-2xl leading-10 lg:text-4xl lg:leading-12 max-w-5xl my-10 mx-auto">Join us for the <span style={{color: '#be1e2e'}}>official launch</span> of "Grayling Depot" at Rolling Oak's annual Oaktoberfest! Saturday October 5 at Rolling&nbsp;Oak&nbsp;Brewery</p>
-                        <Button color='#ffffc' bgColor='#be1e2e' url='https://www.instagram.com/p/C-8NmOIuZ4_/'>Event Details</Button>
+                        <Button color='#ffffc' bgColor='#be1e2e' url='https://www.instagram.com/p/C-8NmOIuZ4_/' variant='primary'>Event Details</Button>
                         {/* </FadeIn> */}
 
                     </div>
@@ -65,7 +65,7 @@ const GraylingDepot = () => {
 
                     <div className="container mx-auto py-20 px-5 ">
                         <h2 className="text-4xl lg:text-6xl text-center mb-10">$20&nbsp;Donation, $1&nbsp;Beer</h2>
-                        <p className="text-2xl lg:text-3xl my-20">Donate <span className='underline' style={{ color: '#be1e2e' }}>$20 or more</span> to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className='underline' style={{ color: '#be1e2e' }}>$1</span>. Donations accepted online, at the museum, or mailed in.</p>
+                        <p className="text-2xl lg:text-3xl my-20">Can't make Oaktoberfest? Donate <span className='underline' style={{ color: '#be1e2e' }}>$20 or more</span> to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className='underline' style={{ color: '#be1e2e' }}>$1</span>. Donations accepted online, at the museum, or mailed in.</p>
                         <div className="flex flex-col md:flex-row items-center justify-between">
 
                             <Promo
