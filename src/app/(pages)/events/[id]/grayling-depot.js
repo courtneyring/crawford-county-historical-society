@@ -143,7 +143,6 @@ const GraylingDepot = () => {
                             cta={{
                                 value: 'https://www.rollingoakbrewing.com/taplist',
                                 label: 'See the tap list',
-                                target: '_blank',
                                 color: '#FFFFFC',
                                 bgColor: '#2f2f2f'
                             }}
