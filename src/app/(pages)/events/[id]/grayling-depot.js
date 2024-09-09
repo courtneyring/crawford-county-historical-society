@@ -65,7 +65,7 @@ const GraylingDepot = () => {
 
                     <div className="container mx-auto py-20 px-5 ">
                         <h2 className="text-4xl lg:text-6xl text-center mb-10">$20&nbsp;Donation, $1&nbsp;Beer</h2>
-                        <p className="text-2xl lg:text-3xl my-20">Can't make Oaktoberfest? Donate <span className='underline' style={{ color: '#be1e2e' }}>$20 or more</span> to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className='underline' style={{ color: '#be1e2e' }}>$1</span>. Donations accepted online, at the museum, or mailed in.</p>
+                        <p className="text-2xl lg:text-3xl my-20">Can't make Oaktoberfest? Donate <span className='underline' style={{ color: '#be1e2e' }}>$20 or more</span> to the Crawford County Historical Society and get your next beer at Rolling Oak for <span className='underline' style={{ color: '#be1e2e' }}>$1</span>. Donations accepted online, mailed in or at the museum.</p>
                         <div className="flex flex-col md:flex-row items-center justify-between">
 
                             <Promo
