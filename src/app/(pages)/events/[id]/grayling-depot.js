@@ -50,8 +50,8 @@ const GraylingDepot = () => {
                     <div className="container m-auto text-center py-20 text-white px-5 md:px-0">
                         {/* <FadeIn> */}
                         <h2 className="text-4xl lg:text-6xl">Grayling Depot Official Launch</h2>
-                        <p className="text-2xl leading-10 lg:text-4xl lg:leading-12 max-w-5xl my-10 mx-auto">Join us for the <span style={{color: '#be1e2e'}}>official launch</span> of "Grayling Depot" at Rolling Oak's annual Oaktoberfest! Saturday October 5 at Rolling&nbsp;Oak&nbsp;Brewery</p>
-                        <Button color='#ffffc' bgColor='#be1e2e' url='https://www.instagram.com/p/C-8NmOIuZ4_/' variation='primary'>Event Details</Button>
+                        <p className="text-2xl leading-10 lg:text-4xl lg:leading-12 max-w-5xl my-10 mx-auto">Join us for the <span style={{color: '#be1e2e'}}>official launch</span> of "Grayling Depot" at Rolling Oak's annual Oaktoberfest! Saturday October 5 from 3 to 10pm at Rolling&nbsp;Oak&nbsp;Brewery</p>
+                        {/* <Button color='#ffffc' bgColor='#be1e2e' url='https://www.instagram.com/p/C-8NmOIuZ4_/' variation='primary'>Event Details</Button> */}
                         {/* </FadeIn> */}
 
                     </div>
