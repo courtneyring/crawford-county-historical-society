@@ -78,8 +78,8 @@ const GraylingDepot = () => {
                             <Promo
                                 icon='mail'
                                 header='Mailed'
-                                body='Make checks out to CCHSFF and send to the museum address'
-                                href={{ url: 'http://google.com', label: 'Check out more' }}
+                                body='Make checks out to CCHSFF and send to Crawford County Historical Society, P.O.&nbsp;Box&nbsp;218, Grayling, MI 49738'
+                                // href={{ url: 'http://google.com', label: 'Check out more' }}
                             />
 
                             <Promo
