@@ -50,6 +50,25 @@ collections:
         fields:
           - {label: Label, name: label, widget: string}
           - {label: Value, name: value, widget: string}
+  - name: "footer"
+    label: "Footer"
+    summary: "CCHS Footer Copy"
+    folder: "src/copy/footer"
+    slug: "footer"
+    fields: 
+      - {label: "Logo", name: "logoImg", widget: "image"}
+      - label: "Hours"
+        name: "hours"
+        widget: "list"
+        allow_add: true
+        fields: 
+          - label: "Day"
+            name: "day"
+            widget: object
+            fields: 
+            - {label: "Label", name: "label", widget: "string"}
+            - {label: "Value", name: "value", widget: "string"}
+
   - name: "about"
     label: "About"
     summary: "CCHS About Copy"
