@@ -62,12 +62,8 @@ collections:
         widget: "list"
         allow_add: true
         fields: 
-          - label: "Day"
-            name: "day"
-            widget: object
-            fields: 
-            - {label: "Label", name: "label", widget: "string"}
-            - {label: "Value", name: "value", widget: "string"}
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Value", name: "value", widget: "string"}
       - label: "Links"
         name: "links"
         summary: "{{fields.label}} - {{fields.value}}"
