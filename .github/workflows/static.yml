@@ -3,7 +3,7 @@ name: Deploy to Github Pages
 
 on:
   push:
-    branches: ["master", "grayling-depot-fundraiser"]
+    branches: ["grayling-depot-fundraiser"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
