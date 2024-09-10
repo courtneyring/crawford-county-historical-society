@@ -68,7 +68,33 @@ collections:
             fields: 
             - {label: "Label", name: "label", widget: "string"}
             - {label: "Value", name: "value", widget: "string"}
-
+      - label: "Links"
+        name: "links"
+        summary: "{{fields.label}} - {{fields.value}}"
+        widget: "list"
+        allow_add: true
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Value, name: value, widget: string}
+      - label: 'Address'
+        name: 'address'
+        widget: object
+        fields: 
+          - label: 'Street'
+            name: 'street'
+            widget: string
+          - label: 'PO Box, Suite, etc'
+            name: 'street2'
+            widget: string
+          - label: 'City'
+            name: 'city'
+            widget: string
+          - label: 'State'
+            name: 'state'
+            widget: string
+          - label: 'Zip Code'
+            name: 'zip'
+            widget: number
   - name: "about"
     label: "About"
     summary: "CCHS About Copy"
