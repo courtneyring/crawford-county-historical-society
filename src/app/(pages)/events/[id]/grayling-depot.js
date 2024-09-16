@@ -152,7 +152,9 @@ const GraylingDepot = () => {
 
                 </FadeIn>
             </div >
-
+            <div className="section-dark text-white px-10 py-8">
+                <p className="mb-0">Designed and Developed by <a className="underline" href='https://courtneyring.com'>Courtney Ring</a></p>
+            </div>
             {/* <div className="section-dark md:h-[30rem] flex align-center">
                 <div className="container mx-auto py-20 flex flex-col items-center justify-center">
                     <h2 className="text-5xl mb-10 text-[#FFFFFC]">Questions?</h2>
