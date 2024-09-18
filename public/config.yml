@@ -32,7 +32,7 @@ collections:
             widget: "object"
             fields: 
               - {label: Label, name: label, widget: string}
-              - {label: Url, name: url, widget: string}
+              - {label: Value, name: value, widget: string}
   - name: "navigation"
     label: "Navigation"
     summary: "CCHS Navigation Copy"

@@ -14,7 +14,7 @@ imagePromos:
       buildings, and industries through historical photographs and information.
     cta:
       label: Explore the Past
-      url: /about
+      value: /about
     header: Crawford County History
   - image: /assets/images/band-mill.jpg
     heading: Museum Exhibits
@@ -23,7 +23,7 @@ imagePromos:
       the National Guard’s Camp Grayling. "
     cta:
       label: Learn about our showcases
-      url: /about
+      value: /about
     header: Museum Exhibits
   - image: /assets/images/band-mill.jpg
     heading: Show Your Support
@@ -32,6 +32,6 @@ imagePromos:
       success
     cta:
       label: Help our museum
-      url: /support
+      value: /support
     header: Show Your Support
 ---
