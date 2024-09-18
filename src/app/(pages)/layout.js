@@ -1,14 +1,14 @@
 import { Inter } from "next/font/google";
 
 
-import "./globals.scss";
+import "../globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
-import copy from '../copy/navigation/copy.md';
-import placeholder from '../placeholderCopy/navigation/copy.md';
-import footerCopy from '../copy/footer/copy.md';
-import footerPlaceholder from '../placeholderCopy/footer/copy.md';
+import copy from '../../copy/navigation/copy.md';
+import placeholder from '../../placeholderCopy/navigation/copy.md';
+import footerCopy from '../../copy/footer/copy.md';
+import footerPlaceholder from '../../placeholderCopy/footer/copy.md';
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
@@ -30,14 +30,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* <Navbar links={links} title={title}/> */}
+        <Navbar links={links} title={title}/>
         {children}
-        {/* <Footer 
+        <Footer 
           address={footerAttributes.address}
           links={footerAttributes.links}
           hours={footerAttributes.hours}
           logoImg={footerAttributes.logoImg}
-          /> */}
+          />
         </body>
     </html>
   );

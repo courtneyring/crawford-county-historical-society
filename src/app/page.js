@@ -5,7 +5,19 @@ import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
 import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
 
+import "./globals.scss";
+import Navbar from '@/components/Navbar/Navbar';
+import Footer from '@/components/Footer/Footer';
+
+import navCopy from '../copy/navigation/copy.md';
+import navPlaceholder from '../placeholderCopy/navigation/copy.md';
+import footerCopy from '../copy/footer/copy.md';
+import footerPlaceholder from '../placeholderCopy/footer/copy.md';
+
+
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+const { attributes: navAttritubes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
+const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
 
 export default function Home() {
 
@@ -15,6 +27,7 @@ export default function Home() {
 
   return (
     <main className="flex  flex-col items-center ">
+      <Navbar links={navAttritubes.links} title={navAttritubes.title} />
       <Hero  image={hero.image} />
       <div className="bg-lightgrey w-full">
         <div className='container mx-auto'>
@@ -35,7 +48,12 @@ export default function Home() {
 
 
       </div>
-     
+      <Footer
+        address={footerAttributes.address}
+        links={footerAttributes.links}
+        hours={footerAttributes.hours}
+        logoImg={footerAttributes.logoImg}
+      />
     </main>
   );
 }
