@@ -28,14 +28,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Navbar links={links} title={title}/>
+        {/* <Navbar links={links} title={title}/> */}
         {children}
-        <Footer 
+        {/* <Footer 
           address={footerAttributes.address}
           links={footerAttributes.links}
           hours={footerAttributes.hours}
           logoImg={footerAttributes.logoImg}
-          />
+          /> */}
         </body>
     </html>
   );
