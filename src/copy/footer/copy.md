@@ -1,6 +1,6 @@
 ---
 logo: band-mill.jpg
-logoImg: /assets/images/cchs-logo.png
+logoImg: /assets/images/crawford-county-logo-white.png
 hours:
   - label: Monday
     value: 10am - 6pm

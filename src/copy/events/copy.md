@@ -1,5 +1,5 @@
 ---
-heroImage: /assets/images/band-mill.jpg
+heroImage: /assets/images/gallery_band-mill.jpg
 pageTitle: Events
 events:
   - start: Thursday, Aug 29, 12:00 am
@@ -13,5 +13,5 @@ events:
     name: Test Event
     location: Crawford County Museum
     description: testing
-    image: /assets/images/grayling-house.jpg
+    image: /assets/images/gallery_grayling-house.jpg
 ---

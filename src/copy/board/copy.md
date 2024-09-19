@@ -1,5 +1,5 @@
 ---
-heroImage: /assets/images/south-side-school.jpg
+heroImage: /assets/images/gallery_south-side-school.jpg
 pageTitle: Board
 members:
   - position: President
@@ -22,12 +22,12 @@ attend:
     From April to September, meetings are held at the Museum. From October to
     March, the board meets at the Grayling Township Hall, which is located at
     2090 Viking Way, Grayling, MI 49738.
-  image: /assets/images/george-mason.jpg
+  image: /assets/images/gallery_george-mason.jpg
 contact:
   heading: Contact a Board Member
   body: To contact the board of directors or a specific member of the board,
     please call or email and someone will get back with you as soon as possible
-  image: /assets/images/public-park.jpg
+  image: /assets/images/gallery_public-park.jpg
   cta:
     label: Contact
     value: /contact

@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <main className="flex  flex-col items-center ">
-      <Navbar links={navAttritubes.links} title={navAttritubes.title} />
+      <Navbar links={navAttritubes.links} title={navAttritubes.title} logoImage={navAttritubes.image}/>
       <Hero  image={hero.image} />
       <div className="bg-lightgrey w-full">
         <div className='container mx-auto'>

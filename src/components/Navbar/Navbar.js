@@ -19,12 +19,12 @@ const Navbar = ({ links, logoImage, title }) => {
 
 
   return (
-    <nav className="flex justify-between w-full items-center absolute z-20 left-0 px-5">
+    <nav className="flex justify-between w-full items-center absolute z-20 left-0 px-5 py-2 h-20">
 
-      <div>
-        {(logoImage && !menuIsOpen) && <img src={logoImage} />}
+      {/* <div> */}
+        {(logoImage && !menuIsOpen) && <img className='h-full w-auto' src={logoImage} />}
         {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>}
-      </div>
+      {/* </div> */}
       
 
       {isMobileWidth ?

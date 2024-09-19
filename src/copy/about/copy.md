@@ -1,5 +1,5 @@
 ---
-heroImage: /assets/images/south-side-school.jpg
+heroImage: /assets/images/gallery_south-side-school.jpg
 pageTitle: About Us
 ---
 The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.
