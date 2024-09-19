@@ -1,7 +1,7 @@
 ---
 hero:
   title: Crawford County Historical Society
-  image: /assets/images/hero.jpg
+  image: /assets/images/hero-2.jpg
 intro: "Welcome to the Crawford County Museum and Society. Experience the
   world’s first space shuttle, a nuclear weapons-carrying submarine, dozens of
   military aircraft, a supersonic spy plane, and the world’s fastest commercial
