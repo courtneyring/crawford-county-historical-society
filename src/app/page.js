@@ -16,7 +16,7 @@ import footerPlaceholder from '../placeholderCopy/footer/copy.md';
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
-const { attributes: navAttritubes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
+const { attributes: navAttritubes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? navPlaceholder : navCopy;
 const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
 
 export default function Home() {

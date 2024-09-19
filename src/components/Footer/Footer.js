@@ -40,7 +40,7 @@ const Footer = ({ address, links, hours, logoImg }) => {
   return (
     <>
       <footer
-        className="flex flex-col s bg-black items-center text-surface text-white font-light ">
+        className="flex flex-col s bg-black items-center text-surface text-white font-light w-full">
         <div className="container w-full py-10 px-5">
           <div className="md:px-5 lg:px-10 grid-container ">
             <div className='image-body'>
