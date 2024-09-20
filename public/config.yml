@@ -187,6 +187,9 @@ collections:
     - label: 'Page Title'
       name: 'pageTitle'
       widget: string
+    - label: Not Found Text
+      name: notFoundText
+      widget: string
     - label: 'Events'
       name: 'events'
       widget: 'list'

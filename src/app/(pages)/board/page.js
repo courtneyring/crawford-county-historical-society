@@ -15,12 +15,12 @@ const Board = () => {
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle} >
-            <div className="mb-5 grid grid-cols-3">
+            <div className="mb-5 grid grid-cols-4">
                 {members.map((pos, idx) => {
                     return <Promo header={pos.name} eyebrow={pos.position} key={`promo-${idx}`} alignment='left'/>
                 })}
             </div>
-            <hr className="border-t-2 my-10"/>
+            {/* <hr className="border-t-2 my-10"/> */}
             <ImagePromoBlock
                 header={attend.heading}
                 body={attend.body}

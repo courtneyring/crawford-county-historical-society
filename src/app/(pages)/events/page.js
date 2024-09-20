@@ -8,28 +8,33 @@ const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? pla
 
 const Events = () => {
 
-    let { heroImage, pageTitle, events } = attributes;
+    let { heroImage, pageTitle, events, notFoundText } = attributes;
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
 
-            {events.map((event, idx) => {
-                return (
-                    <div className="h-60 mb-20">
-                        <Event
-                            key={`event-${idx}`}
-                            name={event.name}
-                            start={event.start}
-                            end={event.end}
-                            image={event.image}
-                            location={event.location}
-                            description={event.description}
-                        />
+            {!!events.length ?
+                events.map((event, idx) => {
+                    return (
+                        <div className="h-60 mb-20">
+                            <Event
+                                key={`event-${idx}`}
+                                name={event.name}
+                                start={event.start}
+                                end={event.end}
+                                image={event.image}
+                                location={event.location}
+                                description={event.description}
+                            />
 
-                    </div>
+                        </div>
 
-                )
-            })}
+                    )
+                })
+                :
+                <p>{notFoundText}</p>
+            
+            }
 
 
         </PageContainer>

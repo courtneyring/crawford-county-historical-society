@@ -42,21 +42,21 @@ const Footer = ({ address, links, hours, logoImg }) => {
       <footer
         className="flex flex-col s bg-black items-center text-surface text-white font-light w-full">
         <div className="container w-full py-10 px-5">
-          <div className="md:px-5 lg:px-10 grid-container ">
+          <div className="grid-container ">
             <div className='image-body'>
-              <img src={logoImg} />
+              <img src={logoImg} className='w-44 mb-5'/>
               <Address address={address}/>
             </div>
             <div className='hours'>
               <Hours hours={hours} />
             </div>
-            <div className='flex items-between md:flex-col links'>
+            <div className='flex items-between justify-between md:flex-col links text-right'>
               {links.map((link) => {
                 return <Button url={link.value}>{link.label}</Button>
               })}
             </div>
           </div>
-          {/* <p className='text-xs mt-12'>Designed and Developed by <a href='https://courtneyring.com' target='_blank'>Courtney Ring</a></p> */}
+          <p className='text-md mt-12'>Designed and developed by <a href='https://courtneyring.com' target='_blank' className='underline'>Courtney Ring</a></p>
         </div>
 
 

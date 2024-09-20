@@ -6,7 +6,7 @@ hours:
     value: 10am - 6pm
   - label: Tuesday
     value: 10am - 6pm
-  - label: Wednesday - Sunday
+  - label: Wed - Sun
     value: Closed
 links:
   - label: About
