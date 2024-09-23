@@ -24,14 +24,17 @@ collections:
         allow_add: true
         summary: "{{fields.header}} - {{fields.body}}"
         fields:
-          - { label: "Image", name: "image", widget: "image" }
           - { label: "Header", name: "header", widget: "text" }
+          - { label: "Image", name: "image", widget: "image" }
           - { label: "Body", name: "body", widget: "text" }
           - label: "Align Image"
-            name: "align"
-            widget: "select"
-            default: 'center'
-            options: ["left", "center", "right"]
+            name: "imageAlignment"
+            widget: number
+            default: 50
+            value_type: float
+            min: 0
+            max: 100
+            step: 1
           - label: "CTA"
             name: "cta"
             widget: "object"

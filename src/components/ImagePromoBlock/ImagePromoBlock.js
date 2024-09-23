@@ -1,15 +1,15 @@
 import Button from "../Button/Button";
 import Promo from "../Promo/Promo";
+import './ImagePromoBlock.scss'
 
-
-const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imagePos}) => {
+const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imageAlignment}) => {
 
 
     return (
-        <div className=" flex flex-col md:grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 ">
+        <div className="block">
             
-            <div className={`h-[40rem] md:h-[50rem] ${!reverse && `md:order-2`}`}> 
-                <img src={image} className={`object-cover h-full w-full ${imagePos}`}/>
+            <div className={`block__image ${!reverse && `reverse`}`}> 
+                <img src={image} style={{ objectPosition: `${imageAlignment ?? 50}% center`}}/>
 
             </div>
             

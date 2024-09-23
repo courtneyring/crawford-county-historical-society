@@ -38,7 +38,7 @@ export default function Home() {
         {imagePromos.map((promo, idx) => {
           return (
             <div className="md:py-20">
-              <ImagePromoBlock heading={promo.heading} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2} imagePos={`object-${promo.align}`} />
+              <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2} imageAlignment={promo.imageAlignment} />
             </div>
           )
           
