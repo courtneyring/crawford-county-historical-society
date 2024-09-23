@@ -14,6 +14,8 @@ import navPlaceholder from '../placeholderCopy/navigation/copy.md';
 import footerCopy from '../copy/footer/copy.md';
 import footerPlaceholder from '../placeholderCopy/footer/copy.md';
 import Summary from "@/components/Summary/Summary";
+import useResizeResponsive from "@/hooks/useResponsive";
+import { isMobile } from "@/utils/breakpoints";
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
@@ -24,12 +26,12 @@ export default function Home() {
 
   let { hero, imagePromos, intro } = attributes;
   
-
+  const isMobileWidth = useResizeResponsive(isMobile);
 
   return (
     <main className="flex  flex-col items-center ">
       <Navbar links={navAttritubes.links} title={navAttritubes.title} logoImage={navAttritubes.image}/>
-      <Hero  image={hero.image} imagePos='-4rem'/>
+      <Hero  image={hero.image} imagePos={isMobileWidth && '-4rem'}/>
       <div className="bg-lightgrey w-full">
         <Summary>{intro}</Summary>
       </div>
@@ -38,7 +40,7 @@ export default function Home() {
         {imagePromos.map((promo, idx) => {
           return (
             <div className="md:py-20">
-              <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2} imageAlignment={promo.imageAlignment} />
+              <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
             </div>
           )
           

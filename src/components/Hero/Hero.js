@@ -1,9 +1,9 @@
 'use client';
+import useResizeResponsive from "@/hooks/useResponsive";
 import Button from "../Button/Button";
 import './Hero.scss';
 
 const Hero = ({text, image, variation='default', cta, imagePos}) => {
-
 
     return (
         <div className={`hero ${variation}`} style={{backgroundImage: `url(${image})`, backgroundPosition: imagePos}}>

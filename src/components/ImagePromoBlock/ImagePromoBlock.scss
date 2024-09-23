@@ -13,18 +13,49 @@
     }
 }
 
+.block__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1rem;
+}
+
 @media(min-width: 768px) {
     .block {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: repeat(1, minmax(0, 1fr));
+
+
+        .block__text {
+            padding: 0 1rem;
+            align-items: flex-start;
+            justify-content: center;
+            padding-right: 2rem;
+
+            & > h3 {
+
+            }
+
+            & p {
+                font-size: 1.8rem;
+            }
+        }
     }
+
+
+    .block.reverse {
+        .block__text {
+            order: 2;
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+    }
+}
+
+@media(min-width: 992px) {
 
     .block__image {
         height: 50rem;
-
-        &.reverse {
-            order: 2;
-        }
     }
 }
