@@ -24,13 +24,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
 
-  let { title, links } = attributes;
+  let { title, links, image } = attributes;
 
 
   return (
     <html lang="en">
       <body>
-        <Navbar links={links} title={title}/>
+        <Navbar links={links} title={title} logoImage={image} />
         {children}
         <Footer 
           address={footerAttributes.address}

@@ -10,7 +10,7 @@ const Support = () => {
 
     return(
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
-            <div className="grid grid-cols-1 md:grid-cols-3 mb-20">
+            {/* <div className="grid grid-cols-1 md:grid-cols-3 mb-20">
                 <Promo
                     header='Volunteer'
                     body='Volunteers are a vital component of the museum’s success. We welcome all volunteers no matter if you have a little time to offer or a lot.'
@@ -32,7 +32,7 @@ const Support = () => {
                     image={'https://www.tenement.org/wp-content/uploads/2020/07/97Orchard_Exteriors-website-1_1584x1458_acf_cropped_1584x1458_acf_cropped.jpg'}
                     alignment='center'
                 />
-            </div>
+            </div> */}
 
         
        </PageContainer>

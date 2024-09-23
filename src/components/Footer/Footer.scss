@@ -14,11 +14,6 @@ footer {
   grid-area: image-body;
 }
 
-.grid-container {
-  // grid-template-areas: "image-body hours links";
-  // grid-template-rows: repeat(3, minmax(0, 1fr));
-  // grid-template-columns: 1fr;
-}
 
 @media(min-width: 640px) {
   .grid-container {

@@ -3,6 +3,7 @@ hero:
   title: Lorem ipsum
   image: https://placehold.co/600x400
 title: Lorem ipsum
+image: https://placehold.co/600x400
 links:
   - label: Lorem
     value: /about

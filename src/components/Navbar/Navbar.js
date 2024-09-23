@@ -22,16 +22,19 @@ const Navbar = ({ links, logoImage, title }) => {
     <nav className="flex justify-between w-full items-center absolute z-20 left-0 px-5 py-2 h-20">
 
       {/* <div> */}
-        {(logoImage && !menuIsOpen) && <img className='h-full w-auto' src={logoImage} />}
+      <a className='h-full w-auto'  href='/'>
+        {(logoImage && !menuIsOpen) && <img src={logoImage} className='h-full w-auto' />}
         {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>}
+      </a>
+
       {/* </div> */}
-      
+
 
       {isMobileWidth ?
         // <div className='  '>
-          <MenuButton clickFn={toggleMenu} isOpen={menuIsOpen} />
+        <MenuButton clickFn={toggleMenu} isOpen={menuIsOpen} />
         // </div>
-       
+
         :
         <div className=''>
           {links.map((link, idx) => {
@@ -46,7 +49,7 @@ const Navbar = ({ links, logoImage, title }) => {
               return <a className=' text-white text-3xl pb-5' href={link.value}>{link.label}</a>
             })}
           </div>
-          
+
         </Overlay >,
         document.body
       )}

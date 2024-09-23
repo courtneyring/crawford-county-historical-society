@@ -23,7 +23,7 @@ imagePromos:
       label: Explore the Past
       value: /about
     header: Crawford County History
-  - image: /assets/images/gallery_band-mill.jpg
+  - image: /assets/images/museum-volunteer.jpg
     heading: Show Your Support
     body: The museum is funded through donations, sponsorships, and grants. Find out
       ways you can help the museum from day-to-day operations to long term

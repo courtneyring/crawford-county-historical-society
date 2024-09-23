@@ -1,20 +1,30 @@
 ---
 logo: band-mill.jpg
-logoImg: /assets/images/cchs-logo.png
+logoImg:  https://placehold.co/600x400
 hours:
-  - label: Monday
-    value: 10am - 6pm
-  - label: Tuesday
-    value: 10am - 6pm
-  - label: Wednesday - Sunday
-    value: Closed
+  - label: Lorem
+    value: sollicitudin
+  - label: ipsum
+    value: sollicitudin
+  - label: dolor - sit
+    value: sollicitudin
 links:
-  - label: About
+  - label: Lorem
     value: /about
+  - label: ipsum
+    value: /board
+  - label: dolor
+    value: /events
+  - label: sit
+    value: /gallery
+  - label: amet
+    value: /support
+  - label: consectetur
+    value: /contact
 address:
-  street: 97 East Michigan Avenue
-  street2: P.O. Box 218
-  city: Grayling
+  street: Lorem ipsum dolor
+  street2:  sit amet
+  city: consectetur
   state: MI
-  zip: 49738
+  zip: adipiscing
 ---
