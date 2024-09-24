@@ -25,26 +25,22 @@ const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COP
 export default function Home() {
 
   let { hero, imagePromos, intro } = attributes;
-  
+
   const isMobileWidth = useResizeResponsive(isMobile);
 
   return (
     <main className="flex  flex-col items-center ">
-      <Navbar links={navAttritubes.links} title={navAttritubes.title} logoImage={navAttritubes.image}/>
-      <Hero  image={hero.image} imagePos={isMobileWidth && '-4rem'}/>
+      <Navbar links={navAttritubes.links} title={navAttritubes.title} logoImage={navAttritubes.image} />
+      <Hero image={hero.image} imagePos={isMobileWidth && '-4rem'} />
       <div className="bg-lightgrey w-full">
         <Summary>{intro}</Summary>
       </div>
 
-      <div className="container">
+      <div >
         {imagePromos.map((promo, idx) => {
           return (
-            <div className="md:py-20">
-              <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
-            </div>
+            <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
           )
-          
-          
         })}
 
       </div>

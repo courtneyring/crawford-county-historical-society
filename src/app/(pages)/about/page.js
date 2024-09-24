@@ -1,6 +1,6 @@
 'use client';
 
-import { PageContainer, Promo } from "@/components";
+import { PageContainer, Promo, Body } from "@/components";
 
 import copy from '../../../copy/about/copy.md';
 import placeholder from '../../../placeholderCopy/about/copy.md';
@@ -14,7 +14,7 @@ const About = () => {
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
-            <p className="text-xl leading-8 mx-auto"><AboutContent /></p>
+            <Body><AboutContent /></Body>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-20">
                 <Promo
                     header='Volunteer'

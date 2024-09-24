@@ -9,3 +9,4 @@ export {default as Event} from './Event/Event';
 export { default as PageContainer } from './PageContainer/PageContainer';
 export { default as Address } from './Address/Address';
 export { default as Hours } from './Hours/Hours';
+export { default as Body } from './Body/Body';

@@ -114,6 +114,31 @@ collections:
       - label: 'Body'
         name: 'body'
         widget: text
+      - label: Promos
+        name: 'promos'
+        widget: list
+        fields: 
+          - label: "Header"
+            name: header
+            widget: string
+          - label: Body
+            name: body
+            widget: string
+          - label: Image
+            name: image
+            widget: image
+          - label: Cta
+            name: cta
+            widget: object
+            fields: 
+              - label: 'Label'
+                name: 'label'
+                widget: string
+              - label: 'Value'
+                name: 'value'
+                widget: string
+
+
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"
