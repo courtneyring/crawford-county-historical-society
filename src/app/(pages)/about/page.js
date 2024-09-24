@@ -14,7 +14,7 @@ const About = () => {
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
             <Body><AboutContent /></Body>
-            <div className="grid grid-cols-1 md:grid-cols-3 mb-20">
+            <div className="grid grid-cols-1 lg:grid-cols-3 my-20 ">
                 {promos.map((promo) => 
                     <Promo
                         header={promo.header}
