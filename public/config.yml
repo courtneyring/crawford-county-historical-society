@@ -127,6 +127,9 @@ collections:
           - label: Image
             name: image
             widget: image
+          - label: BackgroundPos
+            name: backgroundPos
+            widget: hidden
           - label: Cta
             name: cta
             widget: object

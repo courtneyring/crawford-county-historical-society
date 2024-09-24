@@ -10,6 +10,7 @@ const { attributes, react: AboutContent } = process.env.NEXT_PUBLIC_PLACEHOLDER_
 
 const About = () => {
     let { heroImage, pageTitle, body, promos } = attributes;
+    console.log(promos)
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
@@ -22,6 +23,7 @@ const About = () => {
                         cta={promo.cta}
                         image={promo.image}
                         alignment='center'
+                        backgroundPos={promo.backgroundPos}
                     />
                 )}
                 

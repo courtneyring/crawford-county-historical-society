@@ -7,8 +7,13 @@
 
 }
 
-.promo__eyebrow {}
-
+.promo__image {
+    width: 100%;
+    height: 15rem;
+    margin-bottom: 1.25rem;
+    background-size: cover;
+    background-position: center;
+}
 .promo__header {
     margin-bottom: 1.25rem;
     font-size: 1.875rem;

@@ -6,6 +6,7 @@ promos:
     body: Meet the members who volunteer their time and professional expertise to
       steer the museum in accordance with its mission
     image: /assets/images/museum-volunteer.jpg
+    backgroundPos: top center
     cta:
       label: Learn More
       value: /board
