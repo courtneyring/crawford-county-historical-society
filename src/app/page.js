@@ -31,7 +31,7 @@ export default function Home() {
   return (
     <main className="flex  flex-col items-center ">
       <Navbar links={navAttritubes.links} title={navAttritubes.title} logoImage={navAttritubes.image} />
-      <Hero image={hero.image} imagePos={isMobileWidth && '-4rem'} />
+      <Hero image={hero.image} pos={isMobileWidth && '-4rem'} />
       <div className="bg-lightgrey w-full">
         <Summary>{intro}</Summary>
       </div>

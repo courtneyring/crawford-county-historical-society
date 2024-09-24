@@ -9,14 +9,14 @@ const { attributes, react: AboutContent } = process.env.NEXT_PUBLIC_PLACEHOLDER_
 
 
 const About = () => {
-    let { heroImage, pageTitle, body, promos } = attributes;
+    let { heroImage, pageTitle, promos, hero } = attributes;
     console.log(promos)
 
     return (
-        <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
+        <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle}>
             <Body><AboutContent /></Body>
             <div className="grid grid-cols-1 lg:grid-cols-3 my-20 ">
-                {promos.map((promo) => 
+                {promos.map((promo, idx) => 
                     <Promo
                         header={promo.header}
                         body= {promo.body}
@@ -24,6 +24,7 @@ const About = () => {
                         image={promo.image}
                         alignment='center'
                         backgroundPos={promo.backgroundPos}
+                        key={`${idx}`}
                     />
                 )}
                 

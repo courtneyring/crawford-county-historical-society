@@ -105,9 +105,19 @@ collections:
     folder: "src/copy/about"
     slug: "copy"
     fields: 
-      - label: "HeroImage"
-        name: "heroImage"
-        widget: "image"
+      - label: "Hero"
+        name: "hero"
+        widget: object
+        fields: 
+          - label: Image
+            name: image
+            widget: image
+          - label: Pos
+            name: pos
+            widget: hidden
+      - label: 'Hero Pos'
+        name: 'heroPos'
+        widget: 'hidden'
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string

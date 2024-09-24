@@ -1,12 +1,14 @@
 ---
-heroImage: /assets/images/gallery_south-side-school.jpg
+hero: 
+  image: /assets/images/gallery_south-side-school.jpg
+  pos: 100% 65%
 pageTitle: About Us
 promos:
   - header: Meet the Board
     body: Meet the members who volunteer their time and professional expertise to
       steer the museum in accordance with its mission
     image: /assets/images/museum-volunteer.jpg
-    backgroundPos: top center
+    backgroundPos: 100% 20%
     cta:
       label: Learn More
       value: /board
