@@ -3,20 +3,22 @@ heroImage: /assets/images/gallery_south-side-school.jpg
 pageTitle: About Us
 promos:
   - header: Meet the Board
-    body: Meet the members who volunteer their time and professional expertise to steer the museum in accordance with its mission 
-    image: https://www.tenement.org/wp-content/uploads/2020/07/97Orchard_Exteriors-website-1_1584x1458_acf_cropped_1584x1458_acf_cropped.jpg
+    body: Meet the members who volunteer their time and professional expertise to
+      steer the museum in accordance with its mission
+    image: /assets/images/museum-volunteer.jpg
     cta:
       label: Learn More
       value: /board
   - header: Support the Museum
     body: There are many ways to support the museum through both time and funding
-    image: https://www.tenement.org/wp-content/uploads/2020/07/97Orchard_Exteriors-website-1_1584x1458_acf_cropped_1584x1458_acf_cropped.jpg
+    image: /assets/images/museum-train.jpg
     cta:
       label: Support Now
       value: /support
   - header: Contact Us
-    body: Get museum hours, location, or contact information to make your visit smooth and enjoyable
-    image: https://www.tenement.org/wp-content/uploads/2020/07/97Orchard_Exteriors-website-1_1584x1458_acf_cropped_1584x1458_acf_cropped.jpg
+    body: Get museum hours, location, or contact information to make your visit
+      smooth and enjoyable
+    image: /assets/images/museum-visitors.JPG
     cta:
       label: Visit the Museum
       value: /contact
