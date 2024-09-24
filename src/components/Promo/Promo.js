@@ -1,6 +1,6 @@
 import './Promo.scss';
 
-const Promo = ({ icon, header, eyebrow, body, href, alignment, image }) => {
+const Promo = ({ icon, header, eyebrow, body, cta, alignment, image }) => {
     const Tag = href ? 'a' : 'div';
     return (
         <Tag className={`items-${alignment} promo`} href={href?.url}>
@@ -9,8 +9,8 @@ const Promo = ({ icon, header, eyebrow, body, href, alignment, image }) => {
             {eyebrow && <p className="promo__eyebrow">{eyebrow}</p>}
             <h3 className='promo__header'>{header}</h3>
             <p className={`promo__body`}>{body}</p>
-            {href &&
-                <div className={`promo__cta`} href={href.value}>{href.label}
+            {cta &&
+                <div className={`promo__cta`} href={cta.value}>{cta.label}
                     <img  src='/assets/icons/chevron-right.svg' />
                 </div>
             }
