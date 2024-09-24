@@ -1,6 +1,14 @@
 ---
 heroImage: /assets/images/gallery_south-side-school.jpg
 pageTitle: About Us
+promos:
+  - header: Volunteer
+    body: Volunteers are a vital component of the museum’s success. We welcome all
+      volunteers no matter if you have a little time to offer or a lot.
+    image: https://www.tenement.org/wp-content/uploads/2020/07/97Orchard_Exteriors-website-1_1584x1458_acf_cropped_1584x1458_acf_cropped.jpg
+    cta:
+      label: learn more'
+      value: /support/volunteer
 ---
 The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.
 
