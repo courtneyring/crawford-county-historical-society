@@ -6,6 +6,7 @@ import ImagePromoBlock from "@/components/ImagePromoBlock/ImagePromoBlock";
 
 import copy from '../../../copy/board/copy.md';
 import placeholder from '../../../placeholderCopy/board/copy.md';
+import TextBlock from "@/components/TextBlock/TextBlock";
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
@@ -15,25 +16,19 @@ const Board = () => {
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle} >
-            <div className="mb-5 grid grid-cols-4">
+            <div className="mb-10 md:mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto">
                 {members.map((pos, idx) => {
                     return <Promo header={pos.name} eyebrow={pos.position} key={`promo-${idx}`} alignment='left'/>
                 })}
             </div>
-            {/* <hr className="border-t-2 my-10"/> */}
-            <ImagePromoBlock
-                header={attend.heading}
-                body={attend.body}
-                image={attend.image}
-            />
-            <div className="h-12"></div>
-            <ImagePromoBlock
-                header={contact.heading}
-                body={contact.body}
-                image={contact.image}
-                cta={contact.cta}
-                reverse
-            />
+            <hr className="border-t-2 my-10 container mx-auto mb-16 md:mb-28 "/>
+            <div className="mb-16 md:mb-28">
+                <TextBlock heading={attend.heading}>{attend.body}</TextBlock>
+            </div>
+            <div className="mb-16 md:mb-28">
+                <TextBlock heading={contact.heading}>{contact.body}</TextBlock>
+            </div>
+
             
         </PageContainer>
 

@@ -5,7 +5,7 @@ import './ImagePromoBlock.scss'
 const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imageAlignment}) => {
 
     return (
-        <div className={`block container ${!!reverse ? `reverse` : ''}`}>
+        <div className={`block container mx-auto ${!!reverse ? `reverse` : ''}`}>
             
             
             
