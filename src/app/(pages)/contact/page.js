@@ -25,7 +25,7 @@ const Contact = () => {
                         </p>
                         <p>
                         <span className="font-bold">Hours</span><br />
-                        <Hours hours={hours} />
+                        {/* <Hours hours={hours} /> */}
                         </p>
                         
 
