@@ -1,5 +1,5 @@
 ---
-heroImage: /assets/images/gallery_south-side-school.jpg
+heroImage: /assets/images/gallery_stephan-family.jpg
 pageTitle: Board
 members:
   - position: President
