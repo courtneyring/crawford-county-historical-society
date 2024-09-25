@@ -16,7 +16,7 @@ const Board = () => {
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle} >
-            <div className="mb-10 md:mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto">
+            <div className="mb-10 px-5 md:px-0 md:mb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto">
                 {members.map((pos, idx) => {
                     return <Promo header={pos.name} eyebrow={pos.position} key={`promo-${idx}`} alignment='left'/>
                 })}
