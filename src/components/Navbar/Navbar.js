@@ -5,6 +5,8 @@ import { isMobile } from '@/utils/breakpoints';
 import useResizeResponsive from '@/hooks/useResponsive';
 import { createPortal } from 'react-dom';
 import Overlay from '../Overlay/Overlay';
+import { imagePath } from '@/utils/imagePrefix';
+
 
 
 const Navbar = ({ links, logoImage, title }) => {
@@ -23,7 +25,7 @@ const Navbar = ({ links, logoImage, title }) => {
 
       {/* <div> */}
       <a className='h-full w-auto'  href='/'>
-        {(logoImage && !menuIsOpen) && <img src={logoImage} className='h-full w-auto' />}
+        {(logoImage && !menuIsOpen) && <img src={imagePath(logoImage)} className='h-full w-auto' />}
         {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>}
       </a>
 

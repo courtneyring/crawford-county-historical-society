@@ -1,8 +1,9 @@
 import Button from "../Button/Button";
-import Promo from "../Promo/Promo";
 import './ImagePromoBlock.scss'
+import { imagePath } from "@/utils/imagePrefix";
 
 const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imageAlignment}) => {
+
 
     return (
         <div className={`block container mx-auto ${!!reverse ? `reverse` : ''}`}>
@@ -15,7 +16,7 @@ const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imageAl
                 {cta && <Button url={cta.value} variation='primary' target={cta.target} bgColor={cta.bgColor} color={cta.color}>{cta.label}</Button>}
             </div>
             <div className={`block__image `}>
-                <img src={image} style={{ objectPosition: `${imageAlignment ?? 50}% center` }} />
+                <img src={imagePath(image)} style={{ objectPosition: `${imageAlignment ?? 50}% center` }} />
 
             </div>
         </div>

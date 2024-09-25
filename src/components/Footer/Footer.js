@@ -3,6 +3,8 @@ import './Footer.scss';
 import Address from '../Address/Address';
 import Hours from '../Hours/Hours';
 import Button from '../Button/Button';
+import { imagePath } from '@/utils/imagePrefix';
+
 
 const Footer = ({ address, links, hours, logoImg }) => {
 
@@ -14,7 +16,7 @@ const Footer = ({ address, links, hours, logoImg }) => {
         <div className="container w-full py-10 px-5">
           <div className="grid-container ">
             <div className='image-body'>
-              <img src={logoImg} className='w-52 md:w-44 mb-5 mx-auto md:mx-0'/>
+              <img src={imagePath(logoImg)} className='w-52 md:w-44 mb-5 mx-auto md:mx-0'/>
               <Address address={address}/>
             </div>
             <div className='hours w-3/5 mx-auto mb-5 md:mb-0'>
