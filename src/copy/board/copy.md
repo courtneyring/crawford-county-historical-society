@@ -1,7 +1,7 @@
 ---
 hero: 
   image: /assets/images/gallery_stephan-family.jpg
-  pos: 100% 100%
+  pos: 100% 60%
 pageTitle: Board
 members:
   - position: President
