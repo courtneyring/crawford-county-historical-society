@@ -30,7 +30,7 @@ const useRepeatable = ({ componentType, copy, length }) => {
     }
 
     useEffect(() => {
-        console.log(copy)
+
         let newArr = [];
         for (let i = 0; i < length; i++) {
             // let obj = {

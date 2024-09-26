@@ -10,7 +10,6 @@ const { attributes, react: AboutContent } = process.env.NEXT_PUBLIC_PLACEHOLDER_
 
 const About = () => {
     let { heroImage, pageTitle, promos, hero } = attributes;
-    console.log(promos)
 
     return (
         <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle}>

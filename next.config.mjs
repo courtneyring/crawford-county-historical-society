@@ -7,7 +7,6 @@ const nextConfig = {
     output: 'export',
     basePath,
     assetPrefix: basePath,
-    optimizeFonts: false,
     webpack: (cfg) => {
         cfg.module.rules.push(
             {

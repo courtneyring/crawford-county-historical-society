@@ -14,6 +14,13 @@ import footerPlaceholder from '../placeholderCopy/footer/copy.md';
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
 
+import configCopy from '../copy/config/copy.md';
+import configPlaceholder from '../placeholderCopy/config/copy.md';
+
+
+
+const { attributes: configAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? configPlaceholder : configCopy;
+
 const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: ['300', '400', '500', '700'] })
 
 export const metadata = {
@@ -29,14 +36,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={urbanist.className}>
-        {/* <Navbar links={links} title={title}/> */}
-        {children}
-        {/* <Footer 
-          address={footerAttributes.address}
-          links={footerAttributes.links}
-          hours={footerAttributes.hours}
-          logoImg={footerAttributes.logoImg}
-          /> */}
+        <Navbar links={configAttributes.links} logoImage={configAttributes.logoImg} />
+          {children}
+        <Footer
+          address={configAttributes.address}
+          links={configAttributes.links}
+          hours={configAttributes.hours}
+          logoImg={configAttributes.logoImg}
+        />
+        
         </body>
     </html>
   );

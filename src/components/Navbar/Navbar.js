@@ -41,7 +41,7 @@ const Navbar = ({ links, logoImage, title }) => {
         :
         <div className=''>
           {links.map((link, idx) => {
-            return <Link className=' [&:not(:last-child)]:px-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value}>{link.label}</Link>
+            return <Link className=' [&:not(:last-child)]:px-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value} key={`navbar-d-${idx}`}>{link.label}</Link>
           })}
         </div>
       }
@@ -49,7 +49,7 @@ const Navbar = ({ links, logoImage, title }) => {
         <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={'black'}>
           <div className='flex flex-col p-10'>
             {links.map((link, idx) => {
-              return <Link className=' text-white text-3xl pb-5' href={link.value}>{link.label}</Link>
+              return <Link className=' text-white text-3xl pb-5' href={link.value} key={`navbar-m-${idx}`}>{link.label}</Link>
             })}
           </div>
 

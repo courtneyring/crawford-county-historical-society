@@ -24,8 +24,8 @@ const Footer = ({ address, links, hours, logoImg }) => {
               <Hours hours={hours} />
             </div>
             <div className='grid grid-cols-3 text-center flex items-between justify-between md:flex-col links md:text-right'>
-              {links.map((link) => {
-                return <Button url={link.value}>{link.label}</Button>
+              {links.map((link, idx) => {
+                return <Button url={link.value} key={`footerlink-${idx}`}>{link.label}</Button>
               })}
             </div>
           </div>
