@@ -1,5 +1,6 @@
 ---
-heroImage: /assets/images/gallery_band-mill.jpg
+hero: 
+    image: /assets/images/gallery_sorenson-store.jpg
 pageTitle: Events
 notFoundText: No events scheduled, please check back later.
 events:

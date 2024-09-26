@@ -234,32 +234,39 @@ collections:
     folder: 'src/copy/events'
     slub: 'copy'
     fields: 
-    - label: "HeroImage"
-      name: "heroImage"
-      widget: "image"
-    - label: 'Page Title'
-      name: 'pageTitle'
-      widget: string
-    - label: Not Found Text
-      name: notFoundText
-      widget: string
-    - label: 'Events'
-      name: 'events'
-      widget: 'list'
-      allow_add: true
-      fields: 
-        - {label: Event Name, name: name, widget: string}
-        - {label: Start, name: start, widget: datetime, format: "dddd, MMM D, h:mm a"}
-        - {label: End, name: end, widget: datetime, format: "h:mm a"}
-        - {label: Location, name: location, widget: string}
-        - {label: Description, name: description, widget: text}
-        - {label: Image, name: image, widget: image }
-        - label: Cta
-          name: cta
-          widget: object
-          fields: 
-            - {label: Label, name: label, widget: string}
-            - {label: Value, name: value, widget: string}
+      - label: "Hero"
+        name: "hero"
+        widget: object
+        fields: 
+          - label: Image
+            name: image
+            widget: image
+          - label: Pos
+            name: pos
+            widget: hidden
+      - label: 'Page Title'
+        name: 'pageTitle'
+        widget: string
+      - label: Not Found Text
+        name: notFoundText
+        widget: string
+      - label: 'Events'
+        name: 'events'
+        widget: 'list'
+        allow_add: true
+        fields: 
+          - {label: Event Name, name: name, widget: string}
+          - {label: Start, name: start, widget: datetime}
+          - {label: End, name: end, widget: datetime}
+          - {label: Location, name: location, widget: string}
+          - {label: Description, name: description, widget: text}
+          - {label: Image, name: image, widget: image }
+          - label: Cta
+            name: cta
+            widget: object
+            fields: 
+              - {label: Label, name: label, widget: string}
+              - {label: Value, name: value, widget: string}
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"
