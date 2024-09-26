@@ -9,14 +9,14 @@ const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? pla
 
 const Events = () => {
 
-    let { heroImage, pageTitle, events, notFoundText } = attributes;
+    let { hero, pageTitle, events, notFoundText } = attributes;
 
     const convertToDate = (str, format) => {
         return moment.utc(new Date(str)).format(format);
     }
 
     return (
-        <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
+        <PageContainer hero={hero} pageTitle={pageTitle}>
             <div className='container mx-auto'>
                 {!!events.length ?
                     events.map((event, idx) => {

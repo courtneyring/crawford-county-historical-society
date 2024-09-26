@@ -1,6 +1,7 @@
 ---
 hero: 
     image: /assets/images/gallery_sorenson-store.jpg
+    pos: 0% 65%
 pageTitle: Events
 notFoundText: No events scheduled, please check back later.
 events:
