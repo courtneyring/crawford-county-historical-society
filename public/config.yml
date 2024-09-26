@@ -254,6 +254,12 @@ collections:
         - {label: Location, name: location, widget: string}
         - {label: Description, name: description, widget: text}
         - {label: Image, name: image, widget: image }
+        - label: Cta
+          name: cta
+          widget: object
+          fields: 
+            - {label: Label, name: label, widget: string}
+            - {label: Value, name: value, widget: string}
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"

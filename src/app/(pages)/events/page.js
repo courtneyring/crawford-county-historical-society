@@ -12,30 +12,33 @@ const Events = () => {
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
+            <div className='container mx-auto'>
+                {!!events.length ?
+                    events.map((event, idx) => {
+                        return (
+                            <div className="h-60 mb-20">
+                                <Event
+                                    key={`event-${idx}`}
+                                    name={event.name}
+                                    start={event.start}
+                                    end={event.end}
+                                    image={event.image}
+                                    location={event.location}
+                                    description={event.description}
+                                />
 
-            {!!events.length ?
-                events.map((event, idx) => {
-                    return (
-                        <div className="h-60 mb-20">
-                            <Event
-                                key={`event-${idx}`}
-                                name={event.name}
-                                start={event.start}
-                                end={event.end}
-                                image={event.image}
-                                location={event.location}
-                                description={event.description}
-                            />
+                            </div>
 
-                        </div>
+                        )
+                    })
+                    :
+                    <p>{notFoundText}</p>
 
-                    )
-                })
-                :
-                <p>{notFoundText}</p>
+                }
+
+
+            </div>
             
-            }
-
 
         </PageContainer>
 
