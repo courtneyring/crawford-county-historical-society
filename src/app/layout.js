@@ -1,4 +1,4 @@
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 
 
 import "./globals.scss";
@@ -14,8 +14,7 @@ import footerPlaceholder from '../placeholderCopy/footer/copy.md';
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
 
-const inter = Inter({ subsets: ["latin"] });
-
+const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: '400' })
 
 export const metadata = {
   title: "CCHS",
@@ -29,7 +28,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <body>
+      <body className={urbanist.className}>
         {/* <Navbar links={links} title={title}/> */}
         {children}
         {/* <Footer 
