@@ -6,6 +6,7 @@ import useResizeResponsive from '@/hooks/useResponsive';
 import { createPortal } from 'react-dom';
 import Overlay from '../Overlay/Overlay';
 import { imagePath } from '@/utils/imagePrefix';
+import Link from 'next/link';
 
 
 
@@ -24,10 +25,10 @@ const Navbar = ({ links, logoImage, title }) => {
     <nav className="flex justify-between w-full items-center absolute z-20 left-0 px-5 py-2 h-20">
 
       {/* <div> */}
-      <a className='h-full w-auto'  href='/'>
+      <Link className='h-full w-auto'  href='/'>
         {(logoImage && !menuIsOpen) && <img src={imagePath(logoImage)} className='h-full w-auto' />}
         {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>}
-      </a>
+      </Link>
 
       {/* </div> */}
 
@@ -40,7 +41,7 @@ const Navbar = ({ links, logoImage, title }) => {
         :
         <div className=''>
           {links.map((link, idx) => {
-            return <a className=' [&:not(:last-child)]:px-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value}>{link.label}</a>
+            return <Link className=' [&:not(:last-child)]:px-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value}>{link.label}</Link>
           })}
         </div>
       }
@@ -48,7 +49,7 @@ const Navbar = ({ links, logoImage, title }) => {
         <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={'black'}>
           <div className='flex flex-col p-10'>
             {links.map((link, idx) => {
-              return <a className=' text-white text-3xl pb-5' href={link.value}>{link.label}</a>
+              return <Link className=' text-white text-3xl pb-5' href={link.value}>{link.label}</Link>
             })}
           </div>
 

@@ -4,6 +4,7 @@ import Address from '../Address/Address';
 import Hours from '../Hours/Hours';
 import Button from '../Button/Button';
 import { imagePath } from '@/utils/imagePrefix';
+import Link from 'next/link';
 
 
 const Footer = ({ address, links, hours, logoImg }) => {
@@ -28,7 +29,7 @@ const Footer = ({ address, links, hours, logoImg }) => {
               })}
             </div>
           </div>
-          <p className='text-md mt-12'>Designed and developed by <a href='https://courtneyring.com' target='_blank' className='underline'>Courtney Ring</a></p>
+          <p className='text-md mt-12'>Designed and developed by <Link href='https://courtneyring.com' target='_blank' className='underline'>Courtney Ring</Link></p>
         </div>
 
 
