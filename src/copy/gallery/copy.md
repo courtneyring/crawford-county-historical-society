@@ -1,5 +1,7 @@
 ---
-heroImage: /assets/images/gallery_south-side-school.jpg
+hero:
+  image: /assets/images/gallery_michigan-ave.png
+  pos: 50% 60%
 pageTitle: Gallery
 images:
   - image: /assets/images/gallery_army-air-field.jpg
