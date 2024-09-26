@@ -3,6 +3,7 @@
 import { Map, PageContainer, Address, Hours } from "@/components";
 import copy from '../../../copy/contact/copy.md';
 import placeholder from '../../../placeholderCopy/contact/copy.md';
+import Link from "next/link";
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
@@ -12,16 +13,16 @@ const Contact = () => {
 
     return (
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
-                <div className="grid grid-cols-2">
+                <div className="grid grid-cols-2 container mx-auto px-3 md:px-0 mb-10">
                     <div>
                         <Address address={address} />
                         <p>
                             <span className="font-bold">Phone</span><br />
-                            {phone}
+                            <Link className="underline cursor" href={`tel:${phone}`}>{phone}</Link>
                         </p>
                         <p>
                             <span className="font-bold">Email</span><br />
-                            {email}
+                        <Link className="underline cursor" href={`mailto:${email}`}>{email}</Link>
                         </p>
                         <p>
                         <span className="font-bold">Hours</span><br />

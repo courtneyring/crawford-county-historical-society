@@ -14,7 +14,7 @@ import footerPlaceholder from '../placeholderCopy/footer/copy.md';
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
 
-const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: '400' })
+const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: ['300', '400', '500', '700'] })
 
 export const metadata = {
   title: "CCHS",

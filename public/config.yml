@@ -50,14 +50,6 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string", required: false }
       - {label: "Image", name: "image", widget: "image", required: false }
-      - label: "Links"
-        name: "links"
-        summary: "{{fields.label}} - {{fields.value}}"
-        widget: "list"
-        allow_add: true
-        fields:
-          - {label: Label, name: label, widget: string}
-          - {label: Value, name: value, widget: string}
   - name: "footer"
     label: "Footer"
     summary: "CCHS Footer Copy"
@@ -65,40 +57,6 @@ collections:
     slug: "footer"
     fields: 
       - {label: "Logo", name: "logoImg", widget: "image"}
-      - label: "Hours"
-        name: "hours"
-        widget: "list"
-        allow_add: true
-        fields: 
-          - {label: "Label", name: "label", widget: "string"}
-          - {label: "Value", name: "value", widget: "string"}
-      - label: "Links"
-        name: "links"
-        summary: "{{fields.label}} - {{fields.value}}"
-        widget: "list"
-        allow_add: true
-        fields:
-          - {label: Label, name: label, widget: string}
-          - {label: Value, name: value, widget: string}
-      - label: 'Address'
-        name: 'address'
-        widget: object
-        fields: 
-          - label: 'Street'
-            name: 'street'
-            widget: string
-          - label: 'PO Box, Suite, etc'
-            name: 'street2'
-            widget: string
-          - label: 'City'
-            name: 'city'
-            widget: string
-          - label: 'State'
-            name: 'state'
-            widget: string
-          - label: 'Zip Code'
-            name: 'zip'
-            widget: number
   - name: "about"
     label: "About"
     summary: "CCHS About Copy"
@@ -150,8 +108,6 @@ collections:
               - label: 'Value'
                 name: 'value'
                 widget: string
-
-
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"
@@ -280,12 +236,25 @@ collections:
     folder: "src/copy/contact"
     slug: "copy"
     fields: 
-      - label: "HeroImage"
-        name: "heroImage"
-        widget: "image"
+      - label: "Hero"
+        name: "hero"
+        widget: object
+        fields: 
+          - label: Image
+            name: image
+            widget: image
+          - label: Pos
+            name: pos
+            widget: hidden
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string
+  - name: 'config'
+    label: "Config"
+    summary: "CCHS Config Values (used across the site)"
+    folder: 'src/copy/config'
+    slug: 'copy'
+    fields:
       - label: 'Address'
         name: 'address'
         widget: object
@@ -305,20 +274,25 @@ collections:
           - label: 'Zip Code'
             name: 'zip'
             widget: number
+      - label: "Hours"
+        name: "hours"
+        widget: "list"
+        allow_add: true
+        fields: 
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Value", name: "value", widget: "string"}
+      - label: "Links"
+        name: "links"
+        summary: "{{fields.label}} - {{fields.value}}"
+        widget: "list"
+        allow_add: true
+        fields:
+          - {label: Label, name: label, widget: string}
+          - {label: Value, name: value, widget: string}
       - label: 'Phone'
         name: 'phone'
         widget: string
       - label: 'Email'
         name: 'email'
         widget: string
-      - label: 'Hours'
-        name: 'hours'
-        widget: object
-        fields: 
-          - {label: 'Tuesday', name: 'tuesday', widget: string}
-          - {label: 'Wednesday', name: 'wednesday', widget: string}
-          - {label: 'Thursday', name: 'thursday', widget: string}
-          - {label: 'Friday', name: 'friday', widget: string}
-          - {label: 'Saturday', name: 'saturday', widget: string}
-          - {label: 'Sunday', name: 'sunday', widget: string}
-          - {label: 'Monday', name: 'monday', widget: string}
+      - {label: "Logo", name: "logoImg", widget: "image"}
