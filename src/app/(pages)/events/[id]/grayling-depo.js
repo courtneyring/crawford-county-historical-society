@@ -1,7 +1,7 @@
 
 'use client';
 import { Hero } from "@/components";
-import './event.scss'
+// import './event.scss'
 import { Libre_Baskerville, Courgette, Rufina, Arapey } from "next/font/google";
 import Button from "@/components/Button/Button";
 import ImagePromoBlock from "@/components/ImagePromoBlock/ImagePromoBlock";

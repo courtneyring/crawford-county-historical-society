@@ -7,6 +7,7 @@ import { createPortal } from 'react-dom';
 import Overlay from '../Overlay/Overlay';
 import { imagePath } from '@/utils/imagePrefix';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 
 
@@ -15,6 +16,11 @@ const Navbar = ({ links, logoImage, title }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const isMobileWidth = useResizeResponsive(isMobile);
 
+  //tempfix - TODO
+  const pathname = usePathname();
+  if (pathname.includes('admin')){
+    return <></>
+  }
 
   const toggleMenu = () => {
     setMenuIsOpen(!menuIsOpen)

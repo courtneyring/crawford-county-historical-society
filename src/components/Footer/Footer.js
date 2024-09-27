@@ -6,9 +6,15 @@ import Button from '../Button/Button';
 import { imagePath } from '@/utils/imagePrefix';
 import Link from 'next/link';
 
+import { usePathname } from 'next/navigation';
 
 const Footer = ({ address, links, hours, logoImg }) => {
 
+  //temp fix - TODO
+  const pathname = usePathname();
+  if (pathname.includes('admin')) {
+    return <></>
+  }
 
   return (
     <>

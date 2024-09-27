@@ -5,7 +5,11 @@ import copy from '../../../copy/contact/copy.md';
 import placeholder from '../../../placeholderCopy/contact/copy.md';
 import Link from "next/link";
 
+import configCopy from '../../../copy/config/copy.md';
+import configPlaceholder from '../../../placeholderCopy/config/copy.md';
 
+
+const { attributes: configAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? configPlaceholder : configCopy;
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 const Contact = () => {
@@ -15,18 +19,18 @@ const Contact = () => {
         <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
                 <div className="grid grid-cols-2 container mx-auto px-3 md:px-0 mb-10">
                     <div>
-                        <Address address={address} />
+                    <Address address={configAttributes.address} />
                         <p>
                             <span className="font-bold">Phone</span><br />
-                            <Link className="underline cursor" href={`tel:${phone}`}>{phone}</Link>
+                        <Link className="underline cursor" href={`tel:${configAttributes.phone}`}>{configAttributes.phone}</Link>
                         </p>
                         <p>
                             <span className="font-bold">Email</span><br />
-                        <Link className="underline cursor" href={`mailto:${email}`}>{email}</Link>
+                        <Link className="underline cursor" href={`mailto:${configAttributes.email}`}>{configAttributes.email}</Link>
                         </p>
                         <p>
                         <span className="font-bold">Hours</span><br />
-                        {/* <Hours hours={hours} /> */}
+                        <Hours hours={configAttributes.hours} />
                         </p>
                         
 

@@ -5,18 +5,8 @@ import "./globals.scss";
 import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
-import copy from '../copy/navigation/copy.md';
-import placeholder from '../placeholderCopy/navigation/copy.md';
-import footerCopy from '../copy/footer/copy.md';
-import footerPlaceholder from '../placeholderCopy/footer/copy.md';
-
-
-const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
-const { attributes: footerAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? footerPlaceholder : footerCopy;
-
 import configCopy from '../copy/config/copy.md';
 import configPlaceholder from '../placeholderCopy/config/copy.md';
-
 
 
 const { attributes: configAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? configPlaceholder : configCopy;
@@ -29,8 +19,6 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
-  let { title, links } = attributes;
 
 
   return (
