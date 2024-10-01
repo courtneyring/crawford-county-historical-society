@@ -1,31 +1,31 @@
 ---
 address:
-    street: 97 East Michigan Avenue
-    street2: P.O. Box 218
-    city: Grayling
+    street: Lorem ipsum
+    street2: dolor sit
+    city: amet
     state: MI
     zip: 49738
 phone: 989-745-3493
-email: cchsgrayling@gmail.com
+email: Loremg@gmail.com
 links:
-  - label: About
+  - label: Lorem
     value: /about
-  - label: Board
+  - label: ipsum
     value: /board
-  - label: Events
+  - label: dolor
     value: /events
-  - label: Gallery
+  - label: sit
     value: /gallery
-  - label: Support
+  - label: amet
     value: /support
-  - label: Contact
+  - label: consectetur
     value: /contact
 hours:
-  - label: Monday
+  - label: Maecenas
     value: 10am - 6pm
-  - label: Tuesday
+  - label: Maecenas
     value: 10am - 6pm
-  - label: Wed - Sun
+  - label: Maecenas
     value: Closed
-logoImg: /assets/images/crawford-county-logo-white.png
+logoImg: ttps://placehold.co/600x400
 ---

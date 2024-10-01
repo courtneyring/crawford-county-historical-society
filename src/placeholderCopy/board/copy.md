@@ -1,5 +1,7 @@
 ---
-heroImage: https://placehold.co/600x400
+hero: 
+  image: https://placehold.co/600x400
+  pos: 100% 60%
 pageTitle: Lorem ipsum
 members:
   - position: Lorem ipsum 

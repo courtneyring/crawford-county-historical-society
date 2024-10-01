@@ -1,17 +1,17 @@
 ---
-heroImage: https://placehold.co/600x400
+hero: 
+    image: https://placehold.co/600x400
+    pos: 0% 65%
 pageTitle: Lorem ipsum
+notFoundText: Lorem ipsum dolor sit amet
 events:
-  - start: Thursday, Aug 29, 12:00 am
-    end: 12:00 am
-    name: Lorem ipsum
-    location: dolor sit
-    description: testing
+  - name: Fusce sodales
+    location: consectetur adipiscing
+    start: 2024-10-05T15:00:00.000Z
+    end: 2024-10-05T22:00:00.000Z
     image: https://placehold.co/600x400
-  - start: Thursday, Aug 29, 12:00 am
-    end: 12:00 am
-    name: Lorem ipsum
-    location: dolor sit
-    description: testing
-    image: https://placehold.co/600x400
+    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    cta:
+      label:  Nunc efficitur 
+      value: https://placehold.co/600x400
 ---
