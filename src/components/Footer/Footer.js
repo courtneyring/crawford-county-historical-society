@@ -1,5 +1,5 @@
 'use client';
-import './Footer.scss';
+import styles from './Footer.module.scss';
 import Address from '../Address/Address';
 import Hours from '../Hours/Hours';
 import Button from '../Button/Button';
@@ -19,17 +19,17 @@ const Footer = ({ address, links, hours, logoImg }) => {
   return (
     <>
       <footer
-        className="flex flex-col s bg-black items-center text-surface text-white font-light w-full">
+        className={`flex flex-col s bg-black items-center text-surface text-white font-light w-full ${styles.footer}`}>
         <div className="container w-full py-10 px-5">
-          <div className="grid-container ">
-            <div className='image-body'>
+          <div className={styles.grid-container}>
+            <div className={styles['image-body']}>
               <img src={imagePath(logoImg)} className='w-52 md:w-44 mb-5 mx-auto md:mx-0'/>
               <Address address={address}/>
             </div>
-            <div className='hours w-3/5 mx-auto mb-5 md:mb-0'>
+            <div className={`${styles.hours} w-3/5 mx-auto mb-5 md:mb-0`}>
               <Hours hours={hours} />
             </div>
-            <div className='grid grid-cols-3 text-center flex items-between justify-between md:flex-col links md:text-right'>
+            <div className={`grid grid-cols-3 text-center flex items-between justify-between md:flex-col ${styles.links} md:text-right`}>
               {links.map((link, idx) => {
                 return <Button url={link.value} key={`footerlink-${idx}`}>{link.label}</Button>
               })}

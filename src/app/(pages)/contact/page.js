@@ -1,16 +1,18 @@
 'use client';
-
+import Link from "next/link";
 import { Map, PageContainer, Address, Hours } from "@/components";
+
+
 import copy from '../../../copy/contact/copy.md';
 import placeholder from '../../../placeholderCopy/contact/copy.md';
-import Link from "next/link";
+const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 import configCopy from '../../../copy/config/copy.md';
 import configPlaceholder from '../../../placeholderCopy/config/copy.md';
-
-
 const { attributes: configAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? configPlaceholder : configCopy;
-const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+
+
+
 
 const Contact = () => {
     let { heroImage, pageTitle, address, phone, email, hours } = attributes;

@@ -1,15 +1,11 @@
 'use client';
-import Hero from "@/components/Hero/Hero";
-import ImagePromoBlock from '@/components/ImagePromoBlock/ImagePromoBlock';
+import "./globals.scss";
+import { Hero, ImagePromoBlock, Summary } from '@/components';
+import useResizeResponsive from "@/hooks/useResponsive";
+import { isMobile } from "@/utils/breakpoints";
 
 import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
-
-import "./globals.scss";
-
-import Summary from "@/components/Summary/Summary";
-import useResizeResponsive from "@/hooks/useResponsive";
-import { isMobile } from "@/utils/breakpoints";
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;

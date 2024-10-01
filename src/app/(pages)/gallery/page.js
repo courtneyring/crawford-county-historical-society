@@ -1,7 +1,6 @@
 'use client';
 import { useMemo } from "react";
-import ImageGrid from "@/components/ImageGrid/ImageGrid";
-import { PageContainer } from '@/components';
+import { PageContainer, ImageGrid } from '@/components';
 
 import copy from '../../../copy/gallery/copy.md';
 import placeholder from '../../../placeholderCopy/gallery/copy.md';

@@ -1,10 +1,10 @@
-import './TextBlock.scss';
+import styles from './TextBlock.module.scss';
 
 const TextBlock = ({heading, children}) => {
     return (
-        <div className="flex container mx-auto flex-col md:flex-row px-5">
-            <h2 className="">{heading}</h2>
-            <p className="">{children}</p>
+        <div className={`flex container mx-auto flex-col md:flex-row px-5 ${styles.textblock}`}>
+            <h2 >{heading}</h2>
+            <p >{children}</p>
         </div>
     )
 }

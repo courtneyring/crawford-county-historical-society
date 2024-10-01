@@ -1,12 +1,9 @@
 'use client';
 
-import { PageContainer } from "@/components";
-import { Promo } from "@/components";
-import ImagePromoBlock from "@/components/ImagePromoBlock/ImagePromoBlock";
+import { PageContainer, Promo, TextBlock } from "@/components";
 
 import copy from '../../../copy/board/copy.md';
 import placeholder from '../../../placeholderCopy/board/copy.md';
-import TextBlock from "@/components/TextBlock/TextBlock";
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 

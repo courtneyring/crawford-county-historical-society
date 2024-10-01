@@ -1,9 +1,6 @@
-import { Urbanist } from "next/font/google";
-
-
 import "./globals.scss";
-import Navbar from '@/components/Navbar/Navbar';
-import Footer from '@/components/Footer/Footer';
+import { Urbanist } from "next/font/google";
+import { Navbar, Footer } from '@/components';
 
 import configCopy from '../copy/config/copy.md';
 import configPlaceholder from '../placeholderCopy/config/copy.md';
