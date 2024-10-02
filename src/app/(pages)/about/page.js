@@ -14,20 +14,24 @@ const About = () => {
     return (
         <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle}>
             <Body><AboutContent /></Body>
-            <div className="grid grid-cols-1 lg:grid-cols-3 my-20 container mx-auto">
-                {promos.map((promo, idx) => 
-                    <Promo
-                        header={promo.header}
-                        body= {promo.body}
-                        cta={promo.cta}
-                        image={promo.image}
-                        alignment='center'
-                        backgroundPos={promo.backgroundPos}
-                        key={`${idx}`}
-                    />
-                )}
-                
+            <div className="w-full">
+                <div className="grid grid-cols-1 lg:grid-cols-3 my-20 container mx-auto">
+                    {promos.map((promo, idx) =>
+                        <Promo
+                            header={promo.header}
+                            body={promo.body}
+                            cta={promo.cta}
+                            image={promo.image}
+                            alignment='center'
+                            backgroundPos={promo.backgroundPos}
+                            key={`${idx}`}
+                        />
+                    )}
+
+                </div>
+
             </div>
+           
         </PageContainer>
 
     )

@@ -1,0 +1,17 @@
+$color-yellow: #FFC151;
+$color-blue: #426AAF;
+$color-darkgrey: #4F4F4F;
+$color-lightgrey: #e5e7eb;
+
+$theme-colors: (
+    'yellow': #FFC151,
+    'blue': #426AAF,
+    'darkgrey': #4F4F4F,
+    'lightgrey': #e5e7eb
+);
+
+:export {
+    @each $key, $value in $theme-colors {
+        #{unquote($key)}: $value;
+    }
+}

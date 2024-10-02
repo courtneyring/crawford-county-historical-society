@@ -23,9 +23,9 @@ module.exports = {
       }, 
       colors: {
         'yellow': '#FFC151',
-        'blue': '#426AAF', 
-        'darkgrey': '#4F4F4F',
-        'lightgrey': '#e5e7eb',
+        'blue': '#314f82', 
+        'darkgrey': '#2e2e2e',
+        'lightgrey': '#e1e2e2',
         'translucent': 'rgba(0, 0, 0, 0.5)'
       },
       aspectRatio: {

@@ -1,10 +1,15 @@
 import styles from './TextBlock.module.scss';
+import { Button } from '@/components';
 
-const TextBlock = ({heading, children}) => {
+const TextBlock = ({heading, children, cta}) => {
     return (
-        <div className={`flex container mx-auto flex-col md:flex-row px-5 ${styles.textblock}`}>
+        <div className={` container mx-auto  px-5 ${styles.textblock}`}>
             <h2 >{heading}</h2>
-            <p >{children}</p>
+            <div>
+                <p dangerouslySetInnerHTML={{ __html: children }} ></p>
+                {cta && <Button variation='primary' url={cta.value}>{cta.label}</Button>}
+            </div>
+            
         </div>
     )
 }

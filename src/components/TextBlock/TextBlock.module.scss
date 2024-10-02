@@ -1,4 +1,7 @@
 .textblock {
+    display: grid;
+    grid-template-columns: 1fr;
+
     h2 {
         font-size: 2.5rem;
     }
@@ -12,13 +15,9 @@
 
 @media(min-width: 768px) {
     .textblock {
-        h2 {
-            width: 40%;
-        }
+        grid-template-columns: 1fr 2fr;
 
-        p {
-            width: 60%;
-        }
+ 
     }
 
 }

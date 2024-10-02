@@ -1,6 +1,7 @@
 'use client';
 import "./globals.scss";
-import { Hero, ImagePromoBlock, Summary } from '@/components';
+
+import { Hero, ImagePromoBlock, Summary, Button } from '@/components';
 import useResizeResponsive from "@/hooks/useResponsive";
 import { isMobile } from "@/utils/breakpoints";
 
@@ -21,16 +22,20 @@ export default function Home() {
     <main className="flex  flex-col items-center ">
      
         <Hero image={hero.image} pos={isMobileWidth && '-4rem'} />
-        <div className="bg-lightgrey w-full">
-          <Summary>{intro}</Summary>
+        <div className={`bg-darkgrey w-full`}>
+          <Summary textColor='white'>{intro}</Summary>
         </div>
-        <div >
+        <div className="bg-white w-full">
           {imagePromos.map((promo, idx) => {
             return (
               <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
             )
           })}
 
+        </div>
+        <div className="bg-blue w-full flex items-center justify-center flex-col py-36">
+        <h2 className='text-lightgrey text-5xl mb-10' >We want to hear from you!</h2>
+          <Button variant='primary' bgColor='#e1e2e2' color='#000000'>Contact Us</Button>
         </div>
 
     </main>

@@ -139,12 +139,32 @@ collections:
     folder: "src/copy/support"
     slug: "copy"
     fields: 
-      - label: "HeroImage"
-        name: "heroImage"
-        widget: "image"
+      - label: "Hero"
+        name: "hero"
+        widget: object
+        fields: 
+          - label: Image
+            name: image
+            widget: image
+          - label: Pos
+            name: pos
+            widget: hidden
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string
+      - label: 'Dontaiont Options'
+        name: options
+        widget: list
+        allow_add: true
+        fields: 
+          - {label: Heading, name: heading, widget: string}
+          - {label: Body, name: body, widget: text}
+          - label: Cta
+            name: cta
+            widget: object
+            fields: 
+              - {label: Label, name: label, widget: string}
+              - {label: Value, name: value, widget: string}
   - name: "board"
     label: "Board"
     summary: "CCHS Board Copy"

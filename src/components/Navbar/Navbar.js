@@ -47,7 +47,7 @@ const Navbar = ({ links, logoImage, title }) => {
         :
         <div className=''>
           {links.map((link, idx) => {
-            return <Link className=' [&:not(:last-child)]:px-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value} key={`navbar-d-${idx}`}>{link.label}</Link>
+            return <Link className=' [&:not(:last-child)]:pr-5 pl-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value} key={`navbar-d-${idx}`}>{link.label}</Link>
           })}
         </div>
       }
