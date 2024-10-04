@@ -15,13 +15,13 @@ const { attributes: configAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COP
 
 
 const Contact = () => {
-    let { heroImage, pageTitle, address, phone, email, hours } = attributes;
+    let { pageTitle, hero } = attributes;
 
     return (
-        <PageContainer heroImage={heroImage} pageTitle={pageTitle}>
-                <div className="grid grid-cols-2 container mx-auto px-3 md:px-0 mb-10">
+        <PageContainer hero={hero} pageTitle={pageTitle}>
+                <div className="grid md:grid-cols-2 container mx-auto px-3 md:px-0 mb-10">
                     <div>
-                    <Address address={configAttributes.address} />
+                    <Address address={configAttributes.address}  />
                         <p>
                             <span className="font-bold">Phone</span><br />
                         <Link className="underline cursor" href={`tel:${configAttributes.phone}`}>{configAttributes.phone}</Link>

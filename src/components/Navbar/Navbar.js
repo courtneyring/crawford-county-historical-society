@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MenuButton from '../MenuButton/MenuButton';
 import { isMobile } from '@/utils/breakpoints';
 import useResizeResponsive from '@/hooks/useResponsive';
@@ -22,7 +22,10 @@ const Navbar = ({ links, logoImage, title }) => {
     return <></>
   }
 
+
   const toggleMenu = () => {
+    let bodyStyle = menuIsOpen ? 'unset' : 'hidden';
+    document.body.style.overflow = bodyStyle;
     setMenuIsOpen(!menuIsOpen)
   }
 
@@ -52,10 +55,10 @@ const Navbar = ({ links, logoImage, title }) => {
         </div>
       }
       {menuIsOpen && createPortal(
-        <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={'black'}>
+        <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={'bg-black'}>
           <div className='flex flex-col p-10'>
             {links.map((link, idx) => {
-              return <Link className=' text-white text-3xl pb-5' href={link.value} key={`navbar-m-${idx}`}>{link.label}</Link>
+              return <Link className=' text-white text-3xl pb-5' href={link.value} key={`navbar-m-${idx}`} onClick={toggleMenu}>{link.label}</Link>
             })}
           </div>
 
