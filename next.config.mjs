@@ -1,12 +1,10 @@
 /** @type {import('next').NextConfig} */
 
-const basePath = process.env.NODE_ENV == 'development' ? '' : '/crawford-county-historical-society';
+// const basePath = process.env.NODE_ENV == 'development' ? '' : '/crawford-county-historical-society';
 
 
 const nextConfig = {
     output: 'export',
-    basePath,
-    assetPrefix: basePath,
     webpack: (cfg) => {
         cfg.module.rules.push(
             {
