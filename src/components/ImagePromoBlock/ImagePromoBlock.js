@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import styles from './ImagePromoBlock.module.scss'
-import { imagePath } from "@/utils/imagePrefix";
+
 
 const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imageAlignment}) => {
     console.log(styles.block)
@@ -16,7 +16,7 @@ const ImagePromoBlock = ({heading, body, cta, image, reverse, textColor, imageAl
                 {cta && <Button url={cta.value} variation='primary' target={cta.target} bgColor={cta.bgColor} color={cta.color}>{cta.label}</Button>}
             </div>
             <div className={styles.block__image}>
-                <img src={imagePath(image)} style={{ objectPosition: `${imageAlignment ?? 50}% center` }} />
+                <img src={image} style={{ objectPosition: `${imageAlignment ?? 50}% center` }} />
 
             </div>
         </div>
