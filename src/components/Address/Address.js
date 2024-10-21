@@ -1,6 +1,6 @@
 const Address = ({ address }) => {
     return (
-        <p className="md:text-center md:text-left">
+        <p className="text-center md:text-left">
             {address.street}
             <br />
             {address.street2}

@@ -7,7 +7,7 @@ import useResizeResponsive from '@/hooks/useResponsive';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-const FadeIn = ({children, className}) => {
+const FadeIn = ({children, className, excludeTranslate}) => {
     const isMobileWidth = useResizeResponsive(isMobile);
     const node = useRef();
     const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
@@ -21,7 +21,7 @@ const FadeIn = ({children, className}) => {
                 duration: 0.5,
                 scrollTrigger: {
                     trigger: node.current,
-                    start: isMobile ? 'top center' : 'top top-+=20%',
+                    start: isMobileWidth ? 'top center' : 'top top+=70%',
                 },
             });
         });
@@ -33,7 +33,7 @@ const FadeIn = ({children, className}) => {
     },[])
 
     return (
-        <div ref={node} className={`opacity-0 translate-y-2 ${className}`}>
+        <div ref={node} className={`opacity-0 ${!excludeTranslate && 'translate-y-3'} ${className}`}>
             {children}
         </div>
     )

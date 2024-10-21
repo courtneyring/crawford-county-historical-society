@@ -1,7 +1,7 @@
 ---
 hero: 
-  image: /assets/images/gallery_south-side-school.jpg
-  pos: 50% 65%
+  image: /assets/images/caboose-2.jpg
+  pos: 70% 40%
 pageTitle: About Us
 promos:
   - header: Meet the Board

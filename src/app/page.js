@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <div className="bg-blue w-full flex items-center justify-center flex-col py-36">
         <h2 className='text-lightgrey text-5xl mb-10' >We want to hear from you!</h2>
-          <Button variant='primary' bgColor='#e1e2e2' color='#000000'>Contact Us</Button>
+          <Button variation='primary' bgColor='#e1e2e2' color='#000000' url='/contact'>Contact Us</Button>
         </div>
 
     </main>

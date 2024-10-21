@@ -1,7 +1,7 @@
 ---
 hero: 
-  image: /assets/images/gallery_stephan-family.jpg
-  pos: 100% 60%
+  image: /assets/images/crawford-county-museum.jpg
+  pos: 100% 55%
 pageTitle: Board
 members:
   - position: President

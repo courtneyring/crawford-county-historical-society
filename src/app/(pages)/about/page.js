@@ -1,6 +1,6 @@
 'use client';
 
-import { PageContainer, Promo, Body } from "@/components";
+import { PageContainer, Promo, Body, Hero } from "@/components";
 
 import copy from '../../../copy/about/copy.md';
 import placeholder from '../../../placeholderCopy/about/copy.md';
@@ -15,8 +15,10 @@ const About = () => {
         <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle}>
             <Body><AboutContent /></Body>
             <div className="w-full">
-                <div className="grid grid-cols-1 lg:grid-cols-3 my-20 container mx-auto">
-                    {promos.map((promo, idx) =>
+                
+
+                {/* <div className="grid grid-cols-1 lg:grid-cols-3 my-20 container mx-auto"> */}
+                    {/* {promos.map((promo, idx) =>
                         <Promo
                             header={promo.header}
                             body={promo.body}
@@ -26,9 +28,9 @@ const About = () => {
                             backgroundPos={promo.backgroundPos}
                             key={`${idx}`}
                         />
-                    )}
+                    )} */}
 
-                </div>
+                {/* </div> */}
 
             </div>
            

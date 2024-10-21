@@ -1,7 +1,7 @@
 ---
 hero:
-  pos: 10% 50%
-  image: /assets/images/gallery_mng-review.jpg
+  pos: 10% 46%
+  image: /assets/images/oaktoberfest_cchs-volunteers.jpg
 pageTitle: Support
 intro: "Welcome to the Crawford County Museum and Society. Experience the
   world’s first space shuttle, a nuclear weapons-carrying submarine, dozens of

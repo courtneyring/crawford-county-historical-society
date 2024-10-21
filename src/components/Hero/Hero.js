@@ -7,7 +7,7 @@ import styles from './Hero.module.scss';
 const Hero = ({text, image, variation='default', cta, pos}) => {
 
     return (
-        <div className={`${styles.hero} ${variation}`} style={{backgroundImage: `url(${image})`, backgroundPosition: pos}}>
+        <div className={`${styles.hero} ${styles[variation]}`} style={{backgroundImage: `url(${image})`, backgroundPosition: pos}}>
             <div className={`${styles.gradient} w-full h-full`}>
                 <div className="max-w-6xl flex flex-col items-center">
                     <h1 className='text-5xl md:text-9xl  text-white leading-normal mb-10 text-center'>{text}</h1>

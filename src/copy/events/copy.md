@@ -1,7 +1,7 @@
 ---
 hero: 
-    image: /assets/images/gallery_sorenson-store.jpg
-    pos: 0% 65%
+    image: /assets/images/oaktoberfest_cheers.jpg
+    pos: 10% 57%
 pageTitle: Events
 notFoundText: No events scheduled, please check back later.
 events:
