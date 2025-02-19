@@ -2,14 +2,14 @@
 hero:
   title: Crawford County Historical Society
   image: /assets/images/hero-2.jpg
-intro: "Welcome to the Crawford County Museum and Society. Experience the
-  world’s first space shuttle, a nuclear weapons-carrying submarine, dozens of
-  military aircraft, a supersonic spy plane, and the world’s fastest commercial
-  airliner displayed in and around the legendary aircraft carrier, Intrepid—an
-  awe-inspiring place for an unforgettable adventure. "
+intro: Welcome to the Crawford County Historical Society and Museum. Experience
+  the rich history of Grayling and Crawford County through dynamic exhibits,
+  interactive programs, and engaging community events that bring local stories
+  to life.
 imagePromos:
   - image: /assets/images/museum-event.jpg
-    body: The museum hosts a variety of events throughout the year from holiday parties to brewery fundraisers.
+    body: The museum hosts a variety of events throughout the year from holiday
+      parties to brewery fundraisers.
     cta:
       label: See Event List
       value: /events
