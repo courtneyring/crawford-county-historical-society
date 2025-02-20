@@ -1,4 +1,4 @@
-import { PageContainer, ImagePromoBlock, Body, TextBlock } from "@/components";
+import { PageContainer, ImagePromoBlock, Body, Promo } from "@/components";
 
 import copy from '../../../copy/support/copy.md';
 import placeholder from '../../../placeholderCopy/support/copy.md';
@@ -8,15 +8,26 @@ const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? pla
 const Support = () => {
     let { hero, pageTitle, imagePromos, intro, textBlocks } = attributes;
 
-    return(
+    return (
         <PageContainer hero={hero} pageTitle={pageTitle}>
-            <Body>{intro}</Body>
-            {textBlocks.map((textBlock) => {
-                return <div className="my-36">
-                    <TextBlock heading={textBlock.heading} cta={textBlock.cta}>{textBlock.body}</TextBlock>
+            <Body>{intro}
+
+
+                <div className="flex flex-col">
+                    {textBlocks.map((textBlock, idx) => {
+                        return <div >
+                            <ImagePromoBlock heading={textBlock.heading} body={textBlock.body} cta={textBlock.cta} icon={textBlock.icon} reverse={idx%2 === 0} uneven={true}/>
+                            <div className="bg-gray-200 h-1 w-full my-20"></div>
+                            {/* <TextBlock heading={textBlock.heading} cta={textBlock.cta}>{textBlock.body}</TextBlock> */}
+                        </div>
+                    })}
+
                 </div>
-            })}
+
+
+            </Body>
             
+
             {/* <div >
                 {imagePromos.map((promo, idx) => {
                     return (
@@ -26,7 +37,7 @@ const Support = () => {
 
             </div> */}
 
-       </PageContainer>
+        </PageContainer>
     )
 
 }

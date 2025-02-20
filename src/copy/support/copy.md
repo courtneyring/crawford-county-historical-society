@@ -11,15 +11,21 @@ intro: "Welcome to the Crawford County Museum and Society. Experience the
 
 textBlocks:
   - heading: Volunteer Your Time
-    body: Volunteers are a vital component of the museum’s success. We welcome all volunteers no matter if you have a little time to offer or a lot. In addition, we have a variety of areas where you can dedicate your time, depending on your interests.
+    body: Join our team and help with research, exhibit creation, or greeting visitors at the welcome desk. Whether you have a few hours or more, your time makes a difference.
+    icon: people
     cta:
-      label: Contact The Museum
-      value: /contact
-  - heading: Donate to the Museum
-    body: A donation to the Crawford County Historical Society is a donation that helps to keep the museum up and running. Your donation helps to pay the bills and continue to preserve the history of the county. The Crawford County Historical Society and Museum welcomes any kind of donation, sponsorship or grant. You can be a one-time donor or make a commitment to an ongoing annual pledge. You may also want to consider sponsoring a specific exhibit and offer a gift in memory of a former Crawford County resident. All donations, big and small, are welcome. If you would like to donate to the CCHS, you can do so online through paypal, or please send your check made payable to CCHS to CCHS, 97 East Michigan Avenue, P.O. Box 218, Grayling, MI 49738
+      label: Call Us
+      value: tel:9893484461
+  - heading: Donate to Daily Operations
+    body: Your donation directly supports the day-to-day operations of the Crawford County Historical Society, helping cover essential costs and preserve the rich history of Crawford County. We welcome one-time gifts, recurring pledges, sponsorships, and memorial donations in honor of loved ones. Every contribution, big or small, makes a difference.
+    icon: give
     cta:
       label: PayPal Donate
       value: /#
-  - heading: Donate to the Historical Society
-    body: The Crawford County Historical Society Foundation Fund was established in 2009. It was created to provide long-term financial support for the historical society and museum. Donations to the fund are invested in a larger fund called the Community Foundation for Northeast Michigan. If you would like to make a contribution, checks can be made payable to the Crawford County Historical Society Foundation Fund (or CCHSFF). Send your donation to Community Foundation for Northeast Michigan, 111 Water Street, P.O. Box 495, Alpena, Michigan 49707
+  - heading: Support Our Long-Term Future
+    body: The Crawford County Historical Society Foundation Fund, established in 2009, ensures the long-term preservation of the museum and its mission. Managed by the Community Foundation for Northeast Michigan, donations to the fund are invested for lasting impact.
+    icon: heart
+    cta:
+      label: Donate Now
+      value: https://www.cfnem.org/ncmcf/funds/give.html?fund=662
 ---

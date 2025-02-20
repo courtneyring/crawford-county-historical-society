@@ -30,3 +30,21 @@ export const Default = {
 
 }
 
+export const UnevenWithIcons = {
+    render: () => {
+        return (
+            <div className='max-w-7xl p-2 mx-auto'>
+                <ImagePromoBlock
+                    uneven={true}
+                    heading="Crawford County History"
+                    body='A donation to the Crawford County Historical Society is a donation that helps to keep the museum up and running. Your donation helps to pay the bills and continue to preserve the history of the county. A donation to the Crawford County Historical Society is a donation that helps to keep the museum up and r'
+                    cta={{ label: 'Learn More', url: '/about' }}
+                    icon='people' />
+            </div>
+
+        )
+    }
+
+}
+
+
