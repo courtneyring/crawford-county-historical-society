@@ -18,9 +18,9 @@ const Footer = ({ address, links, hours, logoImg }) => {
   return (
     <>
       <footer
-        className={`flex flex-col bg-darkgrey items-center text-surface text-white font-light w-full ${styles.footer}`}>
-        <div className="container w-full py-10 px-5">
-          <div className={styles['grid-container']}>
+        className={` bg-darkgrey text-surface text-white font-light ${styles.footer}`}>
+        <div className={styles.footer__container}>
+          <div >
             <div className={styles['image-body']}>
               <img src={logoImg} className='w-52 md:w-44 mb-5 mx-auto md:mx-0'/>
               <Address address={address}/>

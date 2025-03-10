@@ -1,0 +1,9 @@
+.address {
+    text-align: center;
+}
+
+@media(min-width: 768px) {
+    .address {
+        text-align: left;
+    }
+}

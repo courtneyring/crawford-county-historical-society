@@ -30,7 +30,7 @@ export const PrimaryWithUrl = {
     }
 }
 
-export const Secondary = {
+export const SecondaryWithFn = {
     args: {
         variation: 'secondary',
         children: 'Button',

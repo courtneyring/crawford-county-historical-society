@@ -1,6 +1,8 @@
+import styles from './Address.module.scss';
+
 const Address = ({ address }) => {
     return (
-        <p className="text-center md:text-left">
+        <p className={styles.address}>
             {address.street}
             <br />
             {address.street2}

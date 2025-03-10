@@ -9,6 +9,8 @@ import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
 
 
+
+
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
 
 
@@ -25,14 +27,16 @@ export default function Home() {
         <div className={`bg-darkgrey w-full`}>
           <Summary textColor='white'>{intro}</Summary>
         </div>
-        <div className="bg-white w-full">
+        
           {imagePromos.map((promo, idx) => {
             return (
+              <div className={`${idx % 2 === 0 ? 'bg-lightgrey' : 'bg-white'} w-full`}>
               <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
+              </div>
             )
           })}
 
-        </div>
+        
         <div className="bg-blue w-full flex items-center justify-center flex-col py-36">
         <h2 className='text-lightgrey text-5xl mb-10' >We want to hear from you!</h2>
           <Button variation='primary' bgColor='#e1e2e2' color='#000000' url='/contact'>Contact Us</Button>

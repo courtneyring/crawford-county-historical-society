@@ -13,11 +13,12 @@ const Support = () => {
             <Body>{intro}
 
 
-                <div className="flex flex-col">
+                <div className="flex flex-col ">
                     {textBlocks.map((textBlock, idx) => {
-                        return <div >
+                        return <div className="justify-center flex flex-col items-center">
                             <ImagePromoBlock heading={textBlock.heading} body={textBlock.body} cta={textBlock.cta} icon={textBlock.icon} reverse={idx%2 === 0} uneven={true}/>
-                            <div className="bg-gray-200 h-1 w-full my-20"></div>
+  
+                            {/* <div className="bg-gray-200 h-1 w-full my-20"></div> */}
                             {/* <TextBlock heading={textBlock.heading} cta={textBlock.cta}>{textBlock.body}</TextBlock> */}
                         </div>
                     })}
