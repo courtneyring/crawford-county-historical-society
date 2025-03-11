@@ -1,7 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-@import './variables.scss';
+@import './variables.module.scss';
 
 // @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 30px;
 }
 
 h3 {
@@ -50,6 +50,12 @@ h3 {
 p {
   margin-bottom: 2rem;
   font-size: 1.25rem;
+}
+
+@media(min-width: 768px) {
+  h2 {
+    font-size: 50px;
+  }
 }
 
 @keyframes fadeIn {

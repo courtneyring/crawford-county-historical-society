@@ -1,4 +1,4 @@
-import "./globals.scss";
+import "../styles/globals.scss";
 import { Urbanist } from "next/font/google";
 import { Navbar, Footer } from '@/components';
 

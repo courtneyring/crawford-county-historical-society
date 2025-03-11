@@ -1,7 +1,17 @@
 /** @type { import('@storybook/react').Preview } */
-import '../src/app/globals.scss';
+import '../src/styles/globals.scss';
+import { Urbanist } from "next/font/google";
+
+const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: ['300', '400', '500', '700'] })
 
 const preview = {
+  decorators: [
+    (Story) => (
+      <div className={urbanist.className}>
+        <Story />
+      </div>
+    ),
+  ],
   parameters: {
     controls: {
       matchers: {

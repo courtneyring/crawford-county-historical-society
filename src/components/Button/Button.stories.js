@@ -13,9 +13,10 @@ export default {
 
 
 
-export const Primary = {
+export const PrimaryFilled = {
     args: {
         variation: 'primary',
+        hollow: false,
         children: 'Button',
         fn: () =>fn(),
     }
@@ -30,9 +31,28 @@ export const PrimaryWithUrl = {
     }
 }
 
-export const SecondaryWithFn = {
+export const SecondaryHollowWithFn = {
     args: {
         variation: 'secondary',
+        hollow: true,
+        children: 'Button',
+        fn: () =>fn(),
+    }
+
+}
+export const NeutralDark = {
+    args: {
+        variation: 'neutralDark',
+        hollow: true,
+        children: 'Button',
+        fn: () =>fn(),
+    }
+
+}
+export const NeutralFilled = {
+    args: {
+        variation: 'neutralDark',
+        hollow: false,
         children: 'Button',
         fn: () =>fn(),
     }

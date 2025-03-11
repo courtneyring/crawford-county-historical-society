@@ -3,27 +3,21 @@
 import Link from 'next/link';
 import styles from './Button.module.scss';
 
-const Button = ({ children, fn, url, target, variation='primary' }) => {
+const Button = ({ children, fn, url, target, hollow=false, variation='primary' }) => {
+
+    const Tag = url ? Link : 'button';
 
     return (
-        <>
-            {url ?
-                <Link
-                    href={url}
-                    target={target}
-                    className={`${styles.button} ${styles[variation]}`}
-                >
-                    {children}
-                </Link>
-                :
-                <button
-                    className={`${styles.button} ${styles[variation]}`}
-                    onClick={() => fn()}
-                >
-                    {children}
-                </button>
-            }
-        </>
+
+        <Tag
+            href={url}
+            onClick={() =>fn()}
+            target={target}
+            className={`${styles.button} ${hollow ? styles.hollow : styles.filled} ${styles[variation]}`}
+        >
+            {children}
+        </Tag>
+
 
     )
 }

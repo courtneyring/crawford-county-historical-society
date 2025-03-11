@@ -1,0 +1,33 @@
+$color-yellow: #FFC151;
+$color-blue: #426AAF;
+$color-darkgrey: #2E2E2E;
+$color-lightgrey: #e5e7eb;
+$color-white: #ffffff;
+
+$color-primary: $color-blue;
+$color-secondary: $color-yellow;
+$color-neutral-light: $color-lightgrey;
+$color-neutral-dark: $color-darkgrey;
+
+$inner-container-padding-mobile: 15px;
+$inner-container-padding-desktop: 50px;
+
+$text-component-header: 50px;
+$text-component-body-mobile: 16px;
+$text-component-body-desktop: 32px;
+
+
+
+
+$theme-colors: (
+    'primary': $color-blue,
+    'secondary': $color-yellow,
+    'neutralDark': $color-neutral-dark,
+    'neutralLight':$color-neutral-light, 
+    'white': $color-white
+);
+:export {
+    @each $key, $value in $theme-colors {
+        #{unquote($key)}: $value;
+    }
+}

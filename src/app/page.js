@@ -1,5 +1,5 @@
 'use client';
-import "./globals.scss";
+import "../styles/globals.scss";
 
 import { Hero, ImagePromoBlock, Summary, Button } from '@/components';
 import useResizeResponsive from "@/hooks/useResponsive";
