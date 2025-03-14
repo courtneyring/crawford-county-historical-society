@@ -4,7 +4,7 @@ import { fn } from '@storybook/test';
 // import copy from '@/../.storybook/assets/example-copy.json';
 
 
-const logoImg = '/assets/images/CourtneyRingLogo.png'
+const logoImg = '/assets/images/crawford-county-logo-white.png'
 const links = [
   {label: 'About', value: '/about'},
   {label: 'Board', value: '/board'},
@@ -13,19 +13,13 @@ const links = [
   {label: 'Contact', value: '/contact'}
 ]
 
-const hours = [
-  {label: 'Monday', value: '10am - 6pm'},
-  {label: 'Tuesday', value: '10am - 6pm'},
-  {label: 'Wednesday', value: 'Closed'},
-  {label: 'Thursday', value: 'Closed'},
-  {label: 'Friday', value: 'Closed'},
-  {label: 'Saturday', value: 'Closed'},
-  {label: 'Sunday', value: 'Closed'},
-]
+const hours = {label: 'Monday & Tuesday', value: '10am - 6pm'}
+
+
 
 const address = {
   street: '97 East Michigan Avenue',
-  street2: 'P.O.Box 218', 
+  street2: 'P.O. Box 218', 
   city: 'Grayling', 
   state: 'MI',
   zip: 49738

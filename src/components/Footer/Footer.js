@@ -10,32 +10,47 @@ import { usePathname } from 'next/navigation';
 const Footer = ({ address, links, hours, logoImg }) => {
 
   //temp fix - TODO
-  const pathname = usePathname();
-  if (pathname.includes('admin')) {
-    return <></>
-  }
+  // const pathname = usePathname();
+  // if (pathname.includes('admin')) {
+  //   return <></>
+  // }
 
   return (
     <>
       <footer
-        className={` bg-darkgrey text-surface text-white font-light ${styles.footer}`}>
+        className={`${styles.footer}`}>
         <div className={styles.footer__container}>
-          <div >
-            <div className={styles['image-body']}>
-              <img src={logoImg} className='w-52 md:w-44 mb-5 mx-auto md:mx-0'/>
-              <Address address={address}/>
+          <div className={styles.footer__left}>
+            <div className={styles.footer__logo}>
+              <img src={logoImg}/>
+              
             </div>
-            <div className={`${styles.hours} min-w-3/5 w-full mx-auto mb-5 md:mb-0`}>
-              <Hours hours={hours} />
+            <div className={styles.footer__address}>
+              <Address address={address} />
+
             </div>
-            <div className={` flex items-between justify-between md:flex-col ${styles.links} md:text-right`}>
-              {links.map((link, idx) => {
-                return <Button url={link.value} key={`footerlink-${idx}`}>{link.label}</Button>
-              })}
+           
+            <div className={styles.footer__hours}>
+              {hours.label}<br />
+              {hours.value}
+              {/* <Hours hours={hours} /> */}
             </div>
           </div>
-          <p className='text-md mt-12'>Designed and developed by <Link href='https://courtneyring.com' target='_blank' className='underline'>Courtney Ring</Link></p>
+            {/* <div className={styles.footer__hr}></div> */}
+            <div className={`${styles.footer__links}`}>
+              {links.map((link, idx) => {
+                return (
+                  <div className={styles.footer__link}>
+                    <Button url={link.value} key={`footerlink-${idx}`} variation='link' textDecoration='none'>{link.label}</Button>
+                  </div>
+                )
+              })}
+            </div>
         </div>
+         
+          <div className={styles.footer__hr}></div>
+          <p className={styles.footer__credit}>Designed and developed by <Link href='https://courtneyring.com' target='_blank' className='underline'>Courtney Ring</Link></p>
+        
 
 
       </footer>

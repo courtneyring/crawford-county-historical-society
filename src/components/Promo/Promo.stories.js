@@ -38,12 +38,3 @@ export const WithoutLink = {
     },
 };
 
-export const WithImage = {
-    args: {
-        alignment: 'center',
-        image: 'https://www.tenement.org/wp-content/uploads/2020/07/97Orchard_Exteriors-website-1_1584x1458_acf_cropped_1584x1458_acf_cropped.jpg',
-        header: 'Header',
-        body: 'It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more.',
-        href: { value: 'http://google.com', label: 'Check out more' }
-    },
-}

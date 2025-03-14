@@ -1,8 +1,12 @@
+@import "../../styles/variables.module.scss";
+
 .footer {
+  background-color: $color-neutral-dark;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
+  padding: 30px 15px;
   width: 100%;
 }
 
@@ -11,47 +15,80 @@
   padding: 5px 10px;
 }
 
-.hours {
-  grid-area: hours;
+.footer__address {
+  margin-bottom: 50px;
 }
 
-.links {
-  grid-area: links;
+.footer__hours {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.image-body {
-  grid-area: image-body;
+.footer__logo {
+  margin-bottom: 50px;
+  padding: 0 30px;
+
 }
 
+.footer__links {
+  display: flex;
+  // flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
 
-@media(min-width: 640px) {
-  .grid-container {
-    grid-template-areas: "image-body hours links";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    display: grid;
-    gap: 30px;
-
+.footer__link {
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
   }
+}
+
+.footer__credit {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.footer__hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgba($color-neutral-light, 0.5);
+  // margin: 20px 0px;
 }
 
 @media(min-width: 768px) {
-  .grid-container {
-    grid-template-areas: "image-body hours . links";
-    grid-template-columns: 3fr 3fr 1fr 3fr;
-    grid-template-rows: 1fr;
-    display: grid;
-    gap: 30px;
-
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
   }
-}
 
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
+  .footer__logo {
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
 
-@media(min-width: 1280px) {
-  .grid-container {
-      grid-template-areas: "image-body hours . links";
-      grid-template-columns: 1fr 1fr 2fr 1fr;
-      gap: 50px;
-    }
+  .footer__address {
+    margin-bottom: 30px;
+  }
+
+  .footer__hours {
+    text-align: left;
+  }
+
+  .footer__links {
+    display: block;
+    text-align: right;
+  }
+
+  .footer {
+    align-items: flex-start;
+  }
 }

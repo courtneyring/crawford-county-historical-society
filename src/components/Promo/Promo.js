@@ -2,13 +2,11 @@ import styles from './Promo.module.scss';
 import Link from 'next/link';
 
 
-const Promo = ({ icon, header, eyebrow, body, cta, alignment, image, backgroundPos }) => {
+const Promo = ({ icon, header, body, cta }) => {
     const Tag = cta ? Link : 'div';
     return (
-        <Tag className={`items-${alignment} ${styles.promo}`} href={cta?.value}>
-            {image && <div className={styles.promo__image} style={{ backgroundImage: `url(${image})`, backgroundPosition: backgroundPos }}></div>}
+        <Tag className={` ${styles.promo}`} href={cta?.value}>
             {icon && <img src={`assets/icons/${icon}.svg`} className='h-14 w-auto mb-3' />}
-            {eyebrow && <p className={styles.promo__eyebrow}>{eyebrow}</p>}
             <h3 className={styles.promo__header}>{header}</h3>
             <p className={styles.promo__body}>{body}</p>
             {cta &&

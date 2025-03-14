@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import styles from './Button.module.scss';
 
-const Button = ({ children, fn, url, target, hollow=false, variation='primary' }) => {
+const Button = ({ children, fn, url, target, hollow=false, variation='primary', textDecoration }) => {
 
     const Tag = url ? Link : 'button';
 
@@ -14,6 +14,7 @@ const Button = ({ children, fn, url, target, hollow=false, variation='primary' }
             onClick={() =>fn()}
             target={target}
             className={`${styles.button} ${hollow ? styles.hollow : styles.filled} ${styles[variation]}`}
+            style={{textDecoration}}
         >
             {children}
         </Tag>
