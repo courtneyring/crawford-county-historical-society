@@ -1,6 +1,7 @@
 export {default as Accordion} from './Accordion/Accordion';
 export { default as Address } from './Address/Address';
-export { default as Body } from './Body/Body';
+// export { default as Body } from './Body/Body';
+export { default as Banner } from './Banner/Banner';
 export { default as Button } from './Button/Button';
 export { default as Event } from './Event/Event';
 export {default as Footer} from './Footer/Footer';

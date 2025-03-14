@@ -1,14 +1,13 @@
 'use client';
 import "../styles/globals.scss";
-
-import { Hero, ImagePromoBlock, Summary, Button } from '@/components';
+import variables from '../styles/variables.module.scss';
+import styles from './Home.module.scss';
+import { Hero, Banner, ImagePromoBlock, Summary, Button } from '@/components';
 import useResizeResponsive from "@/hooks/useResponsive";
 import { isMobile } from "@/utils/breakpoints";
 
 import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
-
-
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
@@ -22,9 +21,14 @@ export default function Home() {
 
   return (
     <main className="flex  flex-col items-center ">
-     
-        <Hero image={hero.image} pos={isMobileWidth && '-4rem'} />
-        <div className={`bg-darkgrey w-full`}>
+
+      <Hero image={hero.image} pos={isMobileWidth && '-4rem'} />
+      <Banner
+        style={{ backgroundColor: variables.neutralDark, color: variables.white }}
+        text={intro.body}
+        cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
+      />
+      {/* <div className={`bg-darkgrey w-full`}>
           <Summary textColor='white'>{intro}</Summary>
         </div>
         
@@ -40,7 +44,7 @@ export default function Home() {
         <div className="bg-blue w-full flex items-center justify-center flex-col py-36">
         <h2 className='text-lightgrey text-5xl mb-10' >We want to hear from you!</h2>
           <Button variation='primary' bgColor='#e1e2e2' color='#000000' url='/contact'>Contact Us</Button>
-        </div>
+        </div> */}
 
     </main>
   );

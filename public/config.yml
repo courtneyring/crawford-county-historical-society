@@ -17,7 +17,17 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-      - { label: 'Intro', name: 'intro', widget: 'text'}
+      - label: 'Intro'
+        name: 'intro'
+        widget: 'object'
+        fields: 
+          - { label: 'Body', name: 'body', widget: 'text' }
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
+            fields: 
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Value', name: 'value', widget: 'string' }
       - label: "Image Promos"
         name: "imagePromos"
         widget: "list"
