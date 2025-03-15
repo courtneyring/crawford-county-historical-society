@@ -28,29 +28,57 @@ collections:
             fields: 
               - { label: 'Label', name: 'label', widget: 'string' }
               - { label: 'Value', name: 'value', widget: 'string' }
-      - label: "Image Promos"
-        name: "imagePromos"
+      - label: "fiftyFifties"
+        name: "fiftyFifties"
         widget: "list"
-        allow_add: true
-        summary: "{{fields.header}} - {{fields.body}}"
         fields:
-          - { label: "Header", name: "header", widget: "text" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Body", name: "body", widget: "text" }
-          - label: "Align Image"
-            name: "imageAlignment"
-            widget: number
-            default: 50
-            value_type: float
-            min: 0
-            max: 100
-            step: 1
-          - label: "CTA"
-            name: "cta"
-            widget: "object"
+          - label: "Heading"
+            name: "heading"
+            widget: string
+          - label: "Body"
+            name: "body"
+            widget: text
+          - label: Background Color
+            name: backgroundColor
+            widget: select
+            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: Text Color
+            name: color
+            widget: select
+            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: Image
+            name: image
+            widget: image
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
             fields: 
-              - {label: Label, name: label, widget: string}
-              - {label: Value, name: value, widget: string}
+              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
+              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Value', name: 'value', widget: 'string' }
+      - label: "Promo Group"
+        name: "promoGroup"
+        widget: "object"
+        fields:
+          - label: "Heading"
+            name: "heading"
+            widget: string
+          - label: "Promos"
+            name: "promos"
+            widget: list
+            fields:
+              - label: "header"
+                name: "header"
+                widget: string
+              - label: "Body"
+                name: "body"
+                widget: string
+              - icon: 'icon'
+                name: 'icon'
+                widget: 'select'
+                options: ['calendar', 'camera', 'chevron-right', 'close', 'give', 'groups', 'heart', 'people']
+         
   - name: "navigation"
     label: "Navigation"
     summary: "CCHS Navigation Copy"

@@ -2,12 +2,13 @@
 import "../styles/globals.scss";
 import variables from '../styles/variables.module.scss';
 import styles from './Home.module.scss';
-import { Hero, Banner, ImagePromoBlock, Summary, Button } from '@/components';
+import { Hero, Banner, Promo, Summary, Button } from '@/components';
 import useResizeResponsive from "@/hooks/useResponsive";
 import { isMobile } from "@/utils/breakpoints";
 
 import copy from '../copy/home/copy.md';
 import placeholder from '../placeholderCopy/home/copy.md';
+import FiftyFifty from "@/components/FiftyFifty/FiftyFifty";
 
 
 const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
@@ -15,9 +16,20 @@ const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? pla
 
 export default function Home() {
 
-  let { hero, imagePromos, intro } = attributes;
+  let { hero, intro, fiftyFifties, promoGroup } = attributes;
+  console.log(promoGroup)
 
   const isMobileWidth = useResizeResponsive(isMobile);
+
+  const button = (cta) => 
+      <Button
+        hollow={cta.hollow}
+        variation={cta.variation}
+        href={cta.value}
+      >
+        {cta.label}
+      </Button>
+
 
   return (
     <main className="flex  flex-col items-center ">
@@ -28,23 +40,30 @@ export default function Home() {
         text={intro.body}
         cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
       />
-      {/* <div className={`bg-darkgrey w-full`}>
-          <Summary textColor='white'>{intro}</Summary>
-        </div>
-        
-          {imagePromos.map((promo, idx) => {
-            return (
-              <div className={`${idx % 2 === 0 ? 'bg-lightgrey' : 'bg-white'} w-full`}>
-              <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
-              </div>
-            )
-          })}
-
-        
-        <div className="bg-blue w-full flex items-center justify-center flex-col py-36">
-        <h2 className='text-lightgrey text-5xl mb-10' >We want to hear from you!</h2>
-          <Button variation='primary' bgColor='#e1e2e2' color='#000000' url='/contact'>Contact Us</Button>
-        </div> */}
+      {fiftyFifties.map((item, idx) => {
+        return <FiftyFifty
+          heading={item.heading}
+          body={item.body}
+          image={item.image}
+          backgroundColor={variables[item.backgroundColor]}
+          reverse={item.reverse}
+          color={variables[item.color]}
+          cta={button(item.cta)}
+        />
+      })}
+      <h2>{promoGroup.heading}</h2>
+      <div className={styles.home__promos}>
+      {promoGroup.promos.map((promo, idx) => {
+        return (
+          <Promo
+            header={promo.heading}
+            body={promo.body}
+            icon={promo.icon}
+          />
+        )})
+      }
+      </div>
+      {button(promoGroup.cta)}
 
     </main>
   );

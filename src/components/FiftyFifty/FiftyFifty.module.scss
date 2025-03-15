@@ -38,7 +38,6 @@
     .fiftyFifty {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        // padding: 4rem 0;
     }
 
     .fiftyFifty__content {
@@ -47,4 +46,9 @@
                     font-size: $text-component-body-desktop;
                 }
     }
+
+    .fiftyFifty__text > h2, .fiftyFifty__text > p {
+        margin-bottom: 20px;
+    }
+
 }
