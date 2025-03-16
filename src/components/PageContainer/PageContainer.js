@@ -1,11 +1,12 @@
+import styles from './PageContainer.module.scss';
 import Hero from "../Hero/Hero";
 
 const PageContainer = ({ heroImage, pageTitle, children, hero }) => {
     return (
-        <main className="flex flex-col items-center">
+        <main>
             <Hero variation='skinny' image={hero ? hero.image : heroImage} pos={hero?.pos} />
-            <div className='w-full'>
-                <h1 className="my-10 px-3 md:px-0 container mx-auto">{pageTitle}</h1>
+            <div className={styles.page__body}>
+                <h1>{pageTitle}</h1>
                 {children}
             </div>
 

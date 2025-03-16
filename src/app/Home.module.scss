@@ -1,6 +1,7 @@
 .home__promos {
     display: flex;
     margin-bottom: 50px;
+    flex-direction: column;
 }
 
 .home__promoGroup {
@@ -12,4 +13,11 @@
     & h2 {
         margin-bottom: 50px;
     }
+}
+
+@media(min-width: 768px) {
+    .home__promos {
+        flex-direction: row;
+    }
+
 }
