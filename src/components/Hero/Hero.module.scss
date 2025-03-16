@@ -16,7 +16,7 @@
 
 @media(min-width: 768px) {
     .hero {
-        height: 30rem;
+        height: calc(100vh - 13rem);
 
         &.skinny {
             height: 30rem;
@@ -24,20 +24,3 @@
     }
 }
 
-@media(min-width: 992px) {
-    .hero {
-        height: 40rem;
-    }
-}
-
-@media(min-width: 1200px) {
-    .hero {
-        height: 50rem;
-    }
-}
-
-@media(min-width: 1700px) {
-    .hero {
-        height: 70rem;
-    }
-}

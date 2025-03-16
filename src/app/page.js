@@ -21,14 +21,14 @@ export default function Home() {
 
   const isMobileWidth = useResizeResponsive(isMobile);
 
-  const button = (cta) => 
-      <Button
-        hollow={cta.hollow}
-        variation={cta.variation}
-        href={cta.value}
-      >
-        {cta.label}
-      </Button>
+  const button = (cta) =>
+    <Button
+      hollow={cta.hollow}
+      variation={cta.variation}
+      href={cta.value}
+    >
+      {cta.label}
+    </Button>
 
 
   return (
@@ -36,7 +36,8 @@ export default function Home() {
 
       <Hero image={hero.image} pos={isMobileWidth && '-4rem'} />
       <Banner
-        style={{ backgroundColor: variables.neutralDark, color: variables.white }}
+        backgroundColor={variables.neutralDark}
+        color={variables.white }
         text={intro.body}
         cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
       />
@@ -51,19 +52,30 @@ export default function Home() {
           cta={button(item.cta)}
         />
       })}
-      <h2>{promoGroup.heading}</h2>
-      <div className={styles.home__promos}>
-      {promoGroup.promos.map((promo, idx) => {
-        return (
-          <Promo
-            header={promo.heading}
-            body={promo.body}
-            icon={promo.icon}
-          />
-        )})
-      }
+
+      <div className={styles.home__promoGroup}>
+        <h2>{promoGroup.heading}</h2>
+        <div className={styles.home__promos}>
+          {promoGroup.promos.map((promo, idx) => {
+            return (
+              <Promo
+                header={promo.heading}
+                body={promo.body}
+                icon={promo.icon}
+              />
+            )
+          })
+          }
+        </div>
+        {button(promoGroup.cta)}
       </div>
-      {button(promoGroup.cta)}
+      <Banner
+        backgroundImage={`assets/images/gallery_michigan-ave.png`}
+        backgroundColor={variables.primary}
+        color={variables.white}
+        text={'Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.'}
+        cta={<Button variation='secondary'>Learn More</Button>}
+      />
 
     </main>
   );

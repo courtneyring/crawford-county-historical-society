@@ -13,14 +13,36 @@ export default {
 
 
 
-export const DarkGrey = {
+export const Solid = {
     render: () => {
 
 
         return (
 
             <Banner
-                style={{ backgroundColor: variables.neutralDark, color: variables.white }}
+                backgroundColor={variables.neutralDark}
+                color={variables.white}
+                text={'Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.'}
+                cta={<Button variation='secondary'>Learn More</Button>}
+            />
+
+
+        )
+    }
+
+}
+
+
+export const BackgroundImage = {
+    render: () => {
+
+
+        return (
+
+            <Banner
+                backgroundImage={`assets/images/gallery_michigan-ave.png`}
+                backgroundColor={variables.primary}
+                color={variables.white}
                 text={'Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.'}
                 cta={<Button variation='secondary'>Learn More</Button>}
             />
