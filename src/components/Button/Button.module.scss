@@ -15,7 +15,12 @@
 }
 
 @mixin button-styles($color, $hollow, $text: $color-white ) {
-    padding: 16px 32px;
+    padding: 8px 16px;
+
+    @media(min-width: 768px) {
+        padding: 16px 48px;
+    }
+
     text-decoration: none;
 
     @if $hollow {

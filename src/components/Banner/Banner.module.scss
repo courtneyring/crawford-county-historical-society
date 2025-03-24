@@ -1,4 +1,4 @@
-
+@import '../../styles/variables.module.scss';
 
 .banner {
     background-size: cover;
@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: $container-padding-mobile;
     position: relative;
-    padding: 30px 15px;
     width: 100%;
 
     &::before {
@@ -38,6 +38,7 @@
 }
 
 .banner__text {
+    font-size: $size-small;
     margin-bottom: 30px;
 }
 

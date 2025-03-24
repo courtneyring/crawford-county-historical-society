@@ -26,6 +26,8 @@ collections:
             name: 'cta'
             widget: 'object'
             fields: 
+              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
+              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
               - { label: 'Label', name: 'label', widget: 'string' }
               - { label: 'Value', name: 'value', widget: 'string' }
       - label: "fiftyFifties"
@@ -64,6 +66,14 @@ collections:
           - label: "Heading"
             name: "heading"
             widget: string
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
+            fields: 
+              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
+              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Value', name: 'value', widget: 'string' }
           - label: "Promos"
             name: "promos"
             widget: list

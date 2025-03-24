@@ -12,16 +12,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: $inner-container-padding-mobile;
     min-width: 0;
+    padding: $container-padding-mobile;
+    order: 1;
+
+    & h2 {
+        font-size: $size-medium;
+        line-height: $size-medium;
+        margin-bottom: 15px;
+    }
 
     & p {
-        font-size: $text-component-body-mobile;
+        font-size: $size-xsmall;
+        line-height: $size-medium;
+        margin-bottom: 20px;
     }
 
-    &.reverse {
-        order: 1;
-    }
 }
 
 
@@ -41,13 +47,15 @@
     }
 
     .fiftyFifty__content {
-            padding: $inner-container-padding-desktop;
-            & p {
-                    font-size: $text-component-body-desktop;
-                }
+        & p {}
+
+        &.reverse {
+            order: 1;
+        }
     }
 
-    .fiftyFifty__text > h2, .fiftyFifty__text > p {
+    .fiftyFifty__text>h2,
+    .fiftyFifty__text>p {
         margin-bottom: 20px;
     }
 

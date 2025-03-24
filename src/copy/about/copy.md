@@ -3,6 +3,33 @@ hero:
   image: /assets/images/caboose-2.jpg
   pos: 70% 40%
 pageTitle: About Us
+members:
+  - label: President
+    value: Gail Thomas
+  - label: Vice-President
+    value: Terry Lindeman
+  - value: Jack Pilon
+    label: Treasurer
+  - label: Secretary
+    value: Tad Randolph
+  - label: Board Member
+    value: Carl Yost
+  - label: Board Member
+    value: Guy Putman
+  - label: Board Member
+    value: Karri Vinton
+fiftyFifty:
+  heading: Attend a Board Meeting
+  body: The museum is funded through donations, sponsorships, and grants. Find out ways you can help the museum from day-to-day operations to long term success
+  image: /assets/images/mike-bearss-volunteer.jpg
+  backgroundColor: 'neutralLight'
+  color: 'neutralDark'
+  reverse: true
+  cta:
+    label: See Event List
+    value: /events
+    hollow: true
+    variation: neutralDark
 promos:
   - header: Meet the Board
     body: Meet the members who volunteer their time and professional expertise to

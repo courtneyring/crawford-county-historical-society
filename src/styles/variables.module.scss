@@ -1,3 +1,5 @@
+
+// Colors
 $color-yellow: #FFC151;
 $color-blue: #314F82;
 $color-darkgrey: #2E2E2E;
@@ -9,8 +11,24 @@ $color-secondary: $color-yellow;
 $color-neutral-light: $color-lightgrey;
 $color-neutral-dark: $color-darkgrey;
 
-$inner-container-padding-mobile: 30px 15px;
-$inner-container-padding-desktop: 100px 50px;
+$theme-colors: (
+    'primary': $color-blue,
+    'secondary': $color-yellow,
+    'neutralDark': $color-neutral-dark,
+    'neutralLight':$color-neutral-light,
+    'white': $color-white
+);
+
+// Font Sizes
+
+$size-large: 50px;
+$size-medium: 32px;
+$size-small: 24px;
+$size-xsmall: 20px;
+
+
+$container-padding-mobile: 30px 15px;
+$container-padding-desktop: 100px 50px;
 
 $text-component-header: 50px;
 $text-component-body-mobile: 16px;
@@ -19,13 +37,6 @@ $text-component-body-desktop: 32px;
 
 
 
-$theme-colors: (
-    'primary': $color-blue,
-    'secondary': $color-yellow,
-    'neutralDark': $color-neutral-dark,
-    'neutralLight':$color-neutral-light, 
-    'white': $color-white
-);
 :export {
     @each $key, $value in $theme-colors {
         #{unquote($key)}: $value;

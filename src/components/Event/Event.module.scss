@@ -1,8 +1,20 @@
 .event {
-    margin-bottom: 3rem;
-    padding: 0 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 2rem;
+    min-height: 200px;
+}
 
-    // height: 15rem;
+.event__details {
+    display:flex;
+
+    & p{
+        display: flex;
+    }
+
+    & img {
+        width: 20px;
+    }
 }
 
 @media(min-width: 768px) {
@@ -10,3 +22,5 @@
         padding: 0;
     }
 }
+
+

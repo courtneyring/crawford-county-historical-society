@@ -1,0 +1,20 @@
+$size: calc(100% - 20px);
+
+.layeredImage {
+    width: $size;
+    height: $size;
+    position: relative;
+}
+
+.layeredImage > img {
+    width: 100%;;
+    height: 100%;;
+    object-fit: cover;
+    position: absolute;
+}
+
+.layeredImage__accent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}

@@ -13,6 +13,7 @@ fiftyFifties:
     backgroundColor: primary
     color: white
     image: /assets/images/oaktoberfest_patio.jpg
+    reverse: false
     cta:
         label: See Event List
         value: /events
@@ -46,4 +47,14 @@ promoGroup:
     - icon: 'give'
       header: Support Our Future
       body: Donate to the CCHS Foundation Fund which ensures the long-term preservation of the museum and its mission
+banner:
+  backgroundImage: 'assets/images/gallery_michigan-ave.png'
+  backgroundColor: primary
+  color: white
+  text: Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.
+  cta:
+        label: See Event List
+        value: /events
+        hollow: true
+        variation: neutralDark
 ---

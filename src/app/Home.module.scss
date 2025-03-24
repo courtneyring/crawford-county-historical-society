@@ -1,16 +1,19 @@
+@import '../styles/variables.module.scss';
+
 .home__promos {
     display: flex;
     margin-bottom: 50px;
     flex-direction: column;
+    padding: $container-padding-mobile;
 }
 
 .home__promoGroup {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 0px;
 
     & h2 {
+        font-size: $size-medium;
         margin-bottom: 50px;
     }
 }

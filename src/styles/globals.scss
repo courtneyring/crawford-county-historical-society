@@ -24,39 +24,12 @@
   }
 }
 
-body {
-}
-
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-h3 {
-  font-size: 1.3rem;
-}
-
-p {
-  // margin-bottom: 2rem;
-  font-size: 18px;
-}
-
-@media(min-width: 768px) {
-  h2 {
-    font-size: 50px;
-  }
-}
 
 @keyframes fadeIn {
   0% {
