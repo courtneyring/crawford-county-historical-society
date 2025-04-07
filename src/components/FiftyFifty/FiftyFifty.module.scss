@@ -47,10 +47,9 @@
     }
 
     .fiftyFifty__content {
-        & p {}
 
         &.reverse {
-            order: 1;
+            order: -1;
         }
     }
 

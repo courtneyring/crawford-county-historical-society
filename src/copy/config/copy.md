@@ -21,11 +21,7 @@ links:
   - label: Contact
     value: /contact
 hours:
-  - label: Monday
-    value: 10am - 6pm
-  - label: Tuesday
-    value: 10am - 6pm
-  - label: Wed - Sun
-    value: Closed
+  label: Tuesday to Saturday
+  value: 10am - 4pm
 logoImg: /assets/images/crawford-county-logo-white.png
 ---

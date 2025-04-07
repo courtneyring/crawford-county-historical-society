@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 import { usePathname } from 'next/navigation';
 
-const Footer = ({ address, links, hours, logoImg }) => {
+const Footer = ({ address, links, hours, logoImg, phone, email }) => {
 
   //temp fix - TODO
   // const pathname = usePathname();
@@ -27,14 +27,21 @@ const Footer = ({ address, links, hours, logoImg }) => {
             </div>
             <div className={styles.footer__address}>
               <Address address={address} />
-
             </div>
+            <div className={styles.footer__divider}></div>
            
             <div className={styles.footer__hours}>
-              {hours.label}<br />
-              {hours.value}
+              <p style={{ fontStyle: 'italic' }}>{hours.label}<br />
+                {hours.value}</p><br />
+              <p className={styles.footer__phone}><img src='/assets/icons/pin.svg' />{phone}</p>
+              <p className={styles.footer__email}><img src='/assets/icons/pin.svg' />{email}</p>
+
+              
               {/* <Hours hours={hours} /> */}
             </div>
+
+            <div className={styles.footer__divider}></div>
+
           </div>
             {/* <div className={styles.footer__hr}></div> */}
             <div className={`${styles.footer__links}`}>
@@ -46,6 +53,7 @@ const Footer = ({ address, links, hours, logoImg }) => {
                 )
               })}
             </div>
+           
         </div>
          
           <div className={styles.footer__hr}></div>

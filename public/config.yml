@@ -88,23 +88,6 @@ collections:
                 name: 'icon'
                 widget: 'select'
                 options: ['calendar', 'camera', 'chevron-right', 'close', 'give', 'groups', 'heart', 'people']
-         
-  - name: "navigation"
-    label: "Navigation"
-    summary: "CCHS Navigation Copy"
-    create: true
-    folder: "src/copy/navigation"
-    slug: "copy"
-    fields: 
-      - {label: "Title", name: "title", widget: "string", required: false }
-      - {label: "Image", name: "image", widget: "image", required: false }
-  - name: "footer"
-    label: "Footer"
-    summary: "CCHS Footer Copy"
-    folder: "src/copy/footer"
-    slug: "footer"
-    fields: 
-      - {label: "Logo", name: "logoImg", widget: "image"}
   - name: "about"
     label: "About"
     summary: "CCHS About Copy"
@@ -129,33 +112,8 @@ collections:
         widget: string
       - label: 'Body'
         name: 'body'
-        widget: text
-      - label: Promos
-        name: 'promos'
-        widget: list
-        fields: 
-          - label: "Header"
-            name: header
-            widget: string
-          - label: Body
-            name: body
-            widget: string
-          - label: Image
-            name: image
-            widget: image
-          - label: BackgroundPos
-            name: backgroundPos
-            widget: hidden
-          - label: Cta
-            name: cta
-            widget: object
-            fields: 
-              - label: 'Label'
-                name: 'label'
-                widget: string
-              - label: 'Value'
-                name: 'value'
-                widget: string
+        widget: markdown
+      
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"

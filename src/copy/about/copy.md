@@ -3,6 +3,17 @@ hero:
   image: /assets/images/caboose-2.jpg
   pos: 70% 40%
 pageTitle: About Us
+banner:
+  backgroundImage: assets/images/gallery_michigan-ave.png
+  backgroundColor: primary
+  color: white
+  text: Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.
+  cta:
+    label: Learn More
+    value: /events
+    hollow: true
+    variation: white
+membersTitle: Our Leaders
 members:
   - label: President
     value: Gail Thomas
@@ -30,28 +41,6 @@ fiftyFifty:
     value: /events
     hollow: true
     variation: neutralDark
-promos:
-  - header: Meet the Board
-    body: Meet the members who volunteer their time and professional expertise to
-      steer the museum in accordance with its mission
-    image: /assets/images/museum-volunteer.jpg
-    backgroundPos: 100% 20%
-    cta:
-      label: Learn More
-      value: /board
-  - header: Support the Museum
-    body: There are many ways to support the museum through both time and funding
-    image: /assets/images/museum-train.jpg
-    cta:
-      label: Support Now
-      value: /support
-  - header: Contact Us
-    body: Get museum hours, location, or contact information to make your visit
-      smooth and enjoyable
-    image: /assets/images/museum-visitors.JPG
-    cta:
-      label: Visit the Museum
-      value: /contact
 ---
 The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.
 

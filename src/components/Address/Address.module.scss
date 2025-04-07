@@ -1,5 +1,8 @@
+@import "../../styles/variables.module.scss";
+
 .address {
     text-align: center;
+    font-size: $size-xsmall;
 }
 
 @media(min-width: 768px) {

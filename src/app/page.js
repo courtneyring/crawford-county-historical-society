@@ -57,11 +57,15 @@ export default function Home() {
         <div className={styles.home__promos}>
           {promoGroup.promos.map((promo, idx) => {
             return (
-              <Promo
-                header={promo.header}
-                body={promo.body}
-                icon={promo.icon}
-              />
+              <>
+                <Promo
+                  header={promo.header}
+                  body={promo.body}
+                  icon={promo.icon}
+                />
+                {idx < promoGroup.promos.length -1  && <div className={styles.home__promoHr} />}
+              </>
+             
             )
           })
           }
@@ -70,7 +74,7 @@ export default function Home() {
       </div>
       <Banner
         backgroundImage={banner.backgroundImage}
-        backgroundColor={banner.backgroundColor}
+        backgroundColor={variables[banner.backgroundColor]}
         color={banner.color}
         text={banner.text}
         cta={<Button variation={banner.cta.variation} hollow={banner.cta.hollow} url={banner.cta.url}>{banner.cta.label}</Button>}

@@ -28,6 +28,8 @@ export default function RootLayout({ children }) {
           links={configAttributes.links}
           hours={configAttributes.hours}
           logoImg={configAttributes.logoImg}
+          phone={configAttributes.phone}
+          email={configAttributes.email}
         />
         
         </body>
