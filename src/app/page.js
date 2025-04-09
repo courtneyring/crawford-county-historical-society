@@ -1,24 +1,14 @@
 'use client';
-import "../styles/globals.scss";
+
 import variables from '../styles/variables.module.scss';
 import styles from './Home.module.scss';
-import { Hero, Banner, Promo, Summary, Button } from '@/components';
-import useResizeResponsive from "@/hooks/useResponsive";
-import { isMobile } from "@/utils/breakpoints";
-
-import copy from '../copy/home/copy.md';
-import placeholder from '../placeholderCopy/home/copy.md';
-import FiftyFifty from "@/components/FiftyFifty/FiftyFifty";
-
-
-const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+import { Hero, Banner, Promo, Button, FiftyFifty } from '@/components';
+import { attributes } from '../copy/home/copy.md';
 
 
 export default function Home() {
 
   let { hero, intro, fiftyFifties, promoGroup, banner } = attributes;
-
-  const isMobileWidth = useResizeResponsive(isMobile);
 
   const button = (cta) =>
     <Button
@@ -33,7 +23,7 @@ export default function Home() {
   return (
     <main className="flex  flex-col items-center ">
 
-      <Hero image={hero.image} pos={isMobileWidth && '-4rem'} />
+      <Hero image={hero.image}/>
       <Banner
         backgroundColor={variables.neutralDark}
         color={variables.white }

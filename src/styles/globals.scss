@@ -3,10 +3,10 @@
 @import "tailwindcss/utilities";
 @import './variables.module.scss';
 
-// @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100..900&display=swap');
 
 * {
   // font-family: 'Urbanist', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
   box-sizing: border-box;
 }
 

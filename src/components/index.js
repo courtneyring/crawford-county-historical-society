@@ -19,6 +19,6 @@ export {default as Promo} from './Promo/Promo';
 export {default as Summary} from './Summary/Summary';
 export {default as TextBlock} from './TextBlock/TextBlock';
 export {default as DataGrid} from './DataGrid/DataGrid';
-
+export { default as FiftyFifty } from './FiftyFifty/FiftyFifty';
 
 

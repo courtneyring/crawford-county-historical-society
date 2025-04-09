@@ -3,9 +3,11 @@
 .home__promos {
     align-items: center;
     display: flex;
+    justify-content: space-between;
     margin-bottom: 50px;
     flex-direction: column;
-    
+    width: 100%;
+
 }
 
 .home__promoHr {
@@ -20,6 +22,7 @@
     flex-direction: column;
     align-items: center;
     padding: $container-padding-mobile;
+    width: 100%;
 
     & h2 {
         font-size: $size-medium;
@@ -30,10 +33,38 @@
 @media(min-width: 992px) {
     .home__promos {
         flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     .home__promoHr {
         display: none;
     }
 
+    .home__promoGroup {
+        padding: $container-padding-tablet;
+    }
+
+}
+
+@media(min-width: 1200px) {
+    .home__promoGroup {
+        padding: $container-padding-desktop-small;
+
+        & h2 {
+            font-size: $size-medium-large;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media(min-width: 1920px) {
+    .home__promoGroup {
+        padding: $container-padding-desktop-large;
+
+        & h2 {
+            font-size: $size-large;
+            margin-bottom: 50px;
+        }
+    }
 }

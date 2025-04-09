@@ -42,6 +42,35 @@
 
 @media(min-width: 768px) {
     .banner {
-        padding: 100px;
+        padding: $container-padding-tablet;
+    }
+
+    .banner__text {
+        font-size: $size-medium;
+    }
+}
+
+@media(min-width: 1200px) {
+    .banner {
+        padding: $container-padding-desktop-small;
+    }
+
+    .banner__text {
+        font-size: $size-medium-large;
+    }
+}
+
+@media(min-width: 1920px) {
+    .banner {
+        padding: $container-padding-desktop-large;
+    }
+
+    .banner__text {
+        font-size: $size-large;
+        line-height: 1.8;
+        margin-bottom: 100px;
+        max-width: 80%;
+        margin-left: auto;  
+        margin-right: auto
     }
 }

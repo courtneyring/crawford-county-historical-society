@@ -1,36 +1,35 @@
-import "../styles/globals.scss";
+'use client'
+
+import { usePathname } from 'next/navigation'
 import { Urbanist } from "next/font/google";
 import { Navbar, Footer } from '@/components';
+import { attributes as configAttributes } from '../copy/config/copy.md';
 
-import configCopy from '../copy/config/copy.md';
-import configPlaceholder from '../placeholderCopy/config/copy.md';
-
-
-const { attributes: configAttributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? configPlaceholder : configCopy;
+import "../styles/globals.scss";
 
 const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: ['300', '400', '500', '700'] })
 
-export const metadata = {
-  title: "CCHS",
-  description: "CCHS",
-};
+// export const metadata = {
+//   title: "CCHS",
+//   description: "CCHS",
+// };
 
 export default function RootLayout({ children }) {
-
+  const isAdmin = usePathname().includes('admin');
 
   return (
     <html lang="en">
       <body className={urbanist.className}>
-        <Navbar links={configAttributes.links} logoImage={configAttributes.logoImg} />
+        {!isAdmin && <Navbar links={configAttributes.links} logoImage={configAttributes.logoImg} />}
           {children}
-        <Footer
+        {!isAdmin && <Footer
           address={configAttributes.address}
           links={configAttributes.links}
           hours={configAttributes.hours}
           logoImg={configAttributes.logoImg}
           phone={configAttributes.phone}
           email={configAttributes.email}
-        />
+        />}
         
         </body>
     </html>

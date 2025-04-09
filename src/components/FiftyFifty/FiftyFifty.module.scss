@@ -18,13 +18,12 @@
 
     & h2 {
         font-size: $size-medium;
-        line-height: $size-medium;
         margin-bottom: 15px;
+        line-height: 1;
     }
 
     & p {
         font-size: $size-xsmall;
-        line-height: $size-medium;
         margin-bottom: 20px;
     }
 
@@ -47,15 +46,66 @@
     }
 
     .fiftyFifty__content {
+        padding: $container-padding-tablet;
 
         &.reverse {
             order: -1;
         }
     }
 
-    .fiftyFifty__text>h2,
-    .fiftyFifty__text>p {
-        margin-bottom: 20px;
+    .fiftyFifty__text {
+        & h2 {
+            font-size: $size-medium;
+        }
+
+        & p {
+            font-size: $size-small;
+        }
+
+        & h2,
+        p {
+            margin-bottom: 20px;
+        }
     }
 
+}
+
+@media(min-width: 1200px) {
+    .fiftyFifty__content {
+        padding: $container-padding-desktop-small;
+    }
+
+    .fiftyFifty__text {
+        & h2 {
+            font-size: $size-medium-large;
+        }
+
+        & p {
+            font-size: $size-medium;
+        }
+
+        & h2,
+        p {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media(min-width: 1920px) {
+    .fiftyFifty__content {
+        padding: $container-padding-desktop-large;
+    }
+
+    .fiftyFifty__text {
+        & h2 {
+            font-size: $size-large;
+            margin-bottom: 30px;
+        }
+
+        & p {
+            font-size: $size-medium-large;
+            max-width: 80%;
+            margin-bottom: 80px;
+        }
+    }
 }

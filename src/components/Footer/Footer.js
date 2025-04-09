@@ -9,12 +9,6 @@ import { usePathname } from 'next/navigation';
 
 const Footer = ({ address, links, hours, logoImg, phone, email }) => {
 
-  //temp fix - TODO
-  // const pathname = usePathname();
-  // if (pathname.includes('admin')) {
-  //   return <></>
-  // }
-
   return (
     <>
       <footer

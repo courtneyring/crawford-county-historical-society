@@ -10,3 +10,8 @@
         text-align: left;
     }
 }
+@media(min-width: 992px) {
+    .address {
+        font-size: $size-small;
+    }
+}

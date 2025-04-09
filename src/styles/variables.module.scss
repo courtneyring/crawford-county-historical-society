@@ -21,14 +21,22 @@ $theme-colors: (
 
 // Font Sizes
 
+
 $size-large: 50px;
+$size-medium-large: 40px;
 $size-medium: 32px;
+$size-small-medium: 28px;
 $size-small: 24px;
 $size-xsmall: 20px;
+$size-tiny: 16px;
 
 
-$container-padding-mobile: 45px 30px;
-$container-padding-desktop: 100px 50px;
+$container-padding-mobile: 45px 30px; 
+$container-padding-tablet: 50px 30px; //768+ 
+$container-padding-desktop-small: 100px; //1200+
+$container-padding-desktop-large: 150px; //1920+
+
+
 
 $text-component-header: 50px;
 $text-component-body-mobile: 16px;

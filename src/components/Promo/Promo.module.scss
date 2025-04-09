@@ -21,6 +21,7 @@
     background-size: cover;
     background-position: center;
 }
+
 .promo__header {
     margin-bottom: 1.25rem;
     font-size: $size-small;
@@ -52,10 +53,10 @@
 .promo:hover {
     cursor: pointer;
 
-    & > .promo__cta {
-    text-decoration-color: black;
+    &>.promo__cta {
+        text-decoration-color: black;
 
-        & >img {
+        &>img {
             transform: translateX(4px);
         }
     }
@@ -63,7 +64,30 @@
 
 @media(min-width: 768px) {
     .promo {
-        width: 24rem;
-        margin-bottom: 0;
+        width: 19rem;
+        max-width: unset;
+        margin: 0;
+    }
+}
+
+@media(min-width: 1200px) {
+    .promo {
+        width: 22rem;
+    }
+}
+
+@media(min-width: 1920px) {
+    .promo {
+        width: 30rem;
+    }
+
+    .promo__header {
+        margin-bottom: 2rem;
+        font-size: $size-medium-large;
+    }
+
+    .promo__body {
+        margin-bottom: 1.25rem;
+        font-size: $size-small-medium;
     }
 }
