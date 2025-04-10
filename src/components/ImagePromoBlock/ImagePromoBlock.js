@@ -4,7 +4,6 @@ import styles from './ImagePromoBlock.module.scss'
 
 
 const ImagePromoBlock = ({ heading, body, cta, image, reverse, textColor, imageAlignment, icon, uneven }) => {
-    console.log(styles.block)
 
     return (
         <FadeIn className={`${styles.block} container mx-auto ${!!reverse ? styles.reverse : ''} ${!!uneven ? styles.uneven : ''}`} excludeTranslate={true}>

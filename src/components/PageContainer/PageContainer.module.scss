@@ -1,16 +1,25 @@
 @import "../../styles/variables.module.scss";
 
-.page__body {
-    // padding: $inner-container-padding-mobile;
+.container__inner {
+    padding: $container-padding-mobile;
     width: 100%;
 
     & h1 {
+        font-size: $size-medium-large;
+        margin-bottom: 30px;
+    }
+}
 
+.container__body {
+    font-size: $size-xsmall;
+
+    & p {
+        margin-bottom: 20px;
     }
 }
 
 @media(min-width: 768px) {
-    .page__body {
+    .container__inner {
         // padding: $inner-container-padding-desktop;
     }
 }

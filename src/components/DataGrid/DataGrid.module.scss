@@ -1,14 +1,35 @@
+@import '../../styles/variables.module.scss';
+
 .dataGrid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem 1rem;
+    padding: $container-padding-mobile;
 }
+
+.dataGrid__title {
+    font-size: $size-medium;
+    margin-bottom: 30px;
+}
+
+.dataGrid__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 30px 15px;
+}
+
 
 .dataGrid__label {
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: $size-xtiny;
+    letter-spacing: 2px;
 }
 
 .dataGrid__value {
-    font-size: 32px;
+    font-size: $size-small;
+}
+
+@media(min-width: 768px) {
+    .dataGrid__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem 1rem;
+    }
 }

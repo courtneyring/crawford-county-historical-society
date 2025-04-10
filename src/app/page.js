@@ -3,6 +3,7 @@
 import variables from '../styles/variables.module.scss';
 import styles from './Home.module.scss';
 import { Hero, Banner, Promo, Button, FiftyFifty } from '@/components';
+import { Fragment } from 'react';
 import { attributes } from '../copy/home/copy.md';
 
 
@@ -39,6 +40,7 @@ export default function Home() {
           reverse={item.reverse}
           color={variables[item.color]}
           cta={button(item.cta)}
+          key={item.heading}
         />
       })}
 
@@ -47,14 +49,15 @@ export default function Home() {
         <div className={styles.home__promos}>
           {promoGroup.promos.map((promo, idx) => {
             return (
-              <>
+              <Fragment key={promo.header}>
                 <Promo
                   header={promo.header}
                   body={promo.body}
                   icon={promo.icon}
+
                 />
                 {idx < promoGroup.promos.length -1  && <div className={styles.home__promoHr} />}
-              </>
+              </Fragment>
              
             )
           })

@@ -7,19 +7,14 @@ import { createPortal } from 'react-dom';
 import Overlay from '../Overlay/Overlay';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import styles from './Navbar.module.scss';
 
 
 
-const Navbar = ({ links, logoImage, title }) => {
+const Navbar = ({ links, logoImage, title, background }) => {
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const isMobileWidth = useResizeResponsive(isMobile);
-
-  //tempfix - TODO
-  const pathname = usePathname();
-  if (pathname.includes('admin')){
-    return <></>
-  }
 
 
   const toggleMenu = () => {
@@ -30,7 +25,7 @@ const Navbar = ({ links, logoImage, title }) => {
 
 
   return (
-    <nav className="flex justify-between w-full items-center absolute z-20 left-0 px-5 py-2 h-20">
+    <nav className={`${styles.navbar} ${background && styles.background}`}>
 
       {/* <div> */}
       <Link className='h-full w-auto'  href='/'>

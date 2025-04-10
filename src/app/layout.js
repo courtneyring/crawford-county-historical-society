@@ -15,12 +15,13 @@ const urbanist = Urbanist({ subsets: ['latin'], display: 'swap', weight: ['300',
 // };
 
 export default function RootLayout({ children }) {
-  const isAdmin = usePathname().includes('admin');
+  const pathname = usePathname();
+  const isAdmin = pathname.includes('admin');
 
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={urbanist.className}>
-        {!isAdmin && <Navbar links={configAttributes.links} logoImage={configAttributes.logoImg} />}
+        {!isAdmin && <Navbar links={configAttributes.links} logoImage={configAttributes.logoImg} background={pathname !== '/'}/>}
           {children}
         {!isAdmin && <Footer
           address={configAttributes.address}

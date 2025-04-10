@@ -41,8 +41,8 @@ const Footer = ({ address, links, hours, logoImg, phone, email }) => {
             <div className={`${styles.footer__links}`}>
               {links.map((link, idx) => {
                 return (
-                  <div className={styles.footer__link}>
-                    <Button url={link.value} key={`footerlink-${idx}`} variation='link' textDecoration='none'>{link.label}</Button>
+                  <div className={styles.footer__link} key={link.value} >
+                    <Button url={link.value} variation='link' textDecoration='none'>{link.label}</Button>
                   </div>
                 )
               })}

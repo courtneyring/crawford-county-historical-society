@@ -25,8 +25,8 @@ const About = () => {
 
     return (
 
-        <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle}>
-            <Body><AboutContent /></Body>
+        <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle} copy={<AboutContent />}>
+            {/* <Body><AboutContent /></Body> */}
             <Banner 
                 backgroundImage={banner.backgroundImage}
                 backgroundColor={variables[banner.backgroundColor]}
@@ -34,8 +34,8 @@ const About = () => {
                 text={banner.text}
                 cta={<Button variation={banner.cta.variation}>Learn More</Button>}
             />
-            <h3>{membersTitle}</h3>
-            <DataGrid data={members} />
+            
+            <DataGrid data={members} title={membersTitle} />
             <FiftyFifty
                 heading={fiftyFifty.heading}
                 body={fiftyFifty.body}

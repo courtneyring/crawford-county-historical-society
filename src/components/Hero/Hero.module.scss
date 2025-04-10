@@ -4,6 +4,10 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 30rem;
+
+    &.skinny {
+        height: 400px;
+    }
 }
 
 
@@ -19,7 +23,7 @@
         height: calc(100vh - 13rem);
 
         &.skinny {
-            height: 30rem;
+            height: 730px;
         }
     }
 }

@@ -1,7 +1,7 @@
 ---
 hero: 
   image: /assets/images/caboose-2.jpg
-  pos: 70% 40%
+  pos: 25% 40%
 pageTitle: About Us
 banner:
   backgroundImage: assets/images/gallery_michigan-ave.png
