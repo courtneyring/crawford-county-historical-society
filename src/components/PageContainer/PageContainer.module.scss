@@ -6,12 +6,12 @@
 
     & h1 {
         font-size: $size-medium-large;
-        margin-bottom: 30px;
     }
 }
 
 .container__body {
     font-size: $size-xsmall;
+    margin-top: 30px;
 
     & p {
         margin-bottom: 20px;
@@ -20,6 +20,16 @@
 
 @media(min-width: 768px) {
     .container__inner {
-        // padding: $inner-container-padding-desktop;
+        padding: $container-padding-tablet;
+    }
+}
+@media(min-width: 1200px) {
+    .container__inner {
+        padding: $container-padding-desktop-small;
+    }
+}
+@media(min-width: 1920px) {
+    .container__inner {
+        padding: $container-padding-desktop-large;
     }
 }

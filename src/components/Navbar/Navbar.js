@@ -25,7 +25,7 @@ const Navbar = ({ links, logoImage, title, background }) => {
 
 
   return (
-    <nav className={`${styles.navbar} ${background && styles.background}`}>
+    <nav className={`${styles.navbar} ${background && styles.background }`}>
 
       {/* <div> */}
       <Link className='h-full w-auto'  href='/'>

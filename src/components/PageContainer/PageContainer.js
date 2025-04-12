@@ -7,7 +7,7 @@ const PageContainer = ({ heroImage, pageTitle, children, hero, copy }) => {
             <Hero  variation='skinny' image={hero ? hero.image : heroImage} pos={hero?.pos} />
             <div className={styles.container__inner}>
                 <h1>{pageTitle}</h1>
-                <div className={styles.container__body}>{copy}</div>
+                {copy && <div className={styles.container__body}>{copy}</div>}
             </div>
             {children}
 
