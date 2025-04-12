@@ -16,3 +16,26 @@
         position: static;
     }
 }
+
+.navbar__logo {
+    height: 100%;
+
+    & img {
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: white;
+    font-size: $size-medium;
+    margin-bottom: 30px;
+}
+
+.navbar__mobileDialog {
+    display: flex;
+    flex-direction: column;
+    padding: $container-padding-mobile;
+    padding-top: 150px;
+}

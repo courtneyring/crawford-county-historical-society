@@ -15,7 +15,7 @@ const Support = () => {
 
                 <div className="flex flex-col ">
                     {textBlocks.map((textBlock, idx) => {
-                        return <div className="justify-center flex flex-col items-center">
+                        return <div className="justify-center flex flex-col items-center" key={idx}>
                             <ImagePromoBlock heading={textBlock.heading} body={textBlock.body} cta={textBlock.cta} icon={textBlock.icon} reverse={idx%2 === 0} uneven={true}/>
   
                             {/* <div className="bg-gray-200 h-1 w-full my-20"></div> */}

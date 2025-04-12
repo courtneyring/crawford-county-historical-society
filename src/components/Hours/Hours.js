@@ -2,7 +2,7 @@ const Hours = ({ hours }) => {
     return (
 
         <div className="grid grid-cols-2 w-full">
-            {hours.map((day, idx) => {
+            {/* {hours.map((day, idx) => {
                 return (
                     <>
                         <p className="capitalize mb-0" key={`hours-${idx}`}>{day.label}</p>
@@ -14,7 +14,7 @@ const Hours = ({ hours }) => {
                     // </div>
                 )
 
-            })}
+            })} */}
         </div>
     )
 }

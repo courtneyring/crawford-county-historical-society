@@ -8,6 +8,7 @@ import Overlay from '../Overlay/Overlay';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import styles from './Navbar.module.scss';
+import variables from '../../styles/variables.module.scss';
 
 
 
@@ -25,34 +26,33 @@ const Navbar = ({ links, logoImage, title, background }) => {
 
 
   return (
-    <nav className={`${styles.navbar} ${background && styles.background }`}>
+    <nav className={`${styles.navbar} ${background && styles.background}`}>
 
-      {/* <div> */}
-      <Link className='h-full w-auto'  href='/'>
-        {(logoImage && !menuIsOpen) && <img src={logoImage} className='h-full w-auto' />}
-        {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>}
+
+      <Link className={styles.navbar__logo} href='/'>
+        <img src={logoImage} />
+        {/* {(logoImage && !menuIsOpen) && <img src={logoImage} className='h-full w-auto' />} */}
+        {/* {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>} */}
       </Link>
 
-      {/* </div> */}
 
 
       {isMobileWidth ?
-        // <div className='  '>
+
         <MenuButton clickFn={toggleMenu} isOpen={menuIsOpen} />
-        // </div>
 
         :
         <div className=''>
           {links.map((link, idx) => {
-            return <Link className=' [&:not(:last-child)]:pr-5 pl-5 text-2xl text-white decoration-transparent underline hover:decoration-white duration-500 transition-all' href={link.value} key={`navbar-d-${idx}`}>{link.label}</Link>
+            return <Link className={`${styles.navbar__link}`} href={link.value} key={`navbar-d-${link}`}>{link.label}</Link>
           })}
         </div>
       }
       {menuIsOpen && createPortal(
-        <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={'bg-black'}>
-          <div className='flex flex-col p-10'>
+        <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={variables.neutralDark}>
+          <div className={styles.navbar__mobileDialog}>
             {links.map((link, idx) => {
-              return <Link className=' text-white text-3xl pb-5' href={link.value} key={`navbar-m-${idx}`} onClick={toggleMenu}>{link.label}</Link>
+              return <Link className={styles.navbar__link} href={link.value} key={`m-${link}`} onClick={toggleMenu}>{link.label}</Link>
             })}
           </div>
 

@@ -24,7 +24,7 @@ const Events = () => {
                     events.map((event, idx) => {
                         return (
                             <Event
-                                key={`event-${idx}`}
+                                key={`event-${event.name}`}
                                 name={event.name}
                                 date={convertToDate(event.start, 'dddd, MMMM D')}
                                 startTime={convertToDate(event.start, 'ha')}

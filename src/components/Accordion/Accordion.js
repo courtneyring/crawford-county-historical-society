@@ -15,7 +15,7 @@ const Accordion = ({ items }) => {
     return (
         <div className={styles.accordion}>
             {items.map((item, idx) => {
-                return <AccordionItem key={useId()} title={item.title} body={item.body} toggleFn={(isOpen) => toggle(idx, isOpen)} isOpen={activeAccordions.includes(idx)} idx={idx}></AccordionItem>
+                return <AccordionItem key={useId()} title={item.title} body={item.body} toggleFn={(isOpen) => toggle(idx, isOpen)} isOpen={activeAccordions.includes(idx)} idx={idx} key={idx}></AccordionItem>
             })}
         </div>
 

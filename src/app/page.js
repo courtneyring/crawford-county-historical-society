@@ -40,7 +40,7 @@ export default function Home() {
           reverse={item.reverse}
           color={variables[item.color]}
           cta={button(item.cta)}
-          key={item.heading}
+          key={`fifty-${item.heading}`}
         />
       })}
 

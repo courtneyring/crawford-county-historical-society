@@ -16,10 +16,10 @@ const Overlay = ({ children, closeFn, hideClose, background }) => {
 
     return (
         <>
-            <div className={`w-screen h-screen  bg-translucent p-6 absolute top-0 left-0 ${styles['overlay-container']} ${fadeOut && styles.fadeOut}`}>
+            <div className={` ${styles.overlay__background} ${fadeOut && styles.fadeOut}`}>
             </div>
-            <div className={`${background ?? 'bg-lightgrey'} p-5 absolute ${styles['overlay-dialog']} ${fadeOut ? styles.fadeOut : styles.fadeIn}`}>
-                {!hideClose && <div className="absolute top-5 right-5 w-7 cursor-pointer" onClick={close} >
+            <div className={`${styles.overlay__dialog} ${fadeOut ? styles.fadeOut : styles.fadeIn}`} style={background ? { background } : {}}>
+                {!hideClose && <div className={styles.overlay__close} onClick={close} >
                     <img src='assets/icons/close.svg' />
                 </div>}
                 {children}
