@@ -1,5 +1,7 @@
 @import "../../styles/variables.module.scss";
 
+@include container-padding('.fiftyFifty__content');
+
 .fiftyFifty {
     display: grid;
     grid-template-columns: 1fr;
@@ -13,7 +15,6 @@
     align-items: center;
     justify-content: center;
     min-width: 0;
-    padding: $container-padding-mobile;
     order: 1;
 
     & h2 {
@@ -46,7 +47,6 @@
     }
 
     .fiftyFifty__content {
-        padding: $container-padding-tablet;
 
         &.reverse {
             order: -1;
@@ -71,9 +71,6 @@
 }
 
 @media(min-width: 1200px) {
-    .fiftyFifty__content {
-        padding: $container-padding-desktop-small;
-    }
 
     .fiftyFifty__text {
         & h2 {
@@ -92,9 +89,6 @@
 }
 
 @media(min-width: 1920px) {
-    .fiftyFifty__content {
-        padding: $container-padding-desktop-large;
-    }
 
     .fiftyFifty__text {
         & h2 {

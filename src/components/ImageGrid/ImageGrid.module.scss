@@ -1,0 +1,24 @@
+@import '../../styles/variables.module.scss';
+
+@include container-padding('.imageGrid');
+
+.imageGrid {
+    display: grid;
+    gap: 16px;
+}
+
+.imageGrid__image {
+    height: 100%;
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+
+
+@media(min-width: 768px) {
+    .imageGrid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}

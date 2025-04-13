@@ -1,10 +1,10 @@
 @import "../../styles/variables.module.scss";
 
+@include container-padding('.footer');
 $margin-between: 50px;
 
 .footer {
   background-color: $color-neutral-dark;
-  padding: $container-padding-mobile;
   display: flex;
   flex-direction: column;
   font-size: $size-xsmall;
@@ -123,7 +123,6 @@ $margin-between: 50px;
 
   .footer {
     align-items: flex-start;
-      padding: $container-padding-tablet;
   }
 }
 

@@ -1,7 +1,8 @@
 @import "../../styles/variables.module.scss";
 
+@include container-padding('.container__inner');
+
 .container__inner {
-    padding: $container-padding-mobile;
     width: 100%;
 
     & h1 {
@@ -18,18 +19,3 @@
     }
 }
 
-@media(min-width: 768px) {
-    .container__inner {
-        padding: $container-padding-tablet;
-    }
-}
-@media(min-width: 1200px) {
-    .container__inner {
-        padding: $container-padding-desktop-small;
-    }
-}
-@media(min-width: 1920px) {
-    .container__inner {
-        padding: $container-padding-desktop-large;
-    }
-}

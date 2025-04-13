@@ -1,4 +1,3 @@
-
 // Colors
 $color-yellow: #FFC151;
 $color-blue: #314F82;
@@ -32,12 +31,35 @@ $size-tiny: 16px;
 $size-xtiny: 12px;
 
 
-$container-padding-mobile: 45px 30px; 
+$container-padding-mobile: 45px 30px;
 $container-padding-tablet: 50px 30px; //768+ 
 $container-padding-desktop-small: 100px; //1200+
 $container-padding-desktop-large: 150px; //1920+
 
+@mixin container-padding($selector) {
 
+    #{$selector} {
+        padding: $container-padding-mobile;
+    }
+
+    @media(min-width: 768px) {
+        #{$selector} {
+            padding: $container-padding-tablet;
+        }
+    }
+
+    @media(min-width: 1200px) {
+        #{$selector} {
+            padding: $container-padding-desktop-small;
+        }
+    }
+
+    @media(min-width: 1920px) {
+        #{$selector} {
+            padding: $container-padding-desktop-large;
+        }
+    }
+}
 
 $text-component-header: 50px;
 $text-component-body-mobile: 16px;

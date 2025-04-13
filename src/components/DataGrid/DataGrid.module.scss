@@ -1,8 +1,6 @@
 @import '../../styles/variables.module.scss';
 
-.dataGrid {
-    padding: $container-padding-mobile;
-}
+@include container-padding('.dataGrid');
 
 .dataGrid__title {
     font-size: $size-medium;

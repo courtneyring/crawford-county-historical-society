@@ -1,7 +1,7 @@
 'use client';
 import { useMemo } from "react";
 import { PageContainer, ImageGrid, Body } from '@/components';
-import styles from './gallery.module.scss';
+import styles from './Gallery.module.scss';
 
 import copy from '../../../copy/gallery/copy.md';
 import placeholder from '../../../placeholderCopy/gallery/copy.md';
@@ -13,9 +13,10 @@ const Gallery = () => {
     let imageArr = useMemo(() => images.map((image) => image.image), images)
 
     return (
-        <PageContainer hero={hero} pageTitle={pageTitle}>
-                <Body><BodyCopy/></Body>
+        <PageContainer hero={hero} pageTitle={pageTitle} copy={<BodyCopy />}>
+            <div className={styles.gallery}>
                 <ImageGrid images={imageArr} />
+            </div>
             
         </PageContainer>
     )

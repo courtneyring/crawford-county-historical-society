@@ -1,5 +1,8 @@
 @import '../styles/variables.module.scss';
 
+
+@include container-padding('.home__promoGroup');
+
 .home__promos {
     align-items: center;
     display: flex;
@@ -21,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: $container-padding-mobile;
     width: 100%;
 
     & h2 {
@@ -41,30 +43,19 @@
         display: none;
     }
 
-    .home__promoGroup {
-        padding: $container-padding-tablet;
-    }
 
 }
 
 @media(min-width: 1200px) {
-    .home__promoGroup {
-        padding: $container-padding-desktop-small;
-
-        & h2 {
-            font-size: $size-medium-large;
-            margin-bottom: 50px;
-        }
+    .home__promoGroup h2 {
+        font-size: $size-medium-large;
+        margin-bottom: 50px;
     }
 }
 
 @media(min-width: 1920px) {
-    .home__promoGroup {
-        padding: $container-padding-desktop-large;
-
-        & h2 {
-            font-size: $size-large;
-            margin-bottom: 50px;
-        }
+    .home__promoGroup h2 {
+        font-size: $size-large;
+        margin-bottom: 50px;
     }
 }

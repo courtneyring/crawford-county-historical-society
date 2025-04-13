@@ -6,7 +6,7 @@
     justify-content: space-between;
     width: 100%;
     position: absolute;
-    z-index:20;
+    z-index: 20;
     left: 0;
     padding: 8px 20px;
     height: 80px;
@@ -31,6 +31,7 @@
     color: white;
     font-size: $size-medium;
     margin-bottom: 30px;
+
 }
 
 .navbar__mobileDialog {
@@ -38,4 +39,16 @@
     flex-direction: column;
     padding: $container-padding-mobile;
     padding-top: 150px;
+}
+
+@media(min-width: 768px) {
+    .navbar__link {
+        font-size: $size-small;
+
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+
 }

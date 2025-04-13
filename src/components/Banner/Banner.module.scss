@@ -1,5 +1,7 @@
 @import '../../styles/variables.module.scss';
 
+@include container-padding('.banner');
+
 .banner {
     background-size: cover;
     background-position: right center;
@@ -7,7 +9,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: $container-padding-mobile;
     position: relative;
     width: 100%;
 
@@ -41,9 +42,6 @@
 }
 
 @media(min-width: 768px) {
-    .banner {
-        padding: $container-padding-tablet;
-    }
 
     .banner__text {
         font-size: $size-medium;
@@ -51,20 +49,12 @@
 }
 
 @media(min-width: 1200px) {
-    .banner {
-        padding: $container-padding-desktop-small;
-    }
-
     .banner__text {
         font-size: $size-medium-large;
     }
 }
 
 @media(min-width: 1920px) {
-    .banner {
-        padding: $container-padding-desktop-large;
-    }
-
     .banner__text {
         font-size: $size-large;
         line-height: 1.8;
