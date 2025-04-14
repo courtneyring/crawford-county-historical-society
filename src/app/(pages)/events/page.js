@@ -11,15 +11,14 @@ const Events = () => {
     let { hero, pageTitle, events, notFoundText } = attributes;
 
     const convertToDate = (str, format) => {
-        console.log(moment.utc(new Date(str)).format(format))
-        return moment.utc(new Date(str)).format(format);
+        return moment.utc(str).local().format(format);
     }
 
     return (
         <PageContainer hero={hero} pageTitle={pageTitle}>
             <div className={styles.events}>
                 {!!events.length ?
-                    events.map((event, idx) => {
+                    events.map((event) => {
                         return (
                             <Event
                                 key={`event-${event.name}`}
@@ -30,7 +29,7 @@ const Events = () => {
                                 image={event.image}
                                 location={event.location}
                                 description={event.description}
-                                cta={event.cta}
+                                cta={{...event.cta, variation: 'primary', hollow: false}}
                             />
                         )
                     })
