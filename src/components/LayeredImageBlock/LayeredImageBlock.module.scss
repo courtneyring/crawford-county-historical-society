@@ -1,0 +1,54 @@
+@import '../../styles/variables.module.scss';
+
+@include container-padding('.lImageBlock');
+
+.lImageBlock {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+
+
+.lImageBlock__image {
+    width: 300px;
+    align-self: center;
+    justify-self: center;
+    aspect-ratio: 1;
+}
+
+.lImageBlock__content {
+
+    & h2 {
+        font-size: $size-medium;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        font-size: $size-xsmall;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media(min-width: 992px) {
+    .lImageBlock {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 50px;
+
+    }
+
+    .reverse {
+
+        & > .lImageBlock__content {
+            grid-column: 1;
+            grid-row: 1;
+        }
+        & >.lImageBlock__image {
+            grid-column: 2;
+        }
+
+    }
+
+}

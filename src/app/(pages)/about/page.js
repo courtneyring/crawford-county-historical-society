@@ -1,12 +1,8 @@
 'use client';
 
-import { PageContainer, Button, DataGrid, Body, Hero, Banner } from "@/components";
+import { PageContainer, Button, DataGrid, Body, Hero, Banner, FiftyFifty } from "@/components";
 import variables from '../../../styles/variables.module.scss';
-import copy from '../../../copy/about/copy.md';
-import placeholder from '../../../placeholderCopy/about/copy.md';
-import FiftyFifty from "@/components/FiftyFifty/FiftyFifty";
-
-const { attributes, react: AboutContent } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+import { attributes, react as AboutContent } from '../../../copy/about/copy.md';
 
 
 const About = () => {
@@ -26,7 +22,6 @@ const About = () => {
     return (
 
         <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle} copy={<AboutContent />}>
-            {/* <Body><AboutContent /></Body> */}
             <Banner 
                 backgroundImage={banner.backgroundImage}
                 backgroundColor={variables[banner.backgroundColor]}

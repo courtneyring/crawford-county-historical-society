@@ -14,6 +14,8 @@ events:
       called, 'Grayling Depot' and help us raise much needed funds for the
       museum
     cta:
-      label: See More
-      value: https://graylingdepot.com
+      label: Learn More
+      value: /events
+      hollow: true
+      variation: white
 ---

@@ -1,42 +1,27 @@
-import { PageContainer, ImagePromoBlock, Body, Promo } from "@/components";
-
-import copy from '../../../copy/support/copy.md';
-import placeholder from '../../../placeholderCopy/support/copy.md';
-
-const { attributes } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+import { PageContainer, ImagePromoBlock, Body, Promo, LayeredImageBlock } from "@/components";
+import variables from '../../../styles/variables.module.scss';
+import styles from './support.module.scss';
+import { attributes } from '../../../copy/support/copy.md';
 
 const Support = () => {
-    let { hero, pageTitle, imagePromos, intro, textBlocks } = attributes;
+    let { hero, pageTitle, intro, lImageBlocks } = attributes;
 
     return (
-        <PageContainer hero={hero} pageTitle={pageTitle}>
-            <Body>{intro}
-
-
-                <div className="flex flex-col ">
-                    {textBlocks.map((textBlock, idx) => {
-                        return <div className="justify-center flex flex-col items-center" key={idx}>
-                            <ImagePromoBlock heading={textBlock.heading} body={textBlock.body} cta={textBlock.cta} icon={textBlock.icon} reverse={idx%2 === 0} uneven={true}/>
-  
-                            {/* <div className="bg-gray-200 h-1 w-full my-20"></div> */}
-                            {/* <TextBlock heading={textBlock.heading} cta={textBlock.cta}>{textBlock.body}</TextBlock> */}
-                        </div>
-                    })}
-
-                </div>
-
-
-            </Body>
-            
-
-            {/* <div >
-                {imagePromos.map((promo, idx) => {
-                    return (
-                        <ImagePromoBlock heading={promo.header} body={promo.body} cta={promo.cta} image={promo.image} key={`promo-${idx}`} reverse={idx % 2 != 0} imageAlignment={promo.imageAlignment} />
-                    )
+        <PageContainer hero={hero} pageTitle={pageTitle} copy={intro}>
+            <div className="flex flex-col ">
+                {lImageBlocks.map((block, idx) => {
+                    return <LayeredImageBlock
+                        layeredImage={{...block.layeredImage, backgroundColor: variables[block.layeredImage.backgroundColor]}}
+                        heading={block.heading}
+                        body={block.body}
+                        backgroundColor={variables[block.backgroundColor]}
+                        color={variables[block.color]}
+                        cta={{...block.cta, children: block.cta.label}}
+                        reverse={idx % 2 === 0}
+                    />
                 })}
 
-            </div> */}
+            </div>
 
         </PageContainer>
     )

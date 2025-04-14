@@ -1,12 +1,9 @@
 'use client';
 import { useMemo } from "react";
-import { PageContainer, ImageGrid, Body } from '@/components';
+import { PageContainer, ImageGrid } from '@/components';
 import styles from './Gallery.module.scss';
 
-import copy from '../../../copy/gallery/copy.md';
-import placeholder from '../../../placeholderCopy/gallery/copy.md';
-
-const { attributes, react: BodyCopy } = process.env.NEXT_PUBLIC_PLACEHOLDER_COPY === 'true' ? placeholder : copy;
+import { attributes, react as BodyCopy } from '../../../copy/gallery/copy.md';
 
 const Gallery = () => {
     let { hero, pageTitle, images } = attributes;
@@ -17,7 +14,6 @@ const Gallery = () => {
             <div className={styles.gallery}>
                 <ImageGrid images={imageArr} />
             </div>
-            
         </PageContainer>
     )
 }

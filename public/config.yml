@@ -204,12 +204,14 @@ collections:
           - {label: Location, name: location, widget: string}
           - {label: Description, name: description, widget: text}
           - {label: Image, name: image, widget: image }
-          - label: Cta
-            name: cta
-            widget: object
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
             fields: 
-              - {label: Label, name: label, widget: string}
-              - {label: Value, name: value, widget: string}
+              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
+              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Value', name: 'value', widget: 'string' }
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"

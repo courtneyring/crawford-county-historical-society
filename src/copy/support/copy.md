@@ -9,23 +9,47 @@ intro: "Welcome to the Crawford County Museum and Society. Experience the
   airliner displayed in and around the legendary aircraft carrier, Intrepid—an
   awe-inspiring place for an unforgettable adventure. "
 
-textBlocks:
+lImageBlocks:
   - heading: Volunteer Your Time
     body: Join our team and help with research, exhibit creation, or greeting visitors at the welcome desk. Whether you have a few hours or more, your time makes a difference.
-    icon: people
+    backgroundColor: neutralDark
+    color: white
+    layeredImage: 
+      image: '/assets/images/gallery_ice-harvest.jpg'
+      backgroundColor: secondary
+      positionX: left
+      positionY: top
     cta:
       label: Call Us
       value: tel:9893484461
+      variation: white
+      hollow: true
   - heading: Donate to Daily Operations
     body: Your donation directly supports the day-to-day operations of the Crawford County Historical Society, helping cover essential costs and preserve the rich history of Crawford County. We welcome one-time gifts, recurring pledges, sponsorships, and memorial donations in honor of loved ones. Every contribution, big or small, makes a difference.
-    icon: give
+    backgroundColor: neutralLight
+    color: neutralDark
+    layeredImage: 
+      image: '/assets/images/gallery_army-air-field.jpg'
+      backgroundColor: primary
+      positionX: left
+      positionY: top
     cta:
-      label: PayPal Donate
-      value: /#
+      label: Call Us
+      value: tel:9893484461
+      variation: secondary
+      hollow: false
   - heading: Support Our Long-Term Future
     body: The Crawford County Historical Society Foundation Fund, established in 2009, ensures the long-term preservation of the museum and its mission. Managed by the Community Foundation for Northeast Michigan, donations to the fund are invested for lasting impact.
-    icon: heart
+    backgroundColor: primary
+    color: white
+    layeredImage: 
+      image: '/assets/images/gallery_chief-daughter.jpg'
+      backgroundColor: secondary
+      positionX: left
+      positionY: top
     cta:
-      label: Donate Now
-      value: https://www.cfnem.org/ncmcf/funds/give.html?fund=662
+      label: Call Us
+      value: tel:9893484461
+      variation: white
+      hollow: true
 ---
