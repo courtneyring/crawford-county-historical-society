@@ -36,7 +36,7 @@ $container-padding-tablet: 50px 30px; //768+
 $container-padding-desktop-small: 100px; //1200+
 $container-padding-desktop-large: 150px; //1920+
 
-@mixin container-padding($selector) {
+@mixin container-padding($selector, $exclude...) {
 
     #{$selector} {
         padding: $container-padding-mobile;
@@ -57,6 +57,12 @@ $container-padding-desktop-large: 150px; //1920+
     @media(min-width: 1920px) {
         #{$selector} {
             padding: $container-padding-desktop-large;
+        }
+    }
+
+    @each $direction in $exclude {
+        #{$selector} {
+            padding-#{$direction}: 0px;
         }
     }
 }

@@ -192,6 +192,14 @@ collections:
         widget: string
       - label: Not Found Text
         name: notFoundText
+        widget: object
+        fields: 
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Body
+            name: body
+            widget: string
         widget: string
       - label: 'Events'
         name: 'events'

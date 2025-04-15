@@ -1,12 +1,16 @@
 @import "../../styles/variables.module.scss";
 
-@include container-padding('.container__inner');
+@include container-padding('.container__inner', 'bottom');
 
 .container__inner {
     width: 100%;
 
     & h1 {
         font-size: $size-medium-large;
+    }
+
+    &.removePadding {
+        padding: 0px;
     }
 }
 

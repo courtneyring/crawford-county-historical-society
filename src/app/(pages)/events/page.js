@@ -15,7 +15,7 @@ const Events = () => {
     }
 
     return (
-        <PageContainer hero={hero} pageTitle={pageTitle}>
+        <PageContainer hero={hero} pageTitle={events.length ? pageTitle : null}>
             <div className={styles.events}>
                 {!!events.length ?
                     events.map((event) => {
@@ -29,12 +29,15 @@ const Events = () => {
                                 image={event.image}
                                 location={event.location}
                                 description={event.description}
-                                cta={{...event.cta, variation: 'primary', hollow: false}}
+                                cta={{ ...event.cta, variation: 'primary', hollow: false }}
                             />
                         )
                     })
                     :
-                    <p>{notFoundText}</p>
+                    <div className={styles.events__none}>
+                        <h2>{notFoundText.heading}</h2>
+                        <p>{notFoundText.body}</p>
+                    </div>
 
                 }
 
