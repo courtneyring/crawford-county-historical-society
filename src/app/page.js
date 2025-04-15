@@ -29,6 +29,7 @@ export default function Home() {
         backgroundColor={variables.neutralDark}
         color={variables.white }
         text={intro.body}
+        variation='summary'
         cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
       />
       {fiftyFifties.map((item, idx) => {

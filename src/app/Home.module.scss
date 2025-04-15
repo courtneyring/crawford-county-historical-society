@@ -54,6 +54,10 @@
 }
 
 @media(min-width: 1920px) {
+    .home__promos {
+        max-width: $container-max-width-wide;
+    }
+
     .home__promoGroup h2 {
         font-size: $size-large;
         margin-bottom: 50px;

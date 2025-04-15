@@ -5,7 +5,7 @@
 .fiftyFifty {
     display: grid;
     grid-template-columns: 1fr;
-
+    width: 100%;
 }
 
 .fiftyFifty__content {
@@ -90,7 +90,23 @@
 
 @media(min-width: 1920px) {
 
+    .fiftyFifty__content {
+        aspect-ratio: unset;
+        
+        &:not(.reverse) {
+            // padding-left: 100px;
+            align-items: flex-start;
+        }
+
+        &.reverse {
+            // padding-right: 100px;
+            align-items: flex-end;
+        }
+    }
+
     .fiftyFifty__text {
+        max-width: $container-max-width-wide / 2 - $container-padding-desktop-large; ;
+
         & h2 {
             font-size: $size-large;
             margin-bottom: 30px;
@@ -98,7 +114,7 @@
 
         & p {
             font-size: $size-medium-large;
-            max-width: 80%;
+            // max-width: 80%;
             margin-bottom: 80px;
         }
     }

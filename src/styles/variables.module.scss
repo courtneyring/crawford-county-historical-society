@@ -36,6 +36,11 @@ $container-padding-tablet: 50px 30px; //768+
 $container-padding-desktop-small: 100px; //1200+
 $container-padding-desktop-large: 150px; //1920+
 
+$container-max-width-xsmall: 1000px;
+$container-max-width-small: 1200px;
+$container-max-width: 1400px;
+$container-max-width-wide: 1800px;
+
 @mixin container-padding($selector, $exclude...) {
 
     #{$selector} {

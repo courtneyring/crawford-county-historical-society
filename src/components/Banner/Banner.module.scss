@@ -30,6 +30,8 @@
 
 }
 
+
+
 .banner__content {
     position: relative;
     z-index: 1;
@@ -37,30 +39,48 @@
 }
 
 .banner__text {
-    font-size: $size-small;
+    font-size: $size-xsmall;
     margin-bottom: 30px;
+}
+
+.banner.summary .banner__text {
+    font-size: $size-small;
 }
 
 @media(min-width: 768px) {
 
     .banner__text {
+        font-size: $size-small-medium;
+    }
+
+    .banner.summary .banner__text {
         font-size: $size-medium;
     }
 }
 
 @media(min-width: 1200px) {
     .banner__text {
+        font-size: $size-medium;
+        max-width: $container-max-width-xsmall;
+    }
+
+    .banner.summary .banner__text {
         font-size: $size-medium-large;
     }
 }
 
 @media(min-width: 1920px) {
     .banner__text {
-        font-size: $size-large;
+        font-size: $size-medium-large;
         line-height: 1.8;
-        margin-bottom: 100px;
-        max-width: 80%;
-        margin-left: auto;  
-        margin-right: auto
+        max-width: $container-max-width-small;
+        // margin-bottom: 100px;
+        // max-width: 80%;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+    .banner.summary .banner__text {
+        font-size: $size-large;
+        max-width: $container-max-width;
     }
 }
