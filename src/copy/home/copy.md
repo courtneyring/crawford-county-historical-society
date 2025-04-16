@@ -5,47 +5,47 @@ hero:
 intro: 
   body: "Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life."
   cta:
-      label: See Event List
-      value: /events
+      label: About Us
+      value: /about
       hollow: false
       variation: secondary
 fiftyFifties:
   - heading: Museum Events
-    body: The museum is funded through donations, sponsorships, and grants. Find out ways you can help the museum from day-to-day operations to long term success
+    body: The museum hosts a variety of events each year, from holiday celebrations to fundraisers, bringing the community together in support of preserving local history
     backgroundColor: primary
     color: white
     image: /assets/images/oaktoberfest_patio.jpg
     reverse: false
     cta:
-        label: See Event List
+        label: See Upcoming Events
         value: /events
         hollow: true
         variation: white
-  - heading: Museum Events
-    body: The museum is funded through donations, sponsorships, and grants. Find out ways you can help the museum from day-to-day operations to long term success
+  - heading: CCHS Photo Gallery
+    body: Step back in time with a collection of historic photographs capturing the people, places, and moments that shaped Grayling and Crawford County.
     backgroundColor: neutralLight
     color: neutralDark
     image: /assets/images/gallery_citizens-band-2.jpg
     reverse: true
     cta:
-        label: See Event List
-        value: /events
+        label: Explore the Gallery
+        value: /gallery
         hollow: true
         variation: neutralDark
 promoGroup:
   heading: Show Your Support
   cta:
-      label: See Event List
-      value: /events
+      label: Learn More
+      value: /support
       hollow: false
       variation: secondary
   promos: 
     - icon: 'people'
       header: Volunteer Your Time
-      body: 'Whether you have a few hours or more, your time makes a difference'
+      body: Help with research, exhibits, or greeting visitors—whether it’s a few hours or more, your time matters.
     - icon: 'heart'
-      header: Donate to Operations
-      body: Your donation directly supports the day-to-day operations of CCHS helping cover essential costs 
+      header: Donate to Daily Operations
+      body: Your donation supports essential expenses like utilities, exhibit maintenance, and programs, helping the museum preserve and share Crawford County’s history year-round.
     - icon: 'give'
       header: Support Our Future
       body: Donate to the CCHS Foundation Fund which ensures the long-term preservation of the museum and its mission
@@ -53,10 +53,10 @@ banner:
   backgroundImage: 'assets/images/gallery_michigan-ave.png'
   backgroundColor: primary
   color: white
-  text: Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.
+  text: We want to hear from you!
   cta:
-    label: See Event List
-    value: /events
-    hollow: true
+    label: Contact Us
+    value: /contact
+    hollow: false
     variation: white
 ---

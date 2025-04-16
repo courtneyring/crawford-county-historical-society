@@ -3,20 +3,20 @@
 import Link from 'next/link';
 import styles from './Button.module.scss';
 
-const Button = ({ children, fn, url, target, hollow=false, variation='primary', textDecoration }) => {
+const Button = ({ children, fn, href, target, hollow=false, variation='primary', textDecoration, label, value }) => {
 
-    const Tag = url ? Link : 'button';
+    const Tag = (href || value) ? Link : 'button';
 
     return (
 
         <Tag
-            href={url}
+            href={href || value}
             onClick={() =>fn()}
             target={target}
             className={`${styles.button} ${hollow ? styles.hollow : styles.filled} ${styles[variation]}`}
             style={{textDecoration}}
         >
-            {children}
+            {children || label}
         </Tag>
 
 

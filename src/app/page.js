@@ -71,7 +71,8 @@ export default function Home() {
         backgroundColor={variables[banner.backgroundColor]}
         color={banner.color}
         text={banner.text}
-        cta={<Button variation={banner.cta.variation} hollow={banner.cta.hollow} url={banner.cta.url}>{banner.cta.label}</Button>}
+        variation='summary'
+        cta={<Button {...banner.cta}></Button>}
       />
 
     </main>
