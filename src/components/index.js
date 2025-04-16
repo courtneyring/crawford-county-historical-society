@@ -21,5 +21,6 @@ export {default as TextBlock} from './TextBlock/TextBlock';
 export {default as DataGrid} from './DataGrid/DataGrid';
 export { default as FiftyFifty } from './FiftyFifty/FiftyFifty';
 export { default as LayeredImageBlock } from './LayeredImageBlock/LayeredImageBlock';
+export { default as Form } from './Form/Form';
 
 
