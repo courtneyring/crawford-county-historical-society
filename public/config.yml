@@ -104,16 +104,78 @@ collections:
           - label: Pos
             name: pos
             widget: hidden
-      - label: 'Hero Pos'
-        name: 'heroPos'
-        widget: 'hidden'
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string
       - label: 'Body'
         name: 'body'
         widget: markdown
-      
+      - label: Banner
+        name: banner
+        widget: object
+        fields: 
+          - label: backgroundImage
+            name: backgroundImage
+            widget: image
+          - label: backgroundColor
+            name: backgroundColor
+            widget: select
+            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: color
+            name: color
+            widget: select
+            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: Text
+            name: text
+            widget: text
+          - label: Attribution
+            name: attribution
+            widget: string
+      - label: Title - Members Section
+        name: membersTitle
+        widget: string
+      - label: Members
+        name: members
+        widget: list
+        fields:
+          - label: Label
+            name: label
+            widget: string
+          - label: Value
+            name: value
+            widget: string
+      - label: Fifty Fifty - 
+        name: fiftyFifty
+        widget: object
+        fields: 
+          - label: Heading
+            name: heading
+            widget: string
+          - label: Body
+            name: body
+            widget: text
+          - label: Image
+            name: image
+            widget: image
+          - label: Background Color
+            name: backgroundColor
+            widget: select
+            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: Color
+            name: color
+            widget: select
+            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: Reverse
+            name: reverse
+            widget: boolean
+          - label: 'CTA'
+            name: 'cta'
+            widget: 'object'
+            fields: 
+              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
+              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Value', name: 'value', widget: 'string' }
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"

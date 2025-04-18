@@ -1,22 +1,24 @@
+'use client';
+
 import { useState } from "react";
 import styles from './Form.module.scss';
 
 
-const Form = () => {
-    const [submitted, setSubmitted] = useState(true);
+const Form = ({submitted, onSubmit}) => {
+    // const [submitted, setSubmitted] = useState(true);
 
-    const iframeOnLoad = () => {
-        if (submitted) { window.location = 'http://localhost:6006/?path=/story/components-form--primary' }
-    }
+    // const iframeOnLoad = () => {
+    //     if (submitted) { window.location = 'http://localhost:6006/?path=/story/components-form--primary' }
+    // }
 
-    const submit = () => {
-        // window.location = 'http://localhost:6006/?path=/story/components-form--primary';
-        setSubmitted(true);
-    }
+    // const submit = () => {
+    //     // window.location = 'http://localhost:6006/?path=/story/components-form--primary';
+        
+    // }
 
     return (
         <div className={styles.form__container}>
-            {/* <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} onload={iframeOnLoad}></iframe> */}
+            <iframe name="hidden_iframe" id="hidden_iframe" style={{ display: 'none' }} onLoad={onSubmit}></iframe>
             {
                 submitted ? 
                 <div className={styles.form__submitted}>
@@ -29,7 +31,7 @@ const Form = () => {
 
                     <>
 
-                        <form action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSfCiHrzVakE58ix6tbln3tbPHDNYeQuPhikx-axUzvso9-U-Q/formResponse' method='post' target='hidden_iframe' onsubmit={submit} className={styles.form}>
+                        <form action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSfCiHrzVakE58ix6tbln3tbPHDNYeQuPhikx-axUzvso9-U-Q/formResponse' method='post' target='hidden_iframe' className={styles.form}>
                             <span>
                                 <label htmlFor='name'>Name</label>
                                 <input name='entry.1151240598' type='text' id='name' />

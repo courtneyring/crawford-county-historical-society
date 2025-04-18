@@ -17,7 +17,7 @@
 .dataGrid__label {
     text-transform: uppercase;
     font-size: $size-xtiny;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .dataGrid__value {
@@ -28,6 +28,31 @@
     .dataGrid__grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 3rem 1rem;
+        grid-gap: 3rem 12rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .dataGrid {
+        max-width: $container-max-width-small;
+        margin: 0 auto;
+    }
+
+    .dataGrid__title {
+        font-size: $size-large;
+        margin-bottom: 60px;
+    }
+
+    .dataGrid__grid {
+        // grid-template-columns: repeat(4, 1fr);
+        grid-gap: 3rem 3rem;
+    }
+
+    .dataGrid__label {
+        font-size: $size-tiny;
+    }
+
+    .dataGrid__value {
+        font-size: $size-medium;
     }
 }

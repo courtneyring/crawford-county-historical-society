@@ -21,7 +21,7 @@ fiftyFifties:
         value: /events
         hollow: true
         variation: white
-  - heading: CCHS Photo Gallery
+  - heading: Historical Photo Gallery
     body: Step back in time with a collection of historic photographs capturing the people, places, and moments that shaped Grayling and Crawford County.
     backgroundColor: neutralLight
     color: neutralDark

@@ -7,12 +7,8 @@ banner:
   backgroundImage: assets/images/gallery_michigan-ave.png
   backgroundColor: primary
   color: white
-  text: Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life.
-  cta:
-    label: Learn More
-    value: /events
-    hollow: true
-    variation: white
+  text: “I look at the pictures and go back in time and try to imagine what it would have been like then. Just walking through, it could take a couple hours if you’re really interested and wanted to sit down and start reading, we may have to ring the bell and close the door before you get finished”
+  attribution: Ted Randolph, CCHS Board Member 
 membersTitle: Our Leaders
 members:
   - label: President
@@ -42,6 +38,5 @@ fiftyFifty:
     hollow: true
     variation: neutralDark
 ---
-The Crawford County Historical Society and Museum is a non-governmental, 501c3 non-profit corporation, dedicated to “Collecting, Preserving and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan”.
+The Crawford County Historical Society and Museum is a non-governmental, 501(c)(3) non-profit corporation dedicated to “Collecting, Preserving, and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan.” Through exhibits, educational programs, and community events, we connect the past, present, and future, preserving our county’s rich history for generations to come.
 
-We collect documents and artifacts mostly through donations from the descendants of the early area pioneers. Items range from the Native American cultures through the lumbering industry and early railroads on through the family histories of the first settlers. Most of the items collected require some sort of preservation that may range from simply being placed in a protected showcase to being kept in a climate controlled environment. For instance, early documents and photographs need to be mounted under acid-free matting behind UV filtered glass.

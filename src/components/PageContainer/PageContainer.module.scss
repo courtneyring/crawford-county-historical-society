@@ -1,6 +1,6 @@
 @import "../../styles/variables.module.scss";
 
-@include container-padding('.container__inner', 'bottom');
+@include container-padding('.container__inner');
 
 .container__inner {
     width: 100%;
@@ -23,3 +23,20 @@
     }
 }
 
+@media(min-width: 1200px) {
+
+    .container__inner {
+        max-width: $container-max-width;
+        margin: 0 auto;
+    }
+
+    .container__inner h1 {
+        font-size: $size-large;
+        margin-bottom: 30px;
+    }
+
+    .container__body {
+
+        font-size: $size-small;
+    }
+}
