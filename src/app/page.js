@@ -29,7 +29,6 @@ export default function Home() {
         backgroundColor={variables.neutralDark}
         color={variables.white }
         text={intro.body}
-        variation='narrow'
         cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
       />
       {fiftyFifties.map((item, idx) => {
@@ -71,7 +70,6 @@ export default function Home() {
         backgroundColor={variables[banner.backgroundColor]}
         color={banner.color}
         text={banner.text}
-        variation='narrow'
         cta={<Button {...banner.cta}></Button>}
       />
 

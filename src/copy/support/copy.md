@@ -1,6 +1,6 @@
 ---
 hero:
-  pos: 10% 46%
+  pos: 60% 46%
   image: /assets/images/oaktoberfest_cchs-volunteers.jpg
 pageTitle: Support
 intro: "Welcome to the Crawford County Museum and Society. Experience the
@@ -20,36 +20,36 @@ lImageBlocks:
       positionX: left
       positionY: top
     cta:
-      label: Call Us
-      value: tel:9893484461
+      label: Contact Us
+      value: /contact
       variation: white
       hollow: true
   - heading: Donate to Daily Operations
     body: Your donation directly supports the day-to-day operations of the Crawford County Historical Society, helping cover essential costs and preserve the rich history of Crawford County. We welcome one-time gifts, recurring pledges, sponsorships, and memorial donations in honor of loved ones. Every contribution, big or small, makes a difference.
+    backgroundColor: primary
+    color: white
+    layeredImage: 
+      image: '/assets/images/gallery_army-air-field.jpg'
+      backgroundColor: secondary
+      positionX: right
+      positionY: bottom
+    cta:
+      label: Call Us
+      value: tel:9893484461
+      variation: white
+      hollow: true
+  - heading: Support Our Long-Term Future
+    body: The Crawford County Historical Society Foundation Fund, established in 2009, ensures the long-term preservation of the museum and its mission. Managed by the Community Foundation for Northeast Michigan, donations to the fund are invested for lasting impact.
     backgroundColor: neutralLight
     color: neutralDark
     layeredImage: 
-      image: '/assets/images/gallery_army-air-field.jpg'
+      image: '/assets/images/gallery_chief-daughter.jpg'
       backgroundColor: primary
       positionX: left
       positionY: top
     cta:
       label: Call Us
-      value: tel:9893484461
+      value: https://www.cfnem.org/ncmcf/funds/give.html?fund=662
       variation: secondary
       hollow: false
-  - heading: Support Our Long-Term Future
-    body: The Crawford County Historical Society Foundation Fund, established in 2009, ensures the long-term preservation of the museum and its mission. Managed by the Community Foundation for Northeast Michigan, donations to the fund are invested for lasting impact.
-    backgroundColor: primary
-    color: white
-    layeredImage: 
-      image: '/assets/images/gallery_chief-daughter.jpg'
-      backgroundColor: secondary
-      positionX: left
-      positionY: top
-    cta:
-      label: Call Us
-      value: tel:9893484461
-      variation: white
-      hollow: true
 ---

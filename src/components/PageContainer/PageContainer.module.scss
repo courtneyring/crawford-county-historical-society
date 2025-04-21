@@ -40,3 +40,15 @@
         font-size: $size-small;
     }
 }
+
+@media(min-width: 1920px) {
+    .container__inner {
+        max-width: $container-max-width-wide;
+        margin: 0 auto;
+    }
+
+    .container__body p {
+        font-size: $size-medium;
+        line-height: 1.5;
+    }
+}

@@ -7,8 +7,8 @@ banner:
   backgroundImage: assets/images/gallery_michigan-ave.png
   backgroundColor: primary
   color: white
-  text: “I look at the pictures and go back in time and try to imagine what it would have been like then. Just walking through, it could take a couple hours if you’re really interested and wanted to sit down and start reading, we may have to ring the bell and close the door before you get finished”
-  attribution: Ted Randolph, CCHS Board Member 
+  text: “I look at the pictures and go back in time and try to imagine what it would have been like then. Just walking through, it could take a couple hours [...], we may have to ring the bell and close the door before you get finished.”
+  attribution: "- Ted Randolph, CCHS Board Member"
 membersTitle: Our Leaders
 members:
   - label: President

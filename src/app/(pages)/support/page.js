@@ -17,7 +17,7 @@ const Support = () => {
                         backgroundColor={variables[block.backgroundColor]}
                         color={variables[block.color]}
                         cta={{...block.cta, children: block.cta.label}}
-                        reverse={idx % 2 === 0}
+                        reverse={idx % 2 !== 0}
                     />
                 })}
 

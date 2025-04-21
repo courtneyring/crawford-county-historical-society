@@ -220,10 +220,9 @@ collections:
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string
-      - label: 'Dontaiont Options'
-        name: options
+      - label: 'Donation Options'
+        name: lImageBlocks
         widget: list
-        allow_add: true
         fields: 
           - {label: Heading, name: heading, widget: string}
           - {label: Body, name: body, widget: text}
@@ -233,6 +232,7 @@ collections:
             fields: 
               - {label: Label, name: label, widget: string}
               - {label: Value, name: value, widget: string}
+              - {label: Function, name: fn, widget: code}
   - name: 'events'
     label: "Events"
     summary: "CCHS Events Copy"
@@ -252,7 +252,7 @@ collections:
       - label: 'Page Title'
         name: 'pageTitle'
         widget: string
-      - label: Not Found Text
+      - label: 'Not Found Text'
         name: notFoundText
         widget: object
         fields: 
@@ -262,7 +262,6 @@ collections:
           - label: Body
             name: body
             widget: string
-        widget: string
       - label: 'Events'
         name: 'events'
         widget: 'list'

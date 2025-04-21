@@ -1,7 +1,7 @@
 import styles from './LayeredImage.module.scss';
 
-const LayeredImage = ({image, backgroundColor, positionX, positionY}) => {
-    const shift = '20px';
+const LayeredImage = ({image, backgroundColor, positionX, positionY, customShift}) => {
+    const shift = customShift !== null ? customShift + 'px' : '40px';
 
     const accentStyle= () => {
         const marginTop = positionX === 'right' ? shift : null;
@@ -16,7 +16,7 @@ const LayeredImage = ({image, backgroundColor, positionX, positionY}) => {
     }
 
     return (
-        <div className={styles.layeredImage}>
+        <div className={styles.layeredImage} style={{'--shift': shift}}>
             <div className={styles.layeredImage__accent} style={{ backgroundColor, ...accentStyle()}}></div>
             <img src={image} style={{...imageStyle()}}/>
         </div>

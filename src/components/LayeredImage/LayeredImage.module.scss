@@ -1,4 +1,4 @@
-$size: calc(100% - 20px);
+$size: calc(100% - var(--shift));
 
 .layeredImage {
     width: $size;

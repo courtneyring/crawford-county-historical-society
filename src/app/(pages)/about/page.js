@@ -29,6 +29,7 @@ const About = () => {
                 color={variables[banner.color]}
                 text={banner.text}
                 attribution={banner.attribution}
+                variation='wide'
                 // cta={<Button variation={banner.cta.variation}>Learn More</Button>}
             />
             
