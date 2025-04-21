@@ -11,6 +11,7 @@ import useResizeResponsive from '@/hooks/useResponsive';
 const LayeredImageBlock = ({ heading, body, layeredImage, cta, backgroundColor, color, reverse }) => {
     const isTabletWidth = useResizeResponsive(isTablet);
     const isSmallDesktopWidth = useResizeResponsive(isSmallDesktop);
+    console.log(cta)
 
     return (
         <div className={`${styles.lImageBlock} ${reverse && styles.reverse}`} style={{ backgroundColor, color }}>

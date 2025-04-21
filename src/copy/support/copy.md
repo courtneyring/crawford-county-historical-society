@@ -40,7 +40,6 @@ lImageBlocks:
       positionY: bottom
     cta:
       label: Call Us
-      value: tel:9893484461
       variation: white
       hollow: true
       fn:

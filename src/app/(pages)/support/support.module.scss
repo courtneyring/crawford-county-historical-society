@@ -1,0 +1,64 @@
+@import '../../../styles/variables.module.scss';
+
+@include container-padding('.support__modal');
+
+.support__modal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    // justify-content: center;
+    height: 100%;
+
+
+    & h2 {
+        font-size: $size-small-medium;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    & p {
+        font-size: $size-xsmall;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+}
+
+.support__input {
+    // display: flex;
+    position: relative;
+    margin-bottom: 50px;
+
+    & label {
+        font-size: $size-medium-large;
+        position: absolute;
+        top: -15px;
+        left: -35px;
+    }
+
+    & input {
+        font-size: 90px;
+        color: $color-neutral-dark;
+        max-width: 150px;
+        text-align: center;
+        border-bottom: 2px solid $color-neutral-light;
+        height: 90px;
+        // width: 50px;
+
+        &::placeholder {
+            color: $color-neutral-dark;
+        }
+
+        outline: none;
+    }
+}
+
+.support__paypal {
+    height: 50px;
+    margin-bottom: 30px;
+    width: 100%;
+
+    & > div {
+        height: 100%;
+    }
+}

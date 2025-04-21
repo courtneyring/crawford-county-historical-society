@@ -232,7 +232,7 @@ collections:
             fields: 
               - {label: Label, name: label, widget: string}
               - {label: Value, name: value, widget: string}
-              - {label: Function, name: fn, widget: code}
+              - {label: Function, name: fn, widget: code, required: false}
   - name: 'events'
     label: "Events"
     summary: "CCHS Events Copy"

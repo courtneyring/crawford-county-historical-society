@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
           phone={configAttributes.phone}
           email={configAttributes.email}
         />}
-        
+        {/* <script src="https://www.paypal.com/sdk/js?client-id=AbSE8jCIdvBWHS47YcRlDqXc8yOc0Ua9djAqbdz4UWVQgONOzrR1IUrPZsvKMQIepRzBf35GuH81GTLP&currency=USD&components=buttons,funding-eligibility"></script> */}
         </body>
     </html>
   );
