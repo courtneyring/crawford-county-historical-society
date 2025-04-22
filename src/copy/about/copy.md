@@ -25,6 +25,8 @@ members:
     value: Guy Putman
   - label: Board Member
     value: Karri Vinton
+  - label: Board Member
+    value: Mary Jo Ring
 fiftyFifty:
   heading: Attend a Board Meeting
   body: The museum is funded through donations, sponsorships, and grants. Find out ways you can help the museum from day-to-day operations to long term success
