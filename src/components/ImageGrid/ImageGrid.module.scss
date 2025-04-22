@@ -1,6 +1,6 @@
 @import '../../styles/variables.module.scss';
 
-@include container-padding('.imageGrid');
+@include container-padding('.imageGrid', 'top');
 
 .imageGrid {
     display: grid;
@@ -20,5 +20,12 @@
     .imageGrid {
         grid-template-columns: repeat(2, 1fr);
         gap: 24px;
+    }
+}
+
+@media(min-width: 992px) {
+    .imageGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 18px;
     }
 }
