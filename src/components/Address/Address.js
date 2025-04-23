@@ -1,8 +1,8 @@
 import styles from './Address.module.scss';
 
-const Address = ({ address }) => {
+const Address = ({ address, centerAlign, fontSize }) => {
     return (
-        <p className={styles.address}>
+        <p className={`${styles.address} ${centerAlign && styles.center}`} style={{ fontSize }}>
             {address.street}
             <br />
             {address.street2}

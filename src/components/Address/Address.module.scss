@@ -1,14 +1,18 @@
 @import "../../styles/variables.module.scss";
 
 .address {
-    text-align: center;
+    text-align: left;
     font-size: $size-xsmall;
 }
 
+.address.center {
+    text-align: center;
+}
+
 @media(min-width: 768px) {
-    .address {
-        text-align: left;
-    }
+    // .address {
+    //     text-align: left;
+    // }
 }
 @media(min-width: 992px) {
     .address {

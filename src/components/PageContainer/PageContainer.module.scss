@@ -25,7 +25,7 @@
 
 @media(min-width: 1200px) {
 
-    .container__inner {
+    .container__copy {
         max-width: $container-max-width;
         margin: 0 auto;
     }
@@ -42,8 +42,8 @@
 }
 
 @media(min-width: 1920px) {
-    .container__inner {
-        max-width: $container-max-width-wide;
+    .container__copy {
+        max-width: $container-max-width;
         margin: 0 auto;
     }
 

@@ -1,0 +1,70 @@
+@import '../../styles/variables.module.scss';
+
+$margin-between: 50px;
+
+.ahc {
+    font-size: $size-xsmall;
+    text-align: left;
+}
+
+.ahc__address {
+    margin-bottom: $margin-between;
+
+}
+
+.ahc__hours {
+    margin-bottom: $margin-between;
+    // text-align: center;
+    font-style: italic;
+}
+
+.ahc__contact {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $margin-between;
+    // width: 100%;
+
+    & a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        text-decoration: underline;
+
+
+    }
+
+    & img {
+
+        height: 20px;
+        margin-right: 15px;
+    }
+}
+
+.ahc__contact.dark img {
+    filter: invert(1);
+}
+
+.ahc.center {
+
+    & .ahc__hours {
+        text-align: center;
+    }
+
+    & .ahc__contact, .ahc__contact > span {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media(min-width: 992px) {
+    .ahc {
+        font-size: $size-small;
+    }
+
+    .ahc__contact img {
+        height: 28px;
+    }
+}

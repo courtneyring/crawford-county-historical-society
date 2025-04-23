@@ -22,7 +22,7 @@ const About = () => {
 
     return (
 
-        <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle} copy={<AboutContent />}>
+        <PageContainer heroImage={heroImage} hero={hero} pageTitle={pageTitle} copy={<AboutContent />} >
             <Banner 
                 backgroundImage={banner.backgroundImage}
                 backgroundColor={variables[banner.backgroundColor]}

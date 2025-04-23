@@ -4,10 +4,12 @@ import Address from '../Address/Address';
 import Hours from '../Hours/Hours';
 import Button from '../Button/Button';
 import Link from 'next/link';
-
-import { usePathname } from 'next/navigation';
+import AddressHoursContact from '../AddressHoursContact/AddressHoursContact';
+import { isMobile } from '@/utils/breakpoints';
+import useResizeResponsive from '@/hooks/useResponsive';
 
 const Footer = ({ address, links, hours, logoImg, phone, email }) => {
+  const isMobileWidth = useResizeResponsive(isMobile);
 
   return (
     <>
@@ -19,23 +21,7 @@ const Footer = ({ address, links, hours, logoImg, phone, email }) => {
               <img src={logoImg} />
 
             </div>
-            <div className={styles.footer__address}>
-              <Address address={address} />
-            </div>
-
-
-            <p className={styles.footer__hours} style={{ fontStyle: 'italic' }}>{hours.label}<br />
-              {hours.value}</p>
-
-            <div className={styles.footer__contact}>
-              <span>
-                <a className={styles.footer__email} href={`mailto:${email}`}><img src='/assets/icons/envelope.svg' />{email}</a>
-                <a className={styles.footer__phone} href={`tel:${phone}`}><img src='/assets/icons/phone.svg' />{phone}</a>
-               
-              </span>
-              
-            </div>
-
+            <AddressHoursContact {...{address, hours, phone, email}} centerAlign={isMobileWidth}/>
 
             <div className={styles.footer__divider}></div>
 

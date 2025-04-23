@@ -30,6 +30,17 @@ $size-xsmall: 20px;
 $size-tiny: 16px;
 $size-xtiny: 12px;
 
+$theme-sizes: (
+    'xlarge': $size-xlarge,
+    'large': $size-large,
+    'mediumLarge': $size-medium-large,
+    'medium':$size-medium,
+    'smallMedium': $size-small-medium, 
+    'small': $size-small,
+    'xsmall': $size-xsmall,
+    'tiny': $size-tiny,
+    'xtiny': $size-xtiny
+);
 
 $container-padding-mobile: 45px 30px;
 $container-padding-tablet: 50px 30px; //768+ 
@@ -83,4 +94,8 @@ $text-component-body-desktop: 32px;
     @each $key, $value in $theme-colors {
         #{unquote($key)}: $value;
     }
+
+        @each $key, $value in $theme-sizes {
+            #{unquote($key)}: $value;
+        }
 }

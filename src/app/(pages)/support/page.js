@@ -3,7 +3,7 @@
 import { PageContainer, ImagePromoBlock, Body, Promo, LayeredImageBlock, Overlay, Button } from "@/components";
 import variables from '../../../styles/variables.module.scss';
 import styles from './support.module.scss';
-import { attributes } from '../../../copy/support/copy.md';
+import { attributes, react as IntroCopy } from '../../../copy/support/copy.md';
 import { useLayoutEffect, useState, useEffect } from "react";
 import { createPortal } from 'react-dom';
 import { loadScript } from '@paypal/paypal-js';
@@ -55,7 +55,7 @@ const Support = () => {
     return (
         <>
 
-            <PageContainer hero={hero} pageTitle={pageTitle} copy={intro}>
+            <PageContainer hero={hero} pageTitle={pageTitle} copy={<IntroCopy />}>
                 <div className="flex flex-col ">
                     {lImageBlocks.map((block, idx) => {
                         return <LayeredImageBlock
@@ -71,7 +71,8 @@ const Support = () => {
 
                 </div>
 
-            </PageContainer>{
+            </PageContainer>
+            {
                 modalIsOpen && createPortal(
                     <Overlay closeFn={() => setModalIsOpen(false)} hideClose={false} background={variables.white} fullscreen={false}>
                         <div className={styles.support__modal}>

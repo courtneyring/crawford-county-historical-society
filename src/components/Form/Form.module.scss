@@ -1,11 +1,11 @@
 @import '../../styles/variables.module.scss';
 
+@include container-padding('.form__container');
 
 .form__container {
     background-color: $color-primary;
     display: flex;
     flex-direction: column;
-    padding: 30px;
     height: 100%;
 }
 
@@ -75,4 +75,22 @@
         width: 150px;
         margin-bottom: 50px;
     };
+}
+
+@media(min-width: 1200px) {
+    .form label, .form input, .form textarea {
+        font-size: $size-small;
+    }
+
+    .form input {
+        height: 50px;
+    }
+
+    .form textarea {
+        height: 150px;
+    }
+
+    .form__container {
+        padding: 40px;
+    }
 }
