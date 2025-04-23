@@ -21,6 +21,10 @@
         padding: 16px 48px;
         border-width: 2px;
     }
+
+    .link {
+        font-size: $size-small;
+    }
 }
 
 @media(min-width: 1200px) {

@@ -1,6 +1,6 @@
 ---
 hero:
-  pos: 60% 46%
+  pos: 60% 53%
   image: /assets/images/oaktoberfest_cchs-volunteers.jpg
 pageTitle: Support
 intro: "Welcome to the Crawford County Museum and Society. Experience the

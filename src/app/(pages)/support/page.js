@@ -11,7 +11,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
 
 const Support = () => {
-    const [modalIsOpen, setModalIsOpen] = useState(true);
+    const [modalIsOpen, setModalIsOpen] = useState(false);
     const [donationAmount, setDonationAmount] = useState(0);
 
     let { hero, pageTitle, intro, lImageBlocks } = attributes;

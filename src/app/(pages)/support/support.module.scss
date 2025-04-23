@@ -1,12 +1,11 @@
 @import '../../../styles/variables.module.scss';
 
-@include container-padding('.support__modal');
 
 .support__modal {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding: 90px 70px 70px;
     // justify-content: center;
     height: 100%;
 
@@ -56,9 +55,15 @@
 .support__paypal {
     height: 50px;
     margin-bottom: 30px;
-    width: 100%;
+    width: 300px;
 
     & > div {
         height: 100%;
+    }
+}
+
+@media(min-width: 768px) {
+    .support__modal {
+        max-width: 700px;
     }
 }
