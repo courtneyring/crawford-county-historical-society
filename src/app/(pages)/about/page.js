@@ -7,7 +7,7 @@ import { attributes, react as AboutContent } from '../../../copy/about/copy.md';
 
 
 const About = () => {
-    let { heroImage, pageTitle, hero, banner, membersTitle, members, fiftyFifty } = attributes;
+    let { heroImage, pageTitle, hero, banner, membersTitle, members, fiftyFifties } = attributes;
 
 
     const button = (cta) =>
@@ -34,15 +34,18 @@ const About = () => {
             />
             
             <DataGrid data={members} title={membersTitle} />
-            <FiftyFifty
-                heading={fiftyFifty.heading}
-                body={fiftyFifty.body}
-                image={fiftyFifty.image}
-                backgroundColor={variables[fiftyFifty.backgroundColor]}
-                reverse={fiftyFifty.reverse}
-                color={variables[fiftyFifty.color]}
-                cta={button(fiftyFifty.cta)}
-            />
+            {fiftyFifties.map((item, idx) => {
+                return <FiftyFifty
+                    heading={item.heading}
+                    body={item.body}
+                    image={item.image}
+                    backgroundColor={variables[item.backgroundColor]}
+                    reverse={item.reverse}
+                    color={variables[item.color]}
+                    cta={item.cta ? button(item.cta) : null}
+                    key={`fifty-${item.heading}`}
+                />
+            })}
         </PageContainer>
 
 

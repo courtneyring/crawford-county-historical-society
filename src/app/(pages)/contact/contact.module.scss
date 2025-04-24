@@ -2,7 +2,10 @@
 
 @include container-padding('.contact__ahc');
 
-
+.contact__container {
+    background-color: $color-primary;
+    color: $color-white;
+}
 
 .contact__inner {
     display: grid;
@@ -48,5 +51,9 @@
     .contact__inner {
         max-width: $container-max-width;
         min-height: 800px;
+    }
+
+    .contact__map {
+        height: 700px;
     }
 }

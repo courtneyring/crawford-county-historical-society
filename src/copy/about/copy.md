@@ -27,18 +27,24 @@ members:
     value: Karri Vinton
   - label: Board Member
     value: Mary Jo Ring
-fiftyFifty:
-  heading: Attend a Board Meeting
-  body: The museum is funded through donations, sponsorships, and grants. Find out ways you can help the museum from day-to-day operations to long term success
-  image: /assets/images/mike-bearss-volunteer.jpg
-  backgroundColor: 'neutralLight'
-  color: 'neutralDark'
-  reverse: true
-  cta:
-    label: See Event List
-    value: /events
-    hollow: true
-    variation: neutralDark
+fiftyFifties:
+  - heading: Attend a Board Meeting
+    body: The Board of Directors meets on the second Tuesday of every month at 3pm. From April to September, meetings are held at the Museum (97 East Michigan Avenue). From October to March, the board meets at the Grayling Township Hall (2090 Viking Way).
+    image: /assets/images/mike-bearss-volunteer.jpg
+    backgroundColor: 'neutralLight'
+    color: 'neutralDark'
+    reverse: true
+  - heading: Contact a Board Member
+    body: To contact the board of directors or a specific member of the board, please call or send a message to the Crawford County Historical Society and someone will get back to you as soon as possible.
+    image: /assets/images/museum-event.jpg
+    backgroundColor: 'primary'
+    color: white
+    reverse: false
+    cta:
+      label: Contact Us
+      value: /contact
+      hollow: true
+      variation: white
 ---
 The Crawford County Historical Society and Museum is a non-governmental, 501(c)(3) non-profit corporation dedicated to “Collecting, Preserving, and Interpreting Documents and Artifacts that illustrate the history of Crawford County, Michigan.” Through exhibits, educational programs, and community events, we connect the past, present, and future, preserving our county’s rich history for generations to come.
 

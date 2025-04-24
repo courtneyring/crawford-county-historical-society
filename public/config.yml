@@ -144,9 +144,9 @@ collections:
           - label: Value
             name: value
             widget: string
-      - label: Fifty Fifty - 
-        name: fiftyFifty
-        widget: object
+      - label: Fifty Fifties - 
+        name: fiftyFifties
+        widget: list
         fields: 
           - label: Heading
             name: heading

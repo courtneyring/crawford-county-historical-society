@@ -25,11 +25,11 @@ const Contact = () => {
     }
 
     return (
-        <PageContainer hero={hero} pageTitle={pageTitle} copy={<IntroCopy />} excludePadding={['bottom']}>
+        <PageContainer hero={hero} pageTitle={pageTitle} copy={<IntroCopy />} >
             <div className={styles.contact__container}>
                 <div className={styles.contact__inner}>
                     <div className={styles.contact__ahc}>
-                        <AddressHoursContact {...configAttributes} dark={false} centerAlign={!isDesktopWidth} fontSize={isDesktopWidth ? variables.smallMedium : null}/>
+                        <AddressHoursContact {...configAttributes} centerAlign={!isDesktopWidth} fontSize={isDesktopWidth ? variables.smallMedium : null}/>
                     </div>
 
                     <div className={styles.contact__form} >
