@@ -21,7 +21,8 @@ lImageBlocks:
       variation: white
       hollow: true
   - heading: Donate to Daily Operations
-    body: Your donation directly supports the day-to-day operations of the Crawford
+    body:
+      Your donation directly supports the day-to-day operations of the Crawford
       County Historical Society, helping cover essential costs and preserve the
       rich history of Crawford County. We welcome one-time gifts, recurring
       pledges, sponsorships, and memorial donations in honor of loved ones.
@@ -34,11 +35,10 @@ lImageBlocks:
       positionX: right
       positionY: bottom
     cta:
-      label: Call Us
+      label: Donate Now
       variation: white
       hollow: true
-      fn:
-        code: console.log('test')
+      fn: "Donate"
   - heading: Support Our Long-Term Future
     body: The Crawford County Historical Society Foundation Fund, established in
       2009, ensures the long-term preservation of the museum and its mission.
@@ -52,13 +52,10 @@ lImageBlocks:
       positionX: left
       positionY: top
     cta:
-      label: Call Us
+      label: Contribute to CCHSFF
       value: https://www.cfnem.org/ncmcf/funds/give.html?fund=662
       variation: secondary
       hollow: false
 ---
-Welcome to the Crawford County Museum and Society. Experience the
-  world’s first space shuttle, a nuclear weapons-carrying submarine, dozens of
-  military aircraft, a supersonic spy plane, and the world’s fastest commercial
-  airliner displayed in and around the legendary aircraft carrier, Intrepid—an
-  awe-inspiring place for an unforgettable adventure.
+
+Supporting the Crawford County Historical Society and Museum helps keep the stories of Grayling and Crawford County alive for generations to come. Whether you volunteer your time, make a financial donation, or contribute to our long-term foundation, your support ensures we can maintain exhibits, host community events, and preserve priceless local history. Every gift, large or small, makes a lasting impact on our mission and the community we serve.

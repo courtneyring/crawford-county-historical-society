@@ -8,7 +8,7 @@ collections:
     label: "Home" # Used in the UI
     folder: "src/copy/home" # The path to the folder where the documents are stored
     slug: "copy" # Filename template, e.g., YYYY-MM-DD-title.md
-    summary: 'CCHS Home Copy'
+    summary: "CCHS Home Copy"
     fields: # The fields for each document, usually in front matter
       - label: "Hero"
         name: "hero"
@@ -17,19 +17,31 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
-      - label: 'Intro'
-        name: 'intro'
-        widget: 'object'
-        fields: 
-          - { label: 'Body', name: 'body', widget: 'text' }
-          - label: 'CTA'
-            name: 'cta'
-            widget: 'object'
-            fields: 
-              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
-              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
-              - { label: 'Label', name: 'label', widget: 'string' }
-              - { label: 'Value', name: 'value', widget: 'string' }
+      - label: "Intro"
+        name: "intro"
+        widget: "object"
+        fields:
+          - { label: "Body", name: "body", widget: "text" }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Variation",
+                  name: "variation",
+                  widget: "select",
+                  options:
+                    [
+                      "primary",
+                      "secondary",
+                      "neutralDark",
+                      "neutralLight",
+                      "white",
+                    ],
+                }
+              - { label: "Hollow", name: "hollow", widget: "boolean" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
       - label: "fiftyFifties"
         name: "fiftyFifties"
         widget: "list"
@@ -43,22 +55,36 @@ collections:
           - label: Background Color
             name: backgroundColor
             widget: select
-            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: Text Color
             name: color
             widget: select
-            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: Image
             name: image
             widget: image
-          - label: 'CTA'
-            name: 'cta'
-            widget: 'object'
-            fields: 
-              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
-              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
-              - { label: 'Label', name: 'label', widget: 'string' }
-              - { label: 'Value', name: 'value', widget: 'string' }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Variation",
+                  name: "variation",
+                  widget: "select",
+                  options:
+                    [
+                      "primary",
+                      "secondary",
+                      "neutralDark",
+                      "neutralLight",
+                      "white",
+                    ],
+                }
+              - { label: "Hollow", name: "hollow", widget: "boolean" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
       - label: "Promo Group"
         name: "promoGroup"
         widget: "object"
@@ -66,14 +92,26 @@ collections:
           - label: "Heading"
             name: "heading"
             widget: string
-          - label: 'CTA'
-            name: 'cta'
-            widget: 'object'
-            fields: 
-              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
-              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
-              - { label: 'Label', name: 'label', widget: 'string' }
-              - { label: 'Value', name: 'value', widget: 'string' }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Variation",
+                  name: "variation",
+                  widget: "select",
+                  options:
+                    [
+                      "primary",
+                      "secondary",
+                      "neutralDark",
+                      "neutralLight",
+                      "white",
+                    ],
+                }
+              - { label: "Hollow", name: "hollow", widget: "boolean" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
           - label: "Promos"
             name: "promos"
             widget: list
@@ -84,47 +122,59 @@ collections:
               - label: "Body"
                 name: "body"
                 widget: string
-              - icon: 'icon'
-                name: 'icon'
-                widget: 'select'
-                options: ['calendar', 'camera', 'chevron-right', 'close', 'give', 'groups', 'heart', 'people']
+              - icon: "icon"
+                name: "icon"
+                widget: "select"
+                options:
+                  [
+                    "calendar",
+                    "camera",
+                    "chevron-right",
+                    "close",
+                    "give",
+                    "groups",
+                    "heart",
+                    "people",
+                  ]
   - name: "about"
     label: "About"
     summary: "CCHS About Copy"
     folder: "src/copy/about"
     slug: "copy"
-    fields: 
+    fields:
       - label: "Hero"
         name: "hero"
         widget: object
-        fields: 
+        fields:
           - label: Image
             name: image
             widget: image
           - label: Pos
             name: pos
             widget: hidden
-      - label: 'Page Title'
-        name: 'pageTitle'
+      - label: "Page Title"
+        name: "pageTitle"
         widget: string
-      - label: 'Body'
-        name: 'body'
+      - label: "Body"
+        name: "body"
         widget: markdown
       - label: Banner
         name: banner
         widget: object
-        fields: 
+        fields:
           - label: backgroundImage
             name: backgroundImage
             widget: image
           - label: backgroundColor
             name: backgroundColor
             widget: select
-            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: color
             name: color
             widget: select
-            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: Text
             name: text
             widget: text
@@ -144,10 +194,10 @@ collections:
           - label: Value
             name: value
             widget: string
-      - label: Fifty Fifties - 
+      - label: Fifty Fifties -
         name: fiftyFifties
         widget: list
-        fields: 
+        fields:
           - label: Heading
             name: heading
             widget: string
@@ -160,188 +210,260 @@ collections:
           - label: Background Color
             name: backgroundColor
             widget: select
-            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: Color
             name: color
             widget: select
-            options: ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: Reverse
             name: reverse
             widget: boolean
-          - label: 'CTA'
-            name: 'cta'
-            widget: 'object'
-            fields: 
-              - {label: 'Variation', name: 'variation', widget: 'select', options: ['primary', 'secondary', 'neutralDark', 'neutralLight', 'white']}
-              - {label: 'Hollow', name: 'hollow', widget: 'boolean'}
-              - { label: 'Label', name: 'label', widget: 'string' }
-              - { label: 'Value', name: 'value', widget: 'string' }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - {
+                  label: "Variation",
+                  name: "variation",
+                  widget: "select",
+                  options:
+                    [
+                      "primary",
+                      "secondary",
+                      "neutralDark",
+                      "neutralLight",
+                      "white",
+                    ],
+                }
+              - { label: "Hollow", name: "hollow", widget: "boolean" }
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"
     folder: "src/copy/gallery"
     slug: "copy"
-    fields: 
+    fields:
       - label: "Hero"
         name: "hero"
         widget: object
-        fields: 
+        fields:
           - label: Image
             name: image
             widget: image
           - label: Pos
             name: pos
             widget: hidden
-      - label: 'Page Title'
-        name: 'pageTitle'
+      - label: "Page Title"
+        name: "pageTitle"
         widget: string
-      - label: 'Images'
-        name: 'images'
+      - label: "Images"
+        name: "images"
         widget: list
         allow_add: true
-        fields: 
-          - {label: Image, name: image, widget: image}
+        fields:
+          - { label: Image, name: image, widget: image }
   - name: "support"
     label: "Support"
     summary: "CCHS Support Copy"
     folder: "src/copy/support"
     slug: "copy"
-    fields: 
+    fields:
       - label: "Hero"
         name: "hero"
         widget: object
-        fields: 
+        fields:
           - label: Image
             name: image
             widget: image
           - label: Pos
             name: pos
             widget: hidden
-      - label: 'Page Title'
-        name: 'pageTitle'
+      - label: "Page Title"
+        name: "pageTitle"
         widget: string
-      - label: 'Donation Options'
+      - label: "Body"
+        name: "body"
+        widget: markdown
+      - label: "Support Options"
         name: lImageBlocks
         widget: list
-        fields: 
-          - {label: Heading, name: heading, widget: string}
-          - {label: Body, name: body, widget: text}
+        fields:
+          - { label: Heading, name: heading, widget: string }
+          - { label: Body, name: body, widget: text }
+          - label: backgroundColor
+            name: backgroundColor
+            widget: select
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: color
+            name: color
+            widget: select
+            options:
+              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+          - label: Layered Image
+            name: layeredImage
+            widget: object
+            fields:
+              - label: image
+                name: image
+                widget: image
+              - label: backgroundColor
+                name: backgroundColor
+                widget: select
+                options:
+                  [
+                    "primary",
+                    "secondary",
+                    "neutralDark",
+                    "neutralLight",
+                    "white",
+                  ]
+              - label: Background Layered Offset X
+                name: positionX
+                widget: select
+                options: ["left", "right"]
+              - label: Background Layered Offset Y
+                name: positionY
+                widget: select
+                options: ["top", "bottom"]
           - label: Cta
             name: cta
             widget: object
-            fields: 
-              - {label: Label, name: label, widget: string}
-              - {label: Value, name: value, widget: string}
-              - {label: Function, name: fn, widget: code, required: false}
-  - name: 'events'
+            fields:
+              - {
+                  label: "Variation",
+                  name: "variation",
+                  widget: "select",
+                  options:
+                    [
+                      "primary",
+                      "secondary",
+                      "neutralDark",
+                      "neutralLight",
+                      "white",
+                    ],
+                }
+              - { label: "Hollow", name: "hollow", widget: "boolean" }
+              - { label: Label, name: label, widget: string }
+              - { label: Value, name: value, widget: string }
+              - {
+                  label: Action,
+                  name: fn,
+                  widget: "select",
+                  options: ["Donate", ""],
+                }
+  - name: "events"
     label: "Events"
     summary: "CCHS Events Copy"
-    folder: 'src/copy/events'
-    slub: 'copy'
-    fields: 
+    folder: "src/copy/events"
+    slub: "copy"
+    fields:
       - label: "Hero"
         name: "hero"
         widget: object
-        fields: 
+        fields:
           - label: Image
             name: image
             widget: image
           - label: Pos
             name: pos
             widget: hidden
-      - label: 'Page Title'
-        name: 'pageTitle'
+      - label: "Page Title"
+        name: "pageTitle"
         widget: string
-      - label: 'Not Found Text'
+      - label: "Not Found Text"
         name: notFoundText
         widget: object
-        fields: 
+        fields:
           - label: Heading
             name: heading
             widget: string
           - label: Body
             name: body
             widget: string
-      - label: 'Events'
-        name: 'events'
-        widget: 'list'
+      - label: "Events"
+        name: "events"
+        widget: "list"
         allow_add: true
-        fields: 
-          - {label: Event Name, name: name, widget: string}
-          - {label: Start, name: start, widget: datetime}
-          - {label: End, name: end, widget: datetime}
-          - {label: Location, name: location, widget: string}
-          - {label: Description, name: description, widget: text}
-          - {label: Image, name: image, widget: image }
-          - label: 'CTA'
-            name: 'cta'
-            widget: 'object'
-            fields: 
-              - { label: 'Label', name: 'label', widget: 'string' }
-              - { label: 'Value', name: 'value', widget: 'string' }
+        fields:
+          - { label: Event Name, name: name, widget: string }
+          - { label: Start, name: start, widget: datetime }
+          - { label: End, name: end, widget: datetime }
+          - { label: Location, name: location, widget: string }
+          - { label: Description, name: description, widget: text }
+          - { label: Image, name: image, widget: image }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Value", name: "value", widget: "string" }
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"
     folder: "src/copy/contact"
     slug: "copy"
-    fields: 
+    fields:
       - label: "Hero"
         name: "hero"
         widget: object
-        fields: 
+        fields:
           - label: Image
             name: image
             widget: image
           - label: Pos
             name: pos
             widget: hidden
-      - label: 'Page Title'
-        name: 'pageTitle'
+      - label: "Page Title"
+        name: "pageTitle"
         widget: string
-  - name: 'config'
+  - name: "config"
     label: "Config"
     summary: "CCHS Config Values (used across the site)"
-    folder: 'src/copy/config'
-    slug: 'copy'
+    folder: "src/copy/config"
+    slug: "copy"
     fields:
-      - label: 'Address'
-        name: 'address'
+      - label: "Address"
+        name: "address"
         widget: object
-        fields: 
-          - label: 'Street'
-            name: 'street'
+        fields:
+          - label: "Street"
+            name: "street"
             widget: string
-          - label: 'PO Box, Suite, etc'
-            name: 'street2'
+          - label: "PO Box, Suite, etc"
+            name: "street2"
             widget: string
-          - label: 'City'
-            name: 'city'
+          - label: "City"
+            name: "city"
             widget: string
-          - label: 'State'
-            name: 'state'
+          - label: "State"
+            name: "state"
             widget: string
-          - label: 'Zip Code'
-            name: 'zip'
+          - label: "Zip Code"
+            name: "zip"
             widget: number
       - label: "Hours"
         name: "hours"
         widget: "list"
         allow_add: true
-        fields: 
-          - {label: "Label", name: "label", widget: "string"}
-          - {label: "Value", name: "value", widget: "string"}
+        fields:
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Value", name: "value", widget: "string" }
       - label: "Links"
         name: "links"
         summary: "{{fields.label}} - {{fields.value}}"
         widget: "list"
         allow_add: true
         fields:
-          - {label: Label, name: label, widget: string}
-          - {label: Value, name: value, widget: string}
-      - label: 'Phone'
-        name: 'phone'
+          - { label: Label, name: label, widget: string }
+          - { label: Value, name: value, widget: string }
+      - label: "Phone"
+        name: "phone"
         widget: string
-      - label: 'Email'
-        name: 'email'
+      - label: "Email"
+        name: "email"
         widget: string
-      - {label: "Logo", name: "logoImg", widget: "image"}
+      - { label: "Logo", name: "logoImg", widget: "image" }
