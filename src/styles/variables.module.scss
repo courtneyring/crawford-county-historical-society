@@ -28,7 +28,7 @@ $size-small-medium: 28px;
 $size-small: 24px;
 $size-xsmall: 20px;
 $size-tiny: 16px;
-$size-xtiny: 12px;
+$size-xtiny: 13px;
 
 $theme-sizes: (
     'xlarge': $size-xlarge,
@@ -42,7 +42,7 @@ $theme-sizes: (
     'xtiny': $size-xtiny
 );
 
-$container-padding-mobile: 45px 30px;
+$container-padding-mobile: 45px 20px;
 $container-padding-tablet: 50px 30px; //768+ 
 $container-padding-tablet-landscape: 70px 60px; //992+
 $container-padding-desktop-small: 100px; //1200+

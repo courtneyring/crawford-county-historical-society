@@ -1,6 +1,6 @@
 @import "../../styles/variables.module.scss";
 
-@include container-padding('.fiftyFifty__content', 'top', 'bottom');
+@include container-padding('.fiftyFifty__content');
 
 @mixin fiftyGutterPadding($padding, $resetRest: false) {
     .fiftyFifty:not(.reverse) .fiftyFifty__content {
@@ -81,11 +81,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: center center;
     }
 }
 
 .fiftyFifty__imageContainer {
     // height: 100%;
+    aspect-ratio: 1;
     width: 100%;
 }
 
@@ -97,6 +99,8 @@
 
 
 @media(min-width: 992px) {
+    @include container-padding('.fiftyFifty__content', 'top', 'bottom');
+
     .fiftyFifty {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;

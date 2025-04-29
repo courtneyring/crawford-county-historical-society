@@ -12,7 +12,7 @@ import variables from '../../styles/variables.module.scss';
 
 
 
-const Navbar = ({ links, logoImage, title, background }) => {
+const Navbar = ({ links, logoImage, title, background, transparent }) => {
 
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const isMobileWidth = useResizeResponsive(isMobile);
@@ -26,7 +26,7 @@ const Navbar = ({ links, logoImage, title, background }) => {
 
 
   return (
-    <nav className={`${styles.navbar} ${background && styles.background} ${menuIsOpen && styles.open}`}>
+    <nav className={`${styles.navbar} ${background && styles.background} ${menuIsOpen && styles.open} ${transparent && styles.transparent}`}>
 
 
       <Link className={styles.navbar__logo} href='/'>

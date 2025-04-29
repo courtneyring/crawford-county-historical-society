@@ -3,7 +3,7 @@ import variables from '../../styles/variables.module.scss';
 import styles from './Event.module.scss';
 
 const Event = ({ name, date, image, location, description, startTime, endTime }) => {
-
+    console.log(image)
     return (
 
         <div className={`${styles.event}`}>

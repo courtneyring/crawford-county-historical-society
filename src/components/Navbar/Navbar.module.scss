@@ -10,14 +10,17 @@
     left: 0;
     padding: 8px 20px;
     height: 80px;
+    
 
     &.background {
         background-color: $color-neutral-dark;
-        position: absolute;
+        position: static;
+
+        &.open {
+            position: absolute;
+        }
     }
 }
-
-
 
 .navbar__logo {
     height: 100%;
@@ -46,6 +49,7 @@
     padding: $container-padding-mobile;
     padding-top: 150px;
 }
+
 
 @media(min-width: 768px) {
 

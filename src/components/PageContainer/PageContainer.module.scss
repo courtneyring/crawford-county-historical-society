@@ -7,6 +7,7 @@
 
     & h1 {
         font-size: $size-medium-large;
+
     }
 
     &.removePadding {
@@ -34,16 +35,16 @@
 
     .container__copy {
         max-width: $container-max-width;
-        margin: 0 auto;
+        margin: 30px 0 auto;
     }
 
     .container__inner h1 {
         font-size: $size-large;
-        margin-bottom: 30px;
+        
     }
 
     .container__body {
-
+        margin-top: 30px;
         font-size: $size-small;
     }
 }

@@ -24,7 +24,7 @@ export default function Home() {
   return (
     <main className="flex  flex-col items-center ">
 
-      <Hero image={hero.image}/>
+      <Hero image={hero.image} pos={hero.pos}/>
       <Banner
         backgroundColor={variables.neutralDark}
         color={variables.white }

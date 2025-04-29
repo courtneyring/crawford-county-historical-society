@@ -8,7 +8,8 @@
 }
 
 .contact__inner {
-    display: grid;
+    display: flex;
+    flex-direction: column-reverse;
 
 }
 
@@ -18,8 +19,6 @@
 
 @media(min-width: 768px) {
    
-
-    
     .contact__map {
         height: 500px;
     }
@@ -31,6 +30,7 @@
     @include container-padding('.contact__container');
     
     .contact__inner {
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         max-width: $container-max-width-xsmall;

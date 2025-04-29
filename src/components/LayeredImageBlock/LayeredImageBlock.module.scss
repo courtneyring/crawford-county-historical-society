@@ -18,6 +18,11 @@
 }
 
 .lImageBlock__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 
     & h2 {
         font-size: $size-medium;

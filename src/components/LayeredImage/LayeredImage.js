@@ -1,7 +1,7 @@
 import styles from './LayeredImage.module.scss';
 
 const LayeredImage = ({image, backgroundColor, positionX, positionY, customShift}) => {
-    const shift = customShift !== null ? customShift + 'px' : '40px';
+    const shift = customShift ? customShift + 'px' : '25px';
 
     const accentStyle= () => {
         const marginTop = positionX === 'right' ? shift : null;

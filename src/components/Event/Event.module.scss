@@ -22,7 +22,7 @@
 }
 
 .event__title {
-    font-size: $size-small;
+    font-size: $size-small-medium;
     margin-bottom: 10px;
     order: 1;
 }
@@ -30,13 +30,14 @@
 .event__details {
     display: flex;
     flex-direction: column;
-
+    font-size: $size-xsmall;
     order: 3;
 
     & p {
         align-items: center;
         display: flex;
         margin-bottom: 10px;
+
     }
 
     & img {
@@ -48,6 +49,7 @@
 .event__description {
     order: 2;
     margin-bottom: 15px;
+    font-size: $size-xsmall;
 }
 
 @media(min-width: 768px) {

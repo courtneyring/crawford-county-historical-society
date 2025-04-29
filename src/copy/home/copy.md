@@ -2,6 +2,7 @@
 hero:
   title: Crawford County Historical Society
   image: /assets/images/hero.jpg
+  pos: 6% 50%
 intro: 
   body: "Welcome to the Crawford County Historical Society and Museum. Experience the rich history of Grayling and Crawford County through dynamic exhibits, interactive programs, and engaging community events that bring local stories to life."
   cta:
@@ -22,6 +23,7 @@ fiftyFifties:
         hollow: true
         variation: white
   - heading: Historical Photo Gallery
+
     body: Step back in time with a collection of historic photographs capturing the people, places, and moments that shaped Grayling and Crawford County.
     backgroundColor: neutralLight
     color: neutralDark

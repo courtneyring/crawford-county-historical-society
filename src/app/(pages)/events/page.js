@@ -13,7 +13,7 @@ const Events = () => {
   };
 
   return (
-    <PageContainer hero={hero} pageTitle={events.length ? pageTitle : null}>
+    <PageContainer hero={hero} pageTitle={events.length ? pageTitle : null} excludePadding={events.length ? ['bottom'] : []}>
       <div className={styles.events}>
         {!!events.length ? (
           events.map((event) => {
