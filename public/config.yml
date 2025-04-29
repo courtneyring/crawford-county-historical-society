@@ -399,8 +399,18 @@ collections:
             name: "cta"
             widget: "object"
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Value", name: "value", widget: "string" }
+              - {
+                  label: "Label",
+                  name: "label",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Value",
+                  name: "value",
+                  widget: "string",
+                  required: false,
+                }
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"
