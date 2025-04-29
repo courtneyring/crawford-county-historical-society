@@ -26,28 +26,24 @@ const Navbar = ({ links, logoImage, title, background }) => {
 
 
   return (
-    <nav className={`${styles.navbar} ${background && styles.background}`}>
+    <nav className={`${styles.navbar} ${background && styles.background} ${menuIsOpen && styles.open}`}>
 
 
       <Link className={styles.navbar__logo} href='/'>
         <img src={logoImage} />
-        {/* {(logoImage && !menuIsOpen) && <img src={logoImage} className='h-full w-auto' />} */}
-        {/* {(!logoImage && !menuIsOpen) && <div className='text-white'>{title}</div>} */}
       </Link>
 
-
-
-      {isMobileWidth ?
-
+      <div className={styles.navbar__toggle}>
         <MenuButton clickFn={toggleMenu} isOpen={menuIsOpen} />
+      </div>
 
-        :
-        <div className=''>
-          {links.map((link, idx) => {
-            return <Link className={`${styles.navbar__link}`} href={link.value} key={`navbar-d-${link}`}>{link.label}</Link>
-          })}
-        </div>
-      }
+
+      <div className={styles.navbar__links}>
+        {links.map((link, idx) => {
+          return <Link className={`${styles.navbar__link}`} href={link.value} key={`navbar-d-${link}`}>{link.label}</Link>
+        })}
+      </div>
+
       {menuIsOpen && createPortal(
         <Overlay closeFn={() => setMenuIsOpen(false)} hideClose={true} background={variables.neutralDark}>
           <div className={styles.navbar__mobileDialog}>

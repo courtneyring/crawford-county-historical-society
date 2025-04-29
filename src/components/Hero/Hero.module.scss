@@ -27,7 +27,7 @@
         height: calc(100vh - 13rem);
 
         &.skinny {
-            height: 730px;
+            height: calc(100vh - 13rem);
         }
     }
 }

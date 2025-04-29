@@ -23,6 +23,13 @@
     }
 }
 
+@media(min-width: 992px) {
+    .container__body {
+        font-size: $size-small;
+        line-height: 2;
+    }
+}
+
 @media(min-width: 1200px) {
 
     .container__copy {
