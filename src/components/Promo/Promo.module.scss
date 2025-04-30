@@ -70,6 +70,12 @@
     }
 }
 
+@media(min-width: 992px) {
+    .promo {
+        width: 18rem;
+    }
+}
+
 @media(min-width: 1200px) {
     .promo {
         width: 20rem;

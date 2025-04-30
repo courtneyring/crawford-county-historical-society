@@ -207,6 +207,9 @@ collections:
           - label: Image
             name: image
             widget: image
+          - label: Pos
+            name: pos
+            widget: hidden
           - label: Background Color
             name: backgroundColor
             widget: select
@@ -395,22 +398,6 @@ collections:
           - { label: Location, name: location, widget: string }
           - { label: Description, name: description, widget: text }
           - { label: Image, name: image, widget: image }
-          - label: "CTA"
-            name: "cta"
-            widget: "object"
-            fields:
-              - {
-                  label: "Label",
-                  name: "label",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Value",
-                  name: "value",
-                  widget: "string",
-                  required: false,
-                }
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"

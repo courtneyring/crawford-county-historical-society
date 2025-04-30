@@ -43,6 +43,7 @@ const About = () => {
                     reverse={item.reverse}
                     color={variables[item.color]}
                     cta={item.cta ? button(item.cta) : null}
+                    pos={item.pos}
                     key={`fifty-${item.heading}`}
                 />
             })}

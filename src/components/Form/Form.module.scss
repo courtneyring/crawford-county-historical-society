@@ -77,6 +77,13 @@
     };
 }
 
+
+@media(min-width: 992px) {
+    .form__container {
+        padding: 50px;
+    }
+}
+
 @media(min-width: 1200px) {
     .form label, .form input, .form textarea {
         font-size: $size-small;

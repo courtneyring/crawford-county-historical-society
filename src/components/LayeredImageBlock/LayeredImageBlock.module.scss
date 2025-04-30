@@ -2,6 +2,7 @@
 
 @include container-padding('.lImageBlock');
 
+
 .lImageBlock {}
 
 .lImageBlock__container {
@@ -41,7 +42,7 @@
     @include container-padding('.lImageBlock__content');
 
     .lImageBlock {
-        padding: 0;
+        // padding: 0;
     }
 
     .lImageBlock__container {
@@ -50,7 +51,7 @@
 
     .lImageBlock__image {
         height: 400px;
-        width: 100%;
+        width: 80%;
     }
 
     .lImageBlock__content {
@@ -66,8 +67,44 @@
 }
 
 @media(min-width: 992px) {
+    @include container-padding('.lImageBlock');
+
+    .lImageBlock__container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 30px;
+
+    }
+
+    .lImageBlock__content {
+        padding: 0;
+        align-items: flex-start;
+        text-align: left;
+
+        & p {
+            font-size: $size-xsmall;
+        }
+        
+    }
+
     .lImageBlock__image {
-        height: 500px;
+        align-self: flex-start;
+        padding: 0;
+        width: 100%;
+    }
+
+    .reverse {
+
+        & .lImageBlock__content {
+
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        & .lImageBlock__image {
+            grid-column: 2;
+        }
+
     }
 }
 
@@ -75,8 +112,6 @@
     @include container-padding('.lImageBlock');
 
     .lImageBlock__container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
         gap: 60px;
         max-width: $container-max-width;
         margin: 0 auto;
@@ -99,19 +134,7 @@
         height: 100%;
     }
 
-    .reverse {
 
-        & .lImageBlock__content {
-
-            grid-column: 1;
-            grid-row: 1;
-        }
-
-        & .lImageBlock__image {
-            grid-column: 2;
-        }
-
-    }
 
 }
 
