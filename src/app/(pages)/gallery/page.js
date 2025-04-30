@@ -1,21 +1,20 @@
-'use client';
+"use client";
 import { useMemo } from "react";
-import { PageContainer, ImageGrid } from '@/components';
-import styles from './Gallery.module.scss';
+import { PageContainer, ImageGrid } from "@/components";
 
-import { attributes, react as BodyCopy } from '../../../copy/gallery/copy.md';
+import { attributes, react as BodyCopy } from "../../../copy/gallery/copy.md";
 
 const Gallery = () => {
-    let { hero, pageTitle, images } = attributes;
-    let imageArr = useMemo(() => images.map((image) => image.image), images)
+  let { hero, pageTitle, images } = attributes;
+  let imageArr = useMemo(() => images.map((image) => image.image), images);
 
-    return (
-        <PageContainer hero={hero} pageTitle={pageTitle} copy={<BodyCopy />}>
-            <div className={styles.gallery}>
-                <ImageGrid images={imageArr} />
-            </div>
-        </PageContainer>
-    )
-}
+  return (
+    <PageContainer hero={hero} pageTitle={pageTitle} copy={<BodyCopy />}>
+      <div className={styles.gallery}>
+        <ImageGrid images={imageArr} />
+      </div>
+    </PageContainer>
+  );
+};
 
 export default Gallery;

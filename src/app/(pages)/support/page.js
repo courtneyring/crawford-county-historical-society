@@ -9,10 +9,9 @@ import DonateModal from "@/app/modals/Donate/Donate";
 
 const Support = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
-  let { hero, pageTitle, intro, lImageBlocks } = attributes;
+  let { hero, pageTitle, lImageBlocks } = attributes;
 
   const clickHandler = () => {
-    console.log("here");
     setModalIsOpen(true);
   };
 
@@ -23,6 +22,7 @@ const Support = () => {
           {lImageBlocks.map((block, idx) => {
             return (
               <LayeredImageBlock
+                key={`lImageBlock-${block.heading}`}
                 layeredImage={{
                   ...block.layeredImage,
                   backgroundColor:
