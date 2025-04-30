@@ -252,6 +252,9 @@ collections:
       - label: "Hero"
         name: "hero"
         widget: object
+      - label: "Body"
+        name: "body"
+        widget: markdown
         fields:
           - label: Image
             name: image

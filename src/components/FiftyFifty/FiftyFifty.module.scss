@@ -174,7 +174,8 @@
 
 
     .fiftyFifty__text {
-        max-width: $container-max-width-wide / 2 - $container-padding-desktop-large;
+        max-width: $container-max-width / 2 - $container-padding-desktop-small;
+        // max-width: $container-max-width / 2;
         ;
 
         & h2 {
@@ -190,7 +191,7 @@
     }
 
     .fiftyFifty__imageContainer {
-        max-width: $container-max-width-wide / 2;
+        max-width: $container-max-width / 2;
         aspect-ratio: 1;
     }
 }
