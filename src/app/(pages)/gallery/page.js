@@ -10,7 +10,7 @@ const Gallery = () => {
 
   return (
     <PageContainer hero={hero} pageTitle={pageTitle} copy={<BodyCopy />}>
-      <div className={styles.gallery}>
+      <div>
         <ImageGrid images={imageArr} />
       </div>
     </PageContainer>
