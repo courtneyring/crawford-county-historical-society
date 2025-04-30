@@ -420,6 +420,19 @@ collections:
       - label: "Page Title"
         name: "pageTitle"
         widget: string
+      - label: "Body"
+        name: "body"
+        widget: markdown
+      - label: Form Thank You
+        name: thankYou
+        widget: object
+        fields:
+          - label: Headline
+            name: headline
+            widget: text
+          - label: Body
+            name: body
+            widget: text
   - name: "config"
     label: "Config"
     summary: "CCHS Config Values (used across the site)"
