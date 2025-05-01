@@ -6,7 +6,7 @@ const Promo = ({ icon, header, body, cta }) => {
     const Tag = cta ? Link : 'div';
     return (
         <Tag className={` ${styles.promo}`} href={cta?.value}>
-            {icon && <img src={`assets/icons/${icon}.svg`} className='h-14 w-auto mb-3' />}
+            {icon && <img src={`assets/icons/${icon}.svg`} className='h-14 w-auto mb-3' alt={`${icon} icon`}/>}
             <h3 className={styles.promo__header}>{header}</h3>
             <p className={styles.promo__body}>{body}</p>
             {cta &&

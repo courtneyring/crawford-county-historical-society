@@ -13,5 +13,7 @@ events:
     location: Rolling oak
     description: Here is a description ome join us at the brewery for fundraising
       and other things
-    image: /assets/images/gallery_army-air-field.jpg
+    image: 
+      file: /assets/images/gallery_army-air-field.jpg
+      alt: "Five men standing infront of a helicopter"
 ---

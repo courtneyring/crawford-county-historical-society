@@ -30,14 +30,18 @@ members:
 fiftyFifties:
   - heading: Attend a Board Meeting
     body: The Board of Directors meets on the second Tuesday of every month at 3pm. From April to September, meetings are held at the Museum (97 East Michigan Avenue). From October to March, the board meets at the Grayling Township Hall (2090 Viking Way).
-    image: /assets/images/mike-bearss-volunteer.jpg
+    image: 
+      file: /assets/images/mike-bearss-volunteer.jpg
+      alt: Volunteer building a bench
     pos: 50% 18%
     backgroundColor: 'neutralLight'
     color: 'neutralDark'
     reverse: true
   - heading: Contact a Board Member
     body: To contact the board of directors or a specific member of the board, please call or send a message to the Crawford County Historical Society and someone will get back to you as soon as possible.
-    image: /assets/images/museum-event.jpg
+    image: 
+      file: /assets/images/museum-event.jpg
+      alt: Volunteers dressed up as Santa Claus and Mrs. Claus
     pos: 50% 28%
     backgroundColor: 'primary'
     color: white

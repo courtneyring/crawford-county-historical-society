@@ -27,19 +27,19 @@ const Event = ({
         <div className={styles.event__details}>
           <p>
             <span>
-              <img src="assets/icons/calendar.svg" />
+              <img src="assets/icons/calendar.svg" alt="Calendar icon"/>
             </span>
             {date}
           </p>
           <p>
             <span>
-              <img src="assets/icons/clock.svg" />
+              <img src="assets/icons/clock.svg" alt="Clock icon" />
             </span>
             {startTime} - {endTime}
           </p>
           <p>
             <span>
-              <img src="assets/icons/pin.svg" />
+              <img src="assets/icons/pin.svg" alt="Pin icon" />
             </span>
             {location}
           </p>

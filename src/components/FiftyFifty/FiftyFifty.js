@@ -13,7 +13,7 @@ const FiftyFifty = ({ heading, body, cta, backgroundColor, color, image, reverse
             <div className={styles.fiftyFifty__image}>
                 <div className={styles.fiftyFifty__imageContainer}>
 
-                    <img src={image} style={{objectPosition: pos}}/>
+                    <img src={image.file} alt={image.alt} style={{objectPosition: pos}}/>
                 </div>
                
             </div>

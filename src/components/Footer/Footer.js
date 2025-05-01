@@ -18,7 +18,7 @@ const Footer = ({ address, links, hours, logoImg, phone, email }) => {
         <div className={styles.footer__container}>
           <div className={styles.footer__left}>
             <div className={styles.footer__logo}>
-              <img src={logoImg} />
+              <img src={logoImg} alt='CCHS Logo'/>
 
             </div>
             <AddressHoursContact {...{address, hours, phone, email}} centerAlign={isMobileWidth}/>

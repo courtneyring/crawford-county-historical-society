@@ -5,6 +5,7 @@ media_folder: "public/assets/images"
 public_folder: "/assets/images"
 collections:
   - name: "home" # Used in routes, e.g., /admin/collections/blog
+    title: 'Home'
     label: "Home" # Used in the UI
     folder: "src/copy/home" # The path to the folder where the documents are stored
     slug: "copy" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -13,7 +14,6 @@ collections:
       - label: "Hero"
         name: "hero"
         widget: "object"
-        summary: "{{fields.title}}"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
@@ -64,7 +64,14 @@ collections:
               ["primary", "secondary", "neutralDark", "neutralLight", "white"]
           - label: Image
             name: image
-            widget: image
+            widget: object
+            fields: 
+              - label: File
+                name: file
+                widget: image
+              - label: Alt Text
+                name: alt
+                widget: string
           - label: "CTA"
             name: "cta"
             widget: "object"
@@ -206,10 +213,17 @@ collections:
             widget: text
           - label: Image
             name: image
-            widget: image
-          - label: Pos
-            name: pos
-            widget: hidden
+            widget: object
+            fields: 
+              - label: File
+                name: file
+                widget: image
+              - label: Alt Text
+                name: alt
+                widget: string
+              - label: Pos
+                name: pos
+                widget: hidden
           - label: Background Color
             name: backgroundColor
             widget: select
@@ -262,13 +276,6 @@ collections:
       - label: "Body"
         name: "body"
         widget: markdown
-        fields:
-          - label: Image
-            name: image
-            widget: image
-          - label: Pos
-            name: pos
-            widget: hidden
       - label: "Page Title"
         name: "pageTitle"
         widget: string
@@ -277,7 +284,19 @@ collections:
         widget: list
         allow_add: true
         fields:
-          - { label: Image, name: image, widget: image }
+          - label: Image
+            name: image
+            widget: object
+            fields: 
+              - label: File
+                name: file
+                widget: image
+              - label: Alt Text
+                name: alt
+                widget: string
+              - label: Pos
+                name: pos
+                widget: hidden
   - name: "support"
     label: "Support"
     summary: "CCHS Support Copy"
@@ -320,9 +339,19 @@ collections:
             name: layeredImage
             widget: object
             fields:
-              - label: image
+              - label: Image
                 name: image
-                widget: image
+                widget: object
+                fields: 
+                  - label: File
+                    name: file
+                    widget: image
+                  - label: Alt Text
+                    name: alt
+                    widget: string
+                  - label: Pos
+                    name: pos
+                    widget: hidden
               - label: backgroundColor
                 name: backgroundColor
                 widget: select
@@ -407,7 +436,19 @@ collections:
           - { label: End, name: end, widget: datetime }
           - { label: Location, name: location, widget: string }
           - { label: Description, name: description, widget: text }
-          - { label: Image, name: image, widget: image }
+          - label: Image
+            name: image
+            widget: object
+            fields: 
+              - label: File
+                name: file
+                widget: image
+              - label: Alt Text
+                name: alt
+                widget: string
+              - label: Pos
+                name: pos
+                widget: hidden
   - name: "contact"
     label: "Contact"
     summary: "CCHS Contact Copy"

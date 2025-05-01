@@ -5,6 +5,9 @@ import { attributes } from "../../../copy/events/copy.md";
 import moment from "moment";
 import styles from "./Events.module.scss";
 
+
+
+
 const Events = () => {
   let { hero, pageTitle, events, notFoundText } = attributes;
 

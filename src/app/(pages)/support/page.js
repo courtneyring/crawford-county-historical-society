@@ -2,10 +2,10 @@
 
 import { PageContainer, LayeredImageBlock } from "@/components";
 import variables from "../../../styles/variables.module.scss";
-import styles from "./support.module.scss";
 import { attributes, react as IntroCopy } from "../../../copy/support/copy.md";
 import { useState } from "react";
 import DonateModal from "@/app/modals/Donate/Donate";
+import Head from "next/head";
 
 const Support = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);

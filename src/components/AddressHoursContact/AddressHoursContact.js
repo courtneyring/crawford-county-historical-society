@@ -13,8 +13,8 @@ const AddressHoursContact = ({address, hours, email, phone, dark=true, centerAli
 
             <div className={`${styles.ahc__contact} ${dark && styles.dark}`}>
                 <span>
-                    <a className={styles.ahc__email} href={`mailto:${email}`}><img src='/assets/icons/envelope.svg' />{email}</a>
-                    <a className={styles.ahc__phone} href={`tel:${phone}`}><img src='/assets/icons/phone.svg' />{phone}</a>
+                    <a className={styles.ahc__email} href={`mailto:${email}`}><img src='/assets/icons/envelope.svg' alt="Envelope Icon" />{email}</a>
+                    <a className={styles.ahc__phone} href={`tel:${phone}`}><img src='/assets/icons/phone.svg' alt="Phone Icon"/>{phone}</a>
 
                 </span>
 

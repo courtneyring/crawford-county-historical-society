@@ -1,18 +1,15 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import MenuButton from "../MenuButton/MenuButton";
-import { isMobile } from "@/utils/breakpoints";
-import useResizeResponsive from "@/hooks/useResponsive";
 import { createPortal } from "react-dom";
 import Overlay from "../Overlay/Overlay";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.scss";
 import variables from "../../styles/variables.module.scss";
+import { usePathname } from 'next/navigation';
 
 const Navbar = ({ links, logoImage, title, background, transparent }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const isMobileWidth = useResizeResponsive(isMobile);
 
   const toggleMenu = () => {
     let bodyStyle = menuIsOpen ? "unset" : "hidden";
@@ -25,7 +22,7 @@ const Navbar = ({ links, logoImage, title, background, transparent }) => {
       className={`${styles.navbar} ${background && styles.background} ${menuIsOpen && styles.open} ${transparent && styles.transparent}`}
     >
       <Link className={styles.navbar__logo} href="/">
-        <img src={logoImage} />
+        <img src={logoImage} alt="Logo Image" />
       </Link>
 
       <div className={styles.navbar__toggle}>
