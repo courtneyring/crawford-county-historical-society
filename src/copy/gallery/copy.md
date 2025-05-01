@@ -1,8 +1,6 @@
 ---
 hero:
-  image: 
-      alt: 
-      file: /assets/images/gallery_michigan-ave.png
+  image:  /assets/images/gallery_michigan-ave.png
   pos: 50% 60%
 pageTitle: Gallery
 images:
