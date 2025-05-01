@@ -3,7 +3,6 @@
 import Button from "../Button/Button";
 import LayeredImage from "../LayeredImage/LayeredImage";
 import styles from "./LayeredImageBlock.module.scss";
-import variables from "@/styles/variables.module.scss";
 import { isTablet, isSmallDesktop } from "@/utils/breakpoints";
 import useResizeResponsive from "@/hooks/useResponsive";
 

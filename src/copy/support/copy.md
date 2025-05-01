@@ -11,7 +11,9 @@ lImageBlocks:
     backgroundColor: neutralDark
     color: white
     layeredImage:
-      image: /assets/images/gallery_ice-harvest.jpg
+      image: 
+        file: /assets/images/gallery_ice-harvest.jpg
+        alt: Men standing in front of truck
       backgroundColor: secondary
       positionX: left
       positionY: top
@@ -30,7 +32,9 @@ lImageBlocks:
     backgroundColor: primary
     color: white
     layeredImage:
-      image: /assets/images/gallery_army-air-field.jpg
+      image: 
+        file: /assets/images/gallery_army-air-field.jpg
+        alt: Five pilots standing in front of helicopter
       backgroundColor: secondary
       positionX: right
       positionY: bottom
@@ -47,7 +51,9 @@ lImageBlocks:
     backgroundColor: neutralLight
     color: neutralDark
     layeredImage:
-      image: /assets/images/gallery_chief-daughter.jpg
+      image: 
+        file: /assets/images/gallery_chief-daughter.jpg
+        alt: Native american man in traditional clothing standing next to his daughter in a dress
       backgroundColor: primary
       positionX: left
       positionY: top
