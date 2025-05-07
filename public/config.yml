@@ -194,6 +194,7 @@ collections:
       - label: Members
         name: members
         widget: list
+        summary: '{{fields.label}} - {{fields.value}}'
         fields:
           - label: Label
             name: label
@@ -239,6 +240,7 @@ collections:
             widget: boolean
           - label: "CTA"
             name: "cta"
+            required: false
             widget: "object"
             fields:
               - {
