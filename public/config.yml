@@ -508,8 +508,7 @@ collections:
             widget: number
       - label: "Hours"
         name: "hours"
-        widget: "list"
-        allow_add: true
+        widget: "object"
         fields:
           - { label: "Label", name: "label", widget: "string" }
           - { label: "Value", name: "value", widget: "string" }
