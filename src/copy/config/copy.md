@@ -1,12 +1,13 @@
 ---
 address:
-    street: 97 East Michigan Avenue
-    street2: P.O. Box 218
-    city: Grayling
-    state: MI
-    zip: 49738
-phone: 989-745-3493
-email: cchsgrayling@gmail.com
+  street: 97 East Michigan Avenue
+  street2: P.O. Box 218
+  city: Grayling
+  state: MI
+  zip: 49738
+hours:
+  label: Closed for the Winter Season
+  value: Opening May 23, 2025
 links:
   - label: About
     value: /about
@@ -18,8 +19,7 @@ links:
     value: /support
   - label: Contact
     value: /contact
-hours:
-  label: Tuesday to Saturday
-  value: 10am - 4pm
+phone: 989-745-3493
+email: cchsgrayling@gmail.com
 logoImg: /assets/images/crawford-county-logo-white.png
 ---
