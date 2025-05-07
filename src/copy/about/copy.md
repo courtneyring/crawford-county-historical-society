@@ -45,11 +45,6 @@ fiftyFifties:
     backgroundColor: neutralLight
     color: neutralDark
     reverse: true
-    cta:
-      variation: primary
-      hollow: true
-      label: Funds
-      value: "100"
   - heading: Contact a Board Member
     body: To contact the board of directors or a specific member of the board,
       please call or send a message to the Crawford County Historical Society

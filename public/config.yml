@@ -247,6 +247,7 @@ collections:
                   label: "Variation",
                   name: "variation",
                   widget: "select",
+                  required: false,
                   options:
                     [
                       "primary",
@@ -256,9 +257,9 @@ collections:
                       "white",
                     ],
                 }
-              - { label: "Hollow", name: "hollow", widget: "boolean" }
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Hollow",required: false, name: "hollow", widget: "boolean" }
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Value", name: "value", widget: "string", required: false }
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"
