@@ -10,6 +10,8 @@ collections:
     folder: "src/copy/home" # The path to the folder where the documents are stored
     slug: "copy" # Filename template, e.g., YYYY-MM-DD-title.md
     summary: "CCHS Home Copy"
+    editor: 
+      preview: false
     fields: # The fields for each document, usually in front matter
       - label: "Hero"
         name: "hero"
@@ -42,11 +44,9 @@ collections:
           - label: Background Color
             name: backgroundColor
             widget: hidden
-            value: 'primary'
           - label: Text Color
             name: color
             widget: hidden
-            value: white
           - label: Image
             name: image
             widget: object
@@ -77,26 +77,14 @@ collections:
           - label: "Heading"
             name: "heading"
             widget: string
-          - label: "CTA"
+          - label: "Button"
             name: "cta"
             widget: "object"
             fields:
-              - {
-                  label: "Variation",
-                  name: "variation",
-                  widget: "select",
-                  options:
-                    [
-                      "primary",
-                      "secondary",
-                      "neutralDark",
-                      "neutralLight",
-                      "white",
-                    ],
-                }
-              - { label: "Hollow", name: "hollow", widget: "boolean" }
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Variation", name: "variation", widget: "hidden" }
+              - { label: "Hollow", name: "hollow", widget: "hidden" }
+              - { label: "Text", name: "label", widget: "string", hint: This is the text that goes on the Button }
+              - { label: "Url", name: "value", widget: "string", hint: If you want to link to a page *within* the website use "/" before the page name. ie About Page - /about; Contact Page /contact. Otherwise put the full url ie https://google.com  }
           - label: "Promos"
             name: "promos"
             widget: list
@@ -109,18 +97,28 @@ collections:
                 widget: string
               - icon: "icon"
                 name: "icon"
-                widget: "select"
-                options:
-                  [
-                    "calendar",
-                    "camera",
-                    "chevron-right",
-                    "close",
-                    "give",
-                    "groups",
-                    "heart",
-                    "people",
-                  ]
+                widget: "hidden"
+      - label: Banner
+        name: "banner"
+        widget: object
+        fields:
+          - label: Background Image
+            name: backgroundImage
+            widget: image
+          - label: Background Color
+            name: backgroundColor
+            widget: hidden
+          - label: Color
+            name: color
+            widget: hidden
+          - label: "Button"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Variation", name: "variation", widget: "hidden" }
+              - { label: "Hollow", name: "hollow", widget: "hidden" }
+              - { label: "Text", name: "label", widget: "string", hint: This is the text that goes on the Button }
+              - { label: "Url", name: "value", widget: "string", hint: If you want to link to a page *within* the website use "/" before the page name. ie About Page - /about; Contact Page /contact. Otherwise put the full url ie https://google.com  }
   - name: "about"
     label: "About"
     summary: "CCHS About Copy"
@@ -152,19 +150,16 @@ collections:
             widget: image
           - label: backgroundColor
             name: backgroundColor
-            widget: select
-            options:
-              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            widget: hidden
           - label: color
             name: color
-            widget: select
-            options:
-              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            widget: hidden
           - label: Text
             name: text
             widget: text
           - label: Attribution
             name: attribution
+            required: false
             widget: string
       - label: Title - Members Section
         name: membersTitle
@@ -174,13 +169,13 @@ collections:
         widget: list
         summary: '{{fields.label}} - {{fields.value}}'
         fields:
-          - label: Label
+          - label: Position
             name: label
             widget: string
-          - label: Value
+          - label: Name
             name: value
             widget: string
-      - label: Fifty Fifties -
+      - label: Fifty Fifties
         name: fiftyFifties
         widget: list
         fields:
@@ -205,39 +200,21 @@ collections:
                 widget: hidden
           - label: Background Color
             name: backgroundColor
-            widget: select
-            options:
-              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            widget: hidden
           - label: Color
             name: color
-            widget: select
-            options:
-              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            widget: hidden
           - label: Reverse
             name: reverse
-            widget: boolean
-          - label: "CTA"
+            widget: hidden
+          - label: "Button"
             name: "cta"
-            required: false
             widget: "object"
             fields:
-              - {
-                  label: "Variation",
-                  name: "variation",
-                  widget: "select",
-                  required: false,
-                  options:
-                    [
-                      "primary",
-                      "secondary",
-                      "neutralDark",
-                      "neutralLight",
-                      "white",
-                    ],
-                }
-              - { label: "Hollow",required: false, name: "hollow", widget: "boolean" }
-              - { label: "Label", name: "label", widget: "string", required: false }
-              - { label: "Value", name: "value", widget: "string", required: false }
+              - { label: "Variation", name: "variation", widget: "hidden" }
+              - { label: "Hollow", name: "hollow", widget: "hidden" }
+              - { label: "Text", name: "label", widget: "string", hint: This is the text that goes on the Button, required: false }
+              - { label: "Url", name: "value", widget: "string", hint: If you want to link to a page *within* the website use "/" before the page name. ie About Page - /about; Contact Page /contact. Otherwise put the full url ie https://google.com, required: false  }
   - name: "gallery"
     label: "Gallery"
     summary: "CCHS Gallery Copy"
@@ -264,6 +241,7 @@ collections:
         name: "images"
         widget: list
         allow_add: true
+        summary: '{{fields.image.file}} - {{fields.image.alt}}'
         fields:
           - label: Image
             name: image
