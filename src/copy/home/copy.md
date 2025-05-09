@@ -25,7 +25,7 @@ fiftyFifties:
       alt: People socializing at a party at a brewery
     reverse: false
     cta:
-      label: See Upcoming Event
+      label: See Upcoming Events
       value: /events
       hollow: true
       variation: white
