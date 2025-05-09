@@ -22,29 +22,16 @@ collections:
         widget: "object"
         fields:
           - { label: "Body", name: "body", widget: "text" }
-          - label: "CTA"
+          - label: "Button"
             name: "cta"
             widget: "object"
             fields:
-              - {
-                  label: "Variation",
-                  name: "variation",
-                  widget: "select",
-                  options:
-                    [
-                      "primary",
-                      "secondary",
-                      "neutralDark",
-                      "neutralLight",
-                      "white",
-                    ],
-                }
-              - { label: "Hollow", name: "hollow", widget: "boolean" }
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Value", name: "value", widget: "string" }
-      - label: "fiftyFifties"
+              - { label: "Text", name: "label", widget: "string" }
+              - { label: "Url", name: "value", widget: "string", hint: If you want to link to a page *within* the website use "/" before the page name. ie About Page - /about; Contact Page /contact }
+      - label: "Fifty Fifties"
         name: "fiftyFifties"
         widget: "list"
+        allow_add: false
         fields:
           - label: "Heading"
             name: "heading"
@@ -54,14 +41,12 @@ collections:
             widget: text
           - label: Background Color
             name: backgroundColor
-            widget: select
-            options:
-              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            widget: hidden
+            value: 'primary'
           - label: Text Color
             name: color
-            widget: select
-            options:
-              ["primary", "secondary", "neutralDark", "neutralLight", "white"]
+            widget: hidden
+            value: white
           - label: Image
             name: image
             widget: object
@@ -72,26 +57,19 @@ collections:
               - label: Alt Text
                 name: alt
                 widget: string
-          - label: "CTA"
+                hint: This is used for people who can't see very well and need screen readers. Put a description you would use to describe the picture to that person
+          - label: "Button"
             name: "cta"
             widget: "object"
             fields:
               - {
                   label: "Variation",
                   name: "variation",
-                  widget: "select",
-                  options:
-                    [
-                      "primary",
-                      "secondary",
-                      "neutralDark",
-                      "neutralLight",
-                      "white",
-                    ],
+                  widget: "hidden",
                 }
-              - { label: "Hollow", name: "hollow", widget: "boolean" }
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Value", name: "value", widget: "string" }
+              - { label: "Hollow", name: "hollow", widget: "hidden" }
+              - { label: "Text", name: "label", widget: "string", hint: This is the text that goes on the Button }
+              - { label: "Url", name: "value", widget: "string", hint: If you want to link to a page *within* the website use "/" before the page name. ie About Page - /about; Contact Page /contact. Otherwise put the full url ie https://google.com  }
       - label: "Promo Group"
         name: "promoGroup"
         widget: "object"
