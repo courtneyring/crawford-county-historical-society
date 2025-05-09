@@ -30,7 +30,7 @@ const Footer = ({ address, links, hours, logoImg, phone, email }) => {
             {links.map((link, idx) => {
               return (
                 <div className={styles.footer__link} key={link.value} >
-                  <Button url={link.value} variation='link' textDecoration='none'>{link.label}</Button>
+                  <Button href={link.value} variation='link' textDecoration='none'>{link.label}</Button>
                 </div>
               )
             })}
