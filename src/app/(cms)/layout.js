@@ -9,10 +9,17 @@ export const metadata = {
 
 
 export default function CMSLayout({ children }) {
+
     return (
         <html lang="en" >
             <body className={urbanist.className}>
+                
+ 
+                <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+                <script src='/scripts/test.js'>
+                </script>
                 {children}
+                
             </body>
         </html>
     );

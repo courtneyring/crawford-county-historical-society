@@ -4,17 +4,27 @@ backend:
 media_folder: "public/assets/images"
 public_folder: "/assets/images"
 collections:
+  - name: test
+    title: test
+    label: test
+    folder: "src/copy/test"
+    slug: "copy"
+    summary: "CCHS Test Copy"
+    fields:
+      - label: "Gist"
+        name: "gist"
+        widget: "gist"
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     title: 'Home'
     label: "Home" # Used in the UI
     folder: "src/copy/home" # The path to the folder where the documents are stored
     slug: "copy" # Filename template, e.g., YYYY-MM-DD-title.md
     summary: "CCHS Home Copy"
-    editor: 
-      preview: false
+    # editor: 
+    #   preview: true
     fields: # The fields for each document, usually in front matter
       - label: "Hero"
-        name: "hero"
+        name: "hero2"
         widget: "object"
         fields:
           - { label: "Title", name: "title", widget: "string" }
