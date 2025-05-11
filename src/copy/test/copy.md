@@ -1,5 +1,5 @@
 --
-note:
+gist:
   summary: test
   contents: test
 --
