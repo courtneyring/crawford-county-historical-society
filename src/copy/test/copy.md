@@ -1,3 +1,6 @@
+---
+gist: test
+---
 --
 gist:
   summary: test
