@@ -6,9 +6,11 @@ import { Fragment } from 'react';
 import { attributes } from '../../copy/home/copy.md';
 
 
-export default function Home() {
+export default function Home({data}) {
+  console.log('data', data)
 
-  let { hero, intro, fiftyFifties, promoGroup, banner } = attributes;
+  let { hero, intro, fiftyFifties, promoGroup, banner } = data ? data : attributes;
+
 
   const button = (cta) =>
     <Button
@@ -30,9 +32,9 @@ export default function Home() {
           backgroundColor={variables.neutralDark}
           color={variables.white}
           text={intro.body}
-          cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
+          // cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
         />
-        {fiftyFifties.map((item, idx) => {
+        {/* {fiftyFifties.map((item, idx) => {
           return <FiftyFifty
             heading={item.heading}
             body={item.body}
@@ -72,7 +74,7 @@ export default function Home() {
           color={banner.color}
           text={banner.text}
           cta={<Button {...banner.cta}></Button>}
-        />
+        /> */}
 
       </main>
     </>

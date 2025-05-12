@@ -13,6 +13,7 @@ export default function CMSLayout({ children }) {
         <html lang="en" >
             <body className={urbanist.className}>
                 {children}
+                <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
             </body>
         </html>
     );

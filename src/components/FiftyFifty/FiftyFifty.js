@@ -1,6 +1,7 @@
 import styles from './FiftyFifty.module.scss';
 
 const FiftyFifty = ({ heading, body, cta, backgroundColor, color, image, reverse, pos }) => {
+    console.log(image)
     return (
         <div className={`${styles.fiftyFifty} ${!!reverse && styles.reverse}`} style={{ backgroundColor, color }}>
             <div className={`${styles.fiftyFifty__content} `} >

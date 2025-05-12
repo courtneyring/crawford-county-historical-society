@@ -11,7 +11,7 @@ collections:
     slug: "copy" # Filename template, e.g., YYYY-MM-DD-title.md
     summary: "CCHS Home Copy"
     editor: 
-      preview: false
+      preview: true
     fields: # The fields for each document, usually in front matter
       - label: "Hero"
         name: "hero"
@@ -19,6 +19,7 @@ collections:
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Image", name: "image", widget: "image" }
+          - { label: Pos, name: pos, widget: string}
       - label: "Intro"
         name: "intro"
         widget: "object"

@@ -1,28 +1,38 @@
-// import { Hero } from "@/components";
+'use client'
+
+import { Hero } from '@/components';
+import HomePreview from '@/previews/Home.preview';
+
+import React, {useEffect, useState} from 'react';
+
+
+class PostPreview extends React.Component{
+    render () {
+        var entry = this.props.entry;
+        console.log('entry',entry)
+        var hero = entry.getIn(['data', 'hero']);
+        let image = hero.get('image');
+        var bg = this.props.getAsset(image);
+        let pos = hero.get('pos');
+        return <Hero image={bg} pos={pos} />
+    }
+}
 
 const Admin = () => {
-    // const HeroPreview = ({entry}) => (
-    //     <Hero text={entry.getIn(['data', 'title'])} image=''>
-    //     </Hero>
-    // )
-    return (
-        // <html>
 
-        //     <head>
-        //         <meta charSet="utf-8" />
-        //         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        //         <meta name="robots" content="noindex" />
-        //         <title>Content Manager</title>
-        //     </head>
+    useEffect(() => {
 
-        //     <body>
-                <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-                
+        if (typeof window !== "undefined") {
+            window.CMS.registerPreviewStyle('/_next/static/css/app/(pages)/layout.css')
+            window.CMS.registerPreviewStyle('/_next/static/css/app/(pages)/page.css')
+            window.CMS.registerPreviewStyle('/styles.css')
 
-        //     </body>
+            
+            CMS.registerPreviewTemplate("test", PostPreview);
+            CMS.registerPreviewTemplate("home", HomePreview);
+        }
+    }, [])
 
-        // </html>
-    )
 }
 
 export default Admin;
