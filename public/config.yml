@@ -14,6 +14,16 @@ collections:
       - label: sanity check
         name: sanity-check
         widget: text
+      - label: image
+        name: Image
+        widget: image
+      - label: pos
+        name: Pos
+        widget: text
+      - label: hero
+        name: Hero
+        widget: hero
+        default: '{{fields.image}} | {{fields.pos}}'
       - label: Body
         name: body
         widget: markdown
