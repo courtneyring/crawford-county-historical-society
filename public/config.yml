@@ -11,8 +11,11 @@ collections:
     slug: "copy"
     summary: "CCHS Test Copy"
     fields:
-      - label: Collapsible Note
-        name: collapsible-note
+      - label: sanity check
+        name: sanity-check
+        widget: text
+      - label: Body
+        name: body
         widget: markdown
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI

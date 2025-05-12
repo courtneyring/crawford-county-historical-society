@@ -1,3 +1,4 @@
 ---
-<hr />
+sanity-check: test
 ---
+<hr />
