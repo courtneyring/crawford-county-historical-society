@@ -15,8 +15,9 @@ const Admin = () => {
     useEffect(() => {
 
         if (typeof window !== "undefined") {
-            window.CMS.registerPreviewStyle('/_next/static/css/app/(pages)/layout.css')
-            window.CMS.registerPreviewStyle('/_next/static/css/app/(pages)/preview.css')
+            window.CMS.registerPreviewStyle('/_next/static/css/app/(cms)/layout.css')
+            window.CMS.registerPreviewStyle('/_next/static/css/app/(cms)/admin-temp/page.css')
+            window.CMS.registerPreviewStyle('/styles.css')
             // window.CMS.registEditorComponent
             // window.CMS.registerWidget(uuid);
             window.CMS.registerWidget(hero);

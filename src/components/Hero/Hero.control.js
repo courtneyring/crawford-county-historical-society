@@ -38,10 +38,14 @@ const button = {
 
 export const Control = ({value, onChange }) => {
 
+    const mapValues = (val) => {
+        let v = {...value, val};
+    }
+
     return (
-        <div>
-            <textarea style={wrapper}  value={value} onChange={(e) => { onChange(e.target.value) }}></textarea>
-        </div>
+        <>
+
+        </>
     )
 
 };

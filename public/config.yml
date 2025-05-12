@@ -17,6 +17,8 @@ collections:
       - label: image
         name: Image
         widget: image
+        visible: false
+        hidden: true
       - label: pos
         name: Pos
         widget: text

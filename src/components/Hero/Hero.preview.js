@@ -4,10 +4,11 @@ import './Hero.module.scss';
 import Hero from './Hero';
 
 const Preview = ({ value, getAsset }) => {
-    console.log(value)
+    const [image, pos] = value.split(' | ')
+    console.log(image, pos)
     return (
         <>
-            {value && <Hero image={value.image} pos={value.pos} />}
+            {value && <Hero image={image} pos={pos} />}
         </>
 
     )
