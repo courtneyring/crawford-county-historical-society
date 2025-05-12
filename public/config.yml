@@ -16,10 +16,10 @@ collections:
         widget: "markdown"
       - label: "Travel Quote"
         name: "travelQuote"
-        widget: "travelQuote"
+        widget: "markdown"
       - label: Collapsible Note
         name: collapsible-note
-        widget: collapsible-note
+        widget: markdown
   - name: "home" # Used in routes, e.g., /admin/collections/blog
     label: "Home" # Used in the UI
     folder: "src/copy/home" # The path to the folder where the documents are stored
