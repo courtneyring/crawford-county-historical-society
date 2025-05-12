@@ -1,5 +1,12 @@
 // window.CMS_MANUAL_INIT = true
-console.log('here')
+CMS.registerEditorComponent({
+    id: 'horizontal-rule',
+    label: 'Horizontal Rule',
+    pattern: /^<hr \/>$/ms,
+    collapsed: true,
+    toBlock: () => `<hr />`,
+    toPreview: () => `<hr />`,
+});
 CMS.registerEditorComponent({
     id: 'collapsable-note',
     label: 'Collapsable Note',
