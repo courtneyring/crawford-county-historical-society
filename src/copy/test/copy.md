@@ -1,5 +1,5 @@
 ---
-gist: test
-travelQuote: test
-collapsible-note: test
+<details>
+  <summary>Code Snippets</summary>
+<div>
 ---

@@ -11,12 +11,6 @@ collections:
     slug: "copy"
     summary: "CCHS Test Copy"
     fields:
-      - label: "Gist"
-        name: "gist"
-        widget: "markdown"
-      - label: "Travel Quote"
-        name: "travelQuote"
-        widget: "markdown"
       - label: Collapsible Note
         name: collapsible-note
         widget: markdown
