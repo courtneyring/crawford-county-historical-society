@@ -1,0 +1,122 @@
+backend:
+  name: github
+  repo: courtneyring/crawford-county-historical-society # Path to your GitHub repository
+  branch: master # Branch to update (master by default)
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+
+  ##########################################
+  ################## BLOG ##################
+  ##########################################
+
+  - name: "thoughts" # Used in routes, e.g., /admin/collections/thoughts
+    label: "Thoughts" # Used in the UI
+    folder: "/content/thoughts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Featured Image", required: false, name: "featured_image", widget: "image"}
+      - label: "Extra Images"
+        name: "extra_images"
+        widget: "list"
+        fields:
+          - label: Image
+            name: img
+            widget: image
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  ###########################################
+  ################ PORTFOLIO ################
+  ###########################################
+
+  - name: "portfolio" # Used in routes, e.g., /admin/collections/portfolio
+    label: "Portfolio" # Used in the UI
+    folder: "/content/portfolio" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Featured Image", name: "featured_image", widget: "image"}
+      - {label: "Short Name", name: "short_name", widget: "string"}
+      - label: "Order Number"
+        name: "order_number"
+        widget: "number"
+        default: 0
+        valueType: "int"
+      - label: "Credits"
+        name: "credits"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Copy", name: "copy", widget: "string"}
+          - {label: "Link", name: "link", widget: "string"}
+      - label: "Gallery"
+        name: "gallery"
+        widget: "list"
+        fields:
+          - label: Image
+            name: img
+            widget: image
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  #########################################
+  ################# PAGES #################
+  #########################################
+
+  - name: "pages" # Used in routes, e.g., /admin/collections/pages
+    label: "Pages" # Used in the UI
+    folder: "/content" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Featured Image", required: false, name: "featured_image", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  ##########################################
+  ################ SETTINGS ################
+  ##########################################
+
+  - label: "Site Settings"
+    name: "settings"
+    editor:
+      preview: false
+    files:
+      - label: "Global Settings"
+        name: "global"
+        file: "data/global.yml"
+        fields:
+          - {label: Favicon, name: favicon, widget: image}
+          - {label: Footer Copy, name: footer_copy, widget: string}
+          - label: Contact Info
+            name: contact_info
+            widget: object
+            fields:
+              - {label: Company Name, name: company_name, widget: string}
+              - {label: Name, name: name, widget: string}
+              - {label: Title, name: title, widget: string}
+              - {label: Location, name: location, widget: string}
+              - {label: Street, name: street, widget: string}
+              - {label: City State, name: city_state, widget: string}
+          - label: "Socials"
+            name: "socials"
+            widget: "list"
+            fields:
+              - label: Icon
+                name: icon
+                widget: string
+              - label: URL
+                name: url
+                widget: string

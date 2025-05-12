@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+
+</head>
+
+<body>
+    <!-- Include the script that builds the page and powers Netlify CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+    <script>CMS.registerEditorComponent({
+            // Internal id of the component
+            id: "about-section",
+            // Visible label
+            label: "About Section",
+            // Fields the user need to fill out when adding an instance of the component
+            fields: [{
+                name: 'heading',
+                label: 'Heading',
+                widget: 'string'
+            }, {
+                name: 'image',
+                label: 'Image',
+                widget: 'image'
+            }, {
+                label: "Widget Content",
+                name: "widget_content",
+                widget: "markdown"
+            }],
+            // Pattern to identify a block as being an instance of this component
+            pattern: /^{{% about-section heading="(.*)" image="(.*)" %}}((.|\n)*){{% \/about-section %}}$/,
+            // Function to extract data elements from the regexp match
+            fromBlock: function (match) {
+                console.log(match[3]);
+                return {
+                    heading: match[1],
+                    image: match[2],
+                    widget_content: match[3]
+                };
+            },
+            // Function to create a text block from an instance of this component
+            toBlock: function (obj) {
+                return '{{% about-section heading="' + obj.heading + '" image="' + obj.image + '" %}}' + obj.widget_content + '{{% /about-section %}}';
+            },
+            // Preview output for this component. Can either be a string or a React component
+            // (component gives better render performance)
+            toPreview: function (obj) {
+                return (
+                    '<div class="about-block clearfix"><div class="information"><h2>' + obj.heading + '</h2>' + obj.widget_content + '</div><div class="images"><img src="' + obj.image + '"></div></div>'
+                );
+            }
+       });
+
+        CMS.registerEditorComponent({
+            id: "gist",
+            label: "Gist",
+            fields: [{
+                name: "username",
+                label: "GitHub Username",
+                widget: "string"
+            },
+            {
+                name: "gid",
+                label: "Gist ID",
+                widget: "string"
+            },
+            ],
+            pattern: /^{{< gist ([a-zA-Z0-9]+) ([a-zA-Z0-9]+) >}}/,
+            fromBlock: function (match) {
+                return {
+                    username: match[1],
+                    gid: match[2],
+                };
+            },
+            toBlock: function (obj) {
+                return `{{< gist ${obj.username} ${obj.gid} >}}`;
+            },
+            toPreview: function (obj) {
+                return '<a href="https://gist.github.com/' + obj.username + '/' + obj.id + '">gist</a>';
+            },
+        });
+            CMS.registerEditorComponent({
+                id: 'blockquote', // Internal id of the component
+                label: 'Blockquote', // Visible label
+                // Fields the user need to fill out when adding an instance of the component
+                fields: [
+                    {
+                        name: 'quote',
+                        label: 'Quote',
+                        widget: 'string',
+                    },
+                    {
+                        name: 'author',
+                        label: 'Author',
+                        widget: 'string',
+                    },
+                ],
+                pattern:
+                    /^<blockquote>(.*)<footer>(.*)<\/footer><\/blockquote>/, // Pattern to identify a block as being an instance of this component
+                // Function to extract data elements from the regexp match
+                fromBlock: function (match) {
+                    return {
+                        quote: match[1],
+                        author: match[2],
+                    }
+                },
+                // Function to create a text block from an instance of this component
+                toBlock: function (obj) {
+                    return (
+                        '<blockquote>' +
+                        obj.quote +
+                        '<footer>' +
+                        obj.author +
+                        '</footer></blockquote>'
+                    )
+                },
+                // Preview output for this component. Can either be a string or a React component
+                // (component gives better render performance)
+                toPreview: function (obj) {
+                    return (
+                        '<blockquote>' +
+                        obj.quote +
+                        '<footer>' +
+                        obj.author +
+                        '</footer></blockquote>'
+                    )
+                },
+            })
+
+        console.log(CMS.getEditorComponents())
+
+    </script>
+
+</body>
+
+</html>

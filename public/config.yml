@@ -2,10 +2,10 @@ backend:
   name: github
   repo: courtneyring/crawford-county-historical-society
 media_folder: "public/assets/images"
+local_backend: false
 public_folder: "/assets/images"
 collections:
   - name: test
-    title: test
     label: test
     folder: "src/copy/test"
     slug: "copy"
@@ -13,9 +13,14 @@ collections:
     fields:
       - label: "Gist"
         name: "gist"
-        widget: "gist"
+        widget: "markdown"
+      - label: "Travel Quote"
+        name: "travelQuote"
+        widget: "travelQuote"
+      - label: Collapsible Note
+        name: collapsible-note
+        widget: collapsible-note
   - name: "home" # Used in routes, e.g., /admin/collections/blog
-    title: 'Home'
     label: "Home" # Used in the UI
     folder: "src/copy/home" # The path to the folder where the documents are stored
     slug: "copy" # Filename template, e.g., YYYY-MM-DD-title.md
