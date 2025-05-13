@@ -7,7 +7,7 @@ intro:
   body: Welcome to the Crawford County Historical Society and Museum. Experience
     the rich history of Grayling and Crawford County through dynamic exhibits,
     interactive programs, and engaging community events that bring local stories
-    to life. Test
+    to life.
   cta:
     label: About Us
     value: /about
