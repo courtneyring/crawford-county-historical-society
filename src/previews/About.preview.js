@@ -1,15 +1,13 @@
 'use client';
 import { Hero, Banner, Button, FiftyFifty } from "@/components";
 import variables from '@/styles/variables.module.scss';
-import Home from "@/app/(pages)/page";
+import About from "@/app/(pages)/about/page";
 
 
-const HomePreview = (props) => {
+const AboutPreview = (props) => {
     const entry = props.entry;
     const hero = entry.getIn(['data', 'hero']);
-    const intro = entry.getIn(['data', 'intro']);
     const banner = entry.getIn(['data', 'banner']);
-    const promoGroup = entry.getIn(['data', 'promoGroup']);
     const fiftyFifties = props.widgetsFor('fiftyFifties').map((item) => {
         return {
             heading: item.getIn(['data', 'heading']),
@@ -22,50 +20,52 @@ const HomePreview = (props) => {
             },
             reverse: item.getIn(['data', 'reverse']),
             cta: {
-                label: item.getIn(['data', 'cta']).toJS().label,
-                value: item.getIn(['data', 'cta']).toJS().value,    
+                label: item.getIn(['data', 'cta'])?.toJS().label,
+                value: item.getIn(['data', 'cta'])?.toJS().value,    
             }
         }
     });
-    const promos = promoGroup.toJS().promos
-
 
     const data = {
         hero: {
             image: props.getAsset(hero.get('image')),
             pos: hero.get('pos')
         },
-        intro: {
-            body: intro.get('body'),
-            cta: {
-                label: intro.get('cta').get('label'),
-                value: intro.get('cta').get('value'),
-            }
-        },
-        fiftyFifties,
-        promoGroup: {
-            heading: promoGroup.get('heading'),
-            cta: {
-                label: promoGroup.get('cta').get('label'),
-                value: promoGroup.get('cta').get('value'),
-            },
-            promos
-        },
+        pageTitle: entry.getIn(['data', 'pageTitle']),
         banner: {
             backgroundImage: props.getAsset(banner.get('backgroundImage')),
             backgroundColor: banner.get('backgroundColor'),
             color: banner.get('color'),
             text: banner.get('text'),
-            cta: {
-                label: banner.get('cta').get('label'),
-                value: banner.get('cta').get('value'),
-            }
-        }
+            attribution: banner.get('attribution')
+        },
+        membersTitle: entry.getIn(['data', 'membersTitle']),
+        members: props.widgetsFor('members').map((item) => {
+            return {label: item.getIn(['data', 'label']), value: item.getIn(['data', 'value'])}
+        }),
+        fiftyFifties,
+        // intro: {
+        //     body: intro.get('body'),
+        //     cta: {
+        //         label: intro.get('cta').get('label'),
+        //         value: intro.get('cta').get('value'),
+        //     }
+        // },
+        
+        // promoGroup: {
+        //     heading: promoGroup.get('heading'),
+        //     cta: {
+        //         label: promoGroup.get('cta').get('label'),
+        //         value: promoGroup.get('cta').get('value'),
+        //     },
+        //     promos
+        // },
+       
     }
 
     return (
-        <Home data={data} />
+        <About data={data} />
     )
 }
 
-export default HomePreview;
+export default AboutPreview;

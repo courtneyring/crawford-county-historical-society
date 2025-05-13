@@ -6,8 +6,8 @@ import styles from './about.module.scss';
 import { attributes, react as AboutContent } from '../../../copy/about/copy.md';
 
 
-const About = () => {
-    let { heroImage, pageTitle, hero, banner, membersTitle, members, fiftyFifties } = attributes;
+const About = ({data}) => {
+    let { heroImage, pageTitle, hero, banner, membersTitle, members, fiftyFifties } = data ? data : attributes;
 
 
     const button = (cta) =>
@@ -42,7 +42,7 @@ const About = () => {
                     backgroundColor={variables[item.backgroundColor]}
                     reverse={item.reverse}
                     color={variables[item.color]}
-                    cta={item.cta ? button(item.cta) : null}
+                    cta={item.cta ? item.cta : null}
                     pos={item.pos}
                     key={`fifty-${item.heading}`}
                 />

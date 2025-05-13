@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import styles from './FiftyFifty.module.scss';
 
 const FiftyFifty = ({ heading, body, cta, backgroundColor, color, image, reverse, pos }) => {
@@ -8,7 +9,8 @@ const FiftyFifty = ({ heading, body, cta, backgroundColor, color, image, reverse
                 <div className={styles.fiftyFifty__text}> 
                     <h2>{heading}</h2>
                     <p>{body}</p>
-                    {cta}
+                    {cta.label && cta.value ? <Button {...cta}/> : null}
+
                 </div>
             </div>
             <div className={styles.fiftyFifty__image}>

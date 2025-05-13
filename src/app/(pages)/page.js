@@ -7,11 +7,8 @@ import { attributes } from '../../copy/home/copy.md';
 
 
 export default function Home({data}) {
-  console.log('data', data)
 
   let { hero, intro, fiftyFifties, promoGroup, banner } = data ? data : attributes;
-
-  console.log(intro)
 
   const button = (cta) =>
     <Button

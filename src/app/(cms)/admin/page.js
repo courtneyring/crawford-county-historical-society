@@ -1,22 +1,8 @@
 'use client'
 
-import { Hero } from '@/components';
-import HomePreview from '@/previews/Home.preview';
+import {HomePreview, AboutPreview} from '@/previews';
 
-import React, {useEffect, useState} from 'react';
-
-
-// class PostPreview extends React.Component{
-//     render () {
-//         var entry = this.props.entry;
-//         console.log('entry',entry)
-//         var hero = entry.getIn(['data', 'hero']);
-//         let image = hero.get('image');
-//         var bg = this.props.getAsset(image);
-//         let pos = hero.get('pos');
-//         return <Hero image={bg} pos={pos} />
-//     }
-// }
+import  {useEffect} from 'react';
 
 const Admin = () => {
 
@@ -27,9 +13,8 @@ const Admin = () => {
             window.CMS.registerPreviewStyle('/_next/static/css/app/(pages)/page.css')
             window.CMS.registerPreviewStyle('/styles.css')
 
-            
-            // CMS.registerPreviewTemplate("test", PostPreview);
             CMS.registerPreviewTemplate("home", HomePreview);
+            CMS.registerPreviewTemplate("about", AboutPreview);
         }
     }, [])
 
