@@ -6,17 +6,17 @@ import HomePreview from '@/previews/Home.preview';
 import React, {useEffect, useState} from 'react';
 
 
-class PostPreview extends React.Component{
-    render () {
-        var entry = this.props.entry;
-        console.log('entry',entry)
-        var hero = entry.getIn(['data', 'hero']);
-        let image = hero.get('image');
-        var bg = this.props.getAsset(image);
-        let pos = hero.get('pos');
-        return <Hero image={bg} pos={pos} />
-    }
-}
+// class PostPreview extends React.Component{
+//     render () {
+//         var entry = this.props.entry;
+//         console.log('entry',entry)
+//         var hero = entry.getIn(['data', 'hero']);
+//         let image = hero.get('image');
+//         var bg = this.props.getAsset(image);
+//         let pos = hero.get('pos');
+//         return <Hero image={bg} pos={pos} />
+//     }
+// }
 
 const Admin = () => {
 
@@ -28,7 +28,7 @@ const Admin = () => {
             window.CMS.registerPreviewStyle('/styles.css')
 
             
-            CMS.registerPreviewTemplate("test", PostPreview);
+            // CMS.registerPreviewTemplate("test", PostPreview);
             CMS.registerPreviewTemplate("home", HomePreview);
         }
     }, [])

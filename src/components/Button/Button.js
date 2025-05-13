@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import styles from "./Button.module.scss";
 
 const Button = ({
@@ -14,7 +14,7 @@ const Button = ({
   label,
   value,
 }) => {
-  const Tag = href || value ? Link : "button";
+  const Tag = href || value ? 'a' : "button";
 
   return (
     <Tag

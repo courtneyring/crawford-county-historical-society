@@ -11,6 +11,7 @@ export default function Home({data}) {
 
   let { hero, intro, fiftyFifties, promoGroup, banner } = data ? data : attributes;
 
+  console.log(intro)
 
   const button = (cta) =>
     <Button
@@ -32,9 +33,10 @@ export default function Home({data}) {
           backgroundColor={variables.neutralDark}
           color={variables.white}
           text={intro.body}
-          // cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
+          // cta={intro.cta}
+          cta={<Button variation='secondary' href={intro.cta.value}>{intro.cta.label}</Button>}
         />
-        {/* {fiftyFifties.map((item, idx) => {
+        {fiftyFifties.map((item, idx) => {
           return <FiftyFifty
             heading={item.heading}
             body={item.body}
@@ -74,7 +76,7 @@ export default function Home({data}) {
           color={banner.color}
           text={banner.text}
           cta={<Button {...banner.cta}></Button>}
-        /> */}
+        />
 
       </main>
     </>

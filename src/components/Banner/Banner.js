@@ -1,5 +1,6 @@
 import styles from './Banner.module.scss';
 import variables from '@/styles/variables.module.scss';
+import Button from '../Button/Button';
 
 const Banner = ({ text, cta, backgroundImage, backgroundColor, color, variation, attribution }) => {
     return (
@@ -7,6 +8,7 @@ const Banner = ({ text, cta, backgroundImage, backgroundColor, color, variation,
             <div className={styles.banner__content} >
                 <p className={`${styles.banner__text}`}>{text}</p>
                 <p className={styles.banner__attribution}>{attribution}</p>
+                {/* <Button {...cta}></Button> */}
                 {cta}
             </div>
 
