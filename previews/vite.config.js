@@ -1,16 +1,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import markdown from 'vite-plugin-markdown';
-
+import mdPlugin from 'vite-plugin-md';
 
 
 export default defineConfig({
     root: './',
     base: '/',
-    plugins: [react(), markdown({ mode: ['html', 'toc', 'meta', 'react'] })],
-    assetsInclude: ['**/*.md'],
+    plugins: [react(), mdPlugin({ mode: ['react', 'toc', 'html'] })],
     assetsDir: '/assets',
+    // assetsInclude: ['**/*.md'],
     css: {
         modules: {
             localsConvention: 'camelCase',

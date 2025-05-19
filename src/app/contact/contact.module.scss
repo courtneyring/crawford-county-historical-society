@@ -1,0 +1,59 @@
+@import '@/styles/variables.module.scss';
+
+@include container-padding('.contact__ahc');
+
+.contact__container {
+    background-color: $color-primary;
+    color: $color-white;
+}
+
+.contact__inner {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+.contact__map {
+    height: 300px;
+}
+
+@media(min-width: 768px) {
+   
+    .contact__map {
+        height: 500px;
+    }
+}
+
+
+
+@media(min-width:992px) {
+    @include container-padding('.contact__container');
+    
+    .contact__inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: $container-max-width-xsmall;
+        margin: 0 auto;
+        // min-height: 1000px;
+    }
+
+    .contact__ahc {
+        padding: 0;
+    }
+
+
+
+}
+
+
+@media(min-width: 1200px) {
+    .contact__inner {
+        max-width: $container-max-width;
+        min-height: 800px;
+    }
+
+    .contact__map {
+        height: 700px;
+    }
+}

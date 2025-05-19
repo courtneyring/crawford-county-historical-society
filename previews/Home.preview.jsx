@@ -1,9 +1,5 @@
 'use client';
-import { Hero, Banner, Button, FiftyFifty } from "@/components";
-import variables from '@/styles/variables.module.scss';
 import Home from "@/app/page";
-import styles from '@/app/page'
-
 
 const HomePreview = (props) => {
     const entry = props.entry;
@@ -63,6 +59,8 @@ const HomePreview = (props) => {
             }
         }
     }
+
+    console.log(data)
 
     return (
         <Home data={data} />
