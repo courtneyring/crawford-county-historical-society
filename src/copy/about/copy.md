@@ -27,7 +27,7 @@ members:
   - label: Board Member
     value: Jan Gill
   - label: "Board Member "
-    value: Jeremie Peter
+    value: Jeremie Peters
   - label: Board Member
     value: Karri Vinton
   - label: Board Member
