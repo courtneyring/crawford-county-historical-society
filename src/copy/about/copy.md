@@ -11,7 +11,7 @@ banner:
     would have been like then. Just walking through, it could take a couple
     hours [...], we may have to ring the bell and close the door before you get
     finished.”
-  attribution: "- Ted Randolph, CCHS Board Member"
+  attribution: "- Tad Randolph, CCHS Board Member"
 membersTitle: Our Leaders
 members:
   - label: President
